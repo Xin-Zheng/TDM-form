@@ -5137,7 +5137,7 @@ function updatePropertyHtml() {
 							// console.log(result.feature.attributes["TAZ"]);
 
 
-					$("#TAZinput").val(result.feature.attributes["TAZ"]);
+					$("#TAZinput").html(result.feature.attributes["TAZ"]);
 					$("#TAZinput").change();
 
 					theNum=theNum+1
@@ -5156,8 +5156,6 @@ function updatePropertyHtml() {
 				if (result.feature.attributes["ZONING_SIM"] != null) {
 					theNum = theNum + 1
 
-					$("#UseDistrict").val(result.feature.attributes["ZONING_SIM"]);
-					$("#UseDistrict").change();
 				}
 			}
 		}
@@ -5169,7 +5167,7 @@ function updatePropertyHtml() {
 			if (result.layerName == "Parcels") {
 				if (result.feature.attributes["blklot"] != null) {
 					theNum = theNum + 1
-					$("#AssessorsBlockLot").val(result.feature.attributes["block_num"]+'/'+result.feature.attributes["lot_num"]);
+					$("#AssessorsBlockLot").html(result.feature.attributes["block_num"]+'/'+result.feature.attributes["lot_num"]);
 					$("#AssessorsBlockLot").change();
 				}
 			}
@@ -5182,8 +5180,7 @@ function updatePropertyHtml() {
 			if (result.layerName == "height") {
 				if (result.feature.attributes["HEIGHT"] != null) {
 					theNum = theNum + 1
-					$("#HeightDistrict").val(result.feature.attributes["HEIGHT"]);
-					$("#HeightDistrict").change();
+
 				}
 			}
 		}
@@ -5195,8 +5192,7 @@ function updatePropertyHtml() {
 			if (result.layerName == "zipcode") {
 				if (result.feature.attributes["ZCTA5CE10"] != null) {
 					theNum = theNum + 1
-					$("#ZipCode").val(result.feature.attributes["ZCTA5CE10"]);
-					$("#ZipCode").change();
+
 				}
 			}
 		}
