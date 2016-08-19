@@ -27,16 +27,13 @@
   <script type="text/javascript" src="js/proj4js/lib/proj4js-combined.js"></script>
 
 
-  <div class= "row">
+  <div class="row">
     <img src="images/banner1.png" style="position: absolute; left: 20px; padding-top:5px;" height="90">
-    <img src="images/banner2.png" style="position: absolute; right: 20px;padding-top:5px;" height="90" >
+    <img src="images/banner2.png" style="position: absolute; right: 20px;padding-top:5px;" height="90">
   </div>
 
 
-
 </head>
-
-
 
 
 <body>
@@ -46,59 +43,69 @@
 <br>
 <br>
 <br>
-<div class = "row SecBanner" style="padding:5px;">
-    <div id="step1div" class="col-md-5" style="display: inline-block;" >
-        <div id="step1" style="color:#32BA9C; display: inline-block;" class="subtitle"> STEP 1: </div> <span style="font-size:20px; color:#27343A;" class="subtitle">Search or Click on the Map </span>
-        <form id="addressForm" class="row" style="margin-top:10px; display: inline; margin: 0; vertical-align:bottom; padding: 0px;" action=""; onsubmit="clicked=false; theSearchType=null; isNeighborhood=false; isDistrict=false; showAddress(this.address.value); return false">
-            <input style= "margin-top:5px;display: inline; margin: 0; border-style:inset; border-color: #ffffff; vertical-align: middle; font-size: 18px; height: 34px; width: 300px" type="text"    id="addressInput" name="address" value="1650 Mission Street" />&nbsp; &nbsp;
-            <a name='searchbox'></a><input title = "Search button" alt="Search button" style= "display: inline; margin: 0; vertical-align: middle;" id="findButton" type="image" src = "images/searchtrans.png" onMouseDown="this.src='images/search2trans.png'" onMouseUp="this.src='images/searchtrans.png'" onMouseOut="this.src='images/searchtrans.png'"/>
-        </form>
-    </div>
+<div class="row SecBanner" style="padding:5px;">
+  <div id="step1div" class="col-md-5" style="display: inline-block;">
+    <div id="step1" style="color:#32BA9C; display: inline-block;" class="subtitle"> STEP 1:</div>
+    <span style="font-size:20px; color:#27343A;" class="subtitle">Search or Click on the Map </span>
+    <form id="addressForm" class="row"
+          style="margin-top:10px; display: inline; margin: 0; vertical-align:bottom; padding: 0px;" action="" ;
+          onsubmit="clicked=false; theSearchType=null; isNeighborhood=false; isDistrict=false; showAddress(this.address.value); return false">
+      <input
+        style="margin-top:5px;display: inline; margin: 0; border-style:inset; border-color: #ffffff; vertical-align: middle; font-size: 18px; height: 34px; width: 300px"
+        type="text" id="addressInput" name="address" value="1650 Mission Street"/>&nbsp; &nbsp;
+      <a name='searchbox'></a><input title="Search button" alt="Search button"
+                                     style="display: inline; margin: 0; vertical-align: middle;" id="findButton"
+                                     type="image" src="images/searchtrans.png"
+                                     onMouseDown="this.src='images/search2trans.png'"
+                                     onMouseUp="this.src='images/searchtrans.png'"
+                                     onMouseOut="this.src='images/searchtrans.png'"/>
+    </form>
+  </div>
 
-    <div id="step2div"  class="col-md-6" style="display: inline-block;" >
-        <div style="color:#32BA9C; display: inline-block;" class="subtitle"> STEP 2:
-        </div>
-        <span style="font-size:20px;color:#27343A;" class="subtitle">Choose Land Use Categories
+  <div id="step2div" class="col-md-6" style="display: inline-block;">
+    <div style="color:#32BA9C; display: inline-block;" class="subtitle"> STEP 2:
+    </div>
+    <span style="font-size:20px;color:#27343A;" class="subtitle">Choose Land Use Categories
     </span>
 
 
-        <!-- Project Type Multiple Radios -->
-        <div id="categorydiv" class="row" >
-            <div class="col-md-4">
-                <div class="checkbox">
-                    <label for="radios-0">
-                        <input type="checkbox" name="radios" id="radios-0" value="1" class = "CategoryRadio" checked="true">
-                        Category A: Retail Type
-                    </label>
-                </div>
-                <div class="checkbox">
-                    <label for="radios-1">
-                        <input type="checkbox" name="radios" id="radios-1" value="2" class = "CategoryRadio">
-                        Category B: Office Type
-                    </label>
-                </div>
-            </div>
-
-            <div class="col-md-6" >
-                <div class="checkbox">
-                    <label for="radios-2">
-                        <input type="checkbox" name="radios" id="radios-2" value="3" class = "CategoryRadio">
-                        Category C: Residential Type
-                    </label>
-                </div>
-                <div class="checkbox">
-                    <label for="radios-3">
-                        <input type="checkbox" name="radios" id="radios-3" value="4" class = "CategoryRadio">
-                        Category D: Other
-                    </label>
-                </div>
-            </div>
+    <!-- Project Type Multiple Radios -->
+    <div id="categorydiv" class="row">
+      <div class="col-md-4">
+        <div class="checkbox">
+          <label for="radios-0">
+            <input type="checkbox" name="radios" id="radios-0" value="1" class="CategoryRadio" checked="true">
+            Category A: Retail Type
+          </label>
         </div>
-    </div>
+        <div class="checkbox">
+          <label for="radios-1">
+            <input type="checkbox" name="radios" id="radios-1" value="2" class="CategoryRadio">
+            Category B: Office Type
+          </label>
+        </div>
+      </div>
 
-    <div class="col-md-1">
-        <button id="tourbutton">tour</button>
+      <div class="col-md-6">
+        <div class="checkbox">
+          <label for="radios-2">
+            <input type="checkbox" name="radios" id="radios-2" value="3" class="CategoryRadio">
+            Category C: Residential Type
+          </label>
+        </div>
+        <div class="checkbox">
+          <label for="radios-3">
+            <input type="checkbox" name="radios" id="radios-3" value="4" class="CategoryRadio">
+            Category D: Other
+          </label>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <div class="col-md-1">
+    <button id="tourbutton">tour</button>
+  </div>
 
 </div>
 
@@ -111,1325 +118,1647 @@
   <input type="radio" id="Dprojecttype" name="Dprojecttype" type="text" style="display:none;">
 
 
-    <input id="AcurrentPointTodatabase" name="AcurrentPointTodatabase" type="text" style="display:none;">
-    <input id="AtargetPointTodatabase" name="AtargetPointTodatabase" type="text" style="display:none;">
-    <input id="BcurrentPointTodatabase" name="BcurrentPointTodatabase" type="text" style="display:none;">
-    <input id="BtargetPointTodatabase" name="BtargetPointTodatabase" type="text" style="display:none;">
-    <input id="CcurrentPointTodatabase" name="CcurrentPointTodatabase" type="text" style="display:none;">
-    <input id="CtargetPointTodatabase" name="CtargetPointTodatabase" type="text" style="display:none;">
-    <input id="DcurrentPointTodatabase" name="DcurrentPointTodatabase" type="text" style="display:none;">
-    <input id="DtargetPointTodatabase" name="DtargetPointTodatabase" type="text" style="display:none;">
-
-
-    <br>
-
-<div class="row">
-<div   style="z-index:0;">
-	<div id="map_canvas" > 
-	</div>
-</div>
-</div>
-
-
-<br>
-
-<div class="col-md-12" id="mainCol" style="padding-right: 20px; padding-left: 30px;">
-
-<div id = "BasicProjectCharacter" class="form-horizontal col-md-5 formborder"  >
-<fieldset>
-
-<div class="row">
-	<LEGEND class="col-md-9">Project Characteristics </LEGEND>
-</div>
-
-
-
-<!--&lt;!&ndash; Text input&ndash;&gt;-->
-<!--<div class="form-group">-->
-  <!--<label class="col-md-5 control-label" for="Case">Case No.</label>  -->
-  <!--<div class="col-md-6">-->
-  <!--<input id="Case" name="Case" type="text" placeholder="2016-999999ENV" class="form-control input-md" required="">    -->
-  <!--</div>-->
-<!--</div>-->
-
-
-
-<div class="form-group">
-  <label class="col-md-5 control-label" for="Street">Street Address of Project</label>  
-  <div class="col-md-7">
-  <input id="Street" name="Street" type="text" placeholder="1650 Mission Street" class="form-control input-md" required="">
-  </div>
-
-</div>
-
-
-
-
-<div class="form-group">
-  <label class="col-md-5 control-label" for="Assessors Block/Lot">Assessors Block/Lot</label>  
-  <div class="col-md-6">
-    <div id="AssessorsBlockLot" name="Assessors Block/Lot" style="font-size:130%; padding-top: 4px;"></div>
-  </div>
-</div>
-
-
-
-
-<div class="form-group">
-  <label class="col-md-5 control-label" for="Transportation Analysis Zone Number">Transportation Analysis Zone Number </label>
-  <div class="col-md-6">
-  <div id="TAZinput" name="Transportation Analysis Zone Number" style="font-size:130%; padding-top: 4px;"></div>
-</div>
-
-
-
-
-
-
-
-</fieldset>
-</div>
-
-
-
-
-
-<!-- Type A -->
-<div id="detaileddiv" class="col-md-7"  >
-<div id = "Atype" class="form-horizontal form-type1 formborder">
-
-	<LEGEND class="col-md-12" >Project Characteristics - Land Use Category A (Retail Type)</LEGEND>
-
-
-
-<div class="form-group">
-	<label class="col-md-4 control-label" for="Specify Use A">Specify Use(s)</label>
-	<div class="col-md-6">
-	<input id="SpecifyUseA" name="SpecifyUseA" type="text" placeholder="Restaurant" class="form-control input-md ProjectCharactInput" >
-	</div>
-</div>
-
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Gross Floor Area A">Gross Floor Area (square footage)</label>  
-  <div class="col-md-6">
-  <input id="AgrossareaInput" name="Gross Floor Area A" type="text" placeholder="0" class="form-control input-md ProjectCharactInput auto" >
-  <span class="help-block">Less than 10,000 square feet is not subject to TDM Program.</span>  
-    
-  </div>
-</div>
-
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Occupied Floor Area A">Occupied Floor Area (square footage)</label>  
-  <div class="col-md-6">
-  <input id="AoccupyareaInput" name="Occupied Floor Area A" type="text" placeholder="0" class="form-control input-md ProjectCharactInput auto" >
-    
-  </div>
-</div>
-
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Accessory Parking Spaces A">Accessory Parking Spaces</label>  
-  <div class="col-md-6">
-  <input id="AparkingInput" name="Accessory Parking Spaces A" type="text" placeholder="0" class="form-control input-md ProjectCharactInput auto" >
-  </div>
-</div>
-
-</div>
-
-
-
-
-
-<!--  Type B -->
-<div id = "Btype" class="form-horizontal form-type1 formborder" >
-<fieldset>
-
-<div class="row">
-	<div class="col-md-12"></div>
-	<LEGEND class="col-md-12">Project Characteristics - Land Use Category B (Office Type) </LEGEND>
-</div>
-
-	<div class="form-group">
-  <label class="col-md-4 control-label" for="Specify Use B">Specify Use(s)</label>  
-  <div class="col-md-6">
-  <input id="SpecifyUseB" name="Specify Use B" type="text" placeholder="Office" class="form-control input-md ProjectCharactInput" >
-    
-  </div>
-</div>
-
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Gross Floor Area B">Gross Floor Area (square footage)</label>  
-  <div class="col-md-6">
-  <input id="BgrossareaInput" name="Gross Floor Area B" type="text" placeholder="0" class="form-control input-md ProjectCharactInput auto" >
-  <span class="help-block">Less than 10,000 square feet is not subject to TDM Program.</span>  
-    
-  </div>
-</div>
-
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Occupied Floor Area B">Occupied Floor Area (square footage)</label>  
-  <div class="col-md-6">
-  <input id="BoccupyareaInput" name="Occupied Floor Area B" type="text" placeholder="0" class="form-control input-md ProjectCharactInput auto" >
-    
-  </div>
-</div>
-
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Accessory Parking Spaces B">Accessory Parking Spaces</label>  
-  <div class="col-md-6">
-  <input id="BparkingInput" name="Accessory Parking Spaces B" type="text" placeholder="0" class="form-control input-md ProjectCharactInput auto" >
-    
-  </div>
-</div>
-
-</fieldset>
-</div>
-
-
-
-
-<!--  Type C -->
-<div id = "Ctype" class="form-horizontal form-type1 formborder" >
-<fieldset>
-
-<div class="row">
-	<div class="col-md-12"></div>
-	<LEGEND class="col-md-12">Project Characteristics - Land Use Category C (Residential Type) </LEGEND>
-</div>
-
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Dwelling Units and Beds in Group Housing">Dwelling Units and Beds in Group Housing</label>  
-  <div class="col-md-6">
-  <input id="Cunitbed" name="Cunitbed" type="text" placeholder="0" class="form-control input-md ProjectCharactInput auto" >
-  <SPAN class="help-block"> Less than 10 dwelling units or beds is not subject to TDM Program.</SPAN>
-    
-  </div>
-</div>
-
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Two-Bedrooms">% of Dwelling Units Two-Bedrooms or larger</label>  
-  <div class="col-md-6">
-  <input id="CtwobedroomInput" name="CtwobedroomInput" type="text" placeholder="0" class="form-control input-md ProjectCharactInput" >
-    
-  </div>
-</div>
-
-<div class="form-group">
-  <label class="col-md-4 control-label" for="On-site Affordable Housing">% On-site Affordable Housing</label>  
-  <div class="col-md-6">
-  <input id="CaffordHouseInput" name="CaffordHouseInput" type="text" placeholder="0" class="form-control input-md ProjectCharactInput" >
-  <SPAN class="help-block"> 100% Affordable Housing projects are not subject to TDM Program.</SPAN>
-  </div>
-</div>
-
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Accessory Parking Spaces C">Accessory Parking Spaces</label>  
-  <div class="col-md-6">
-  <input id="CparkingInput" name="CparkingInput" type="text" placeholder="0" class="form-control input-md ProjectCharactInput auto">
-    
-  </div>
-</div>
-
-</fieldset>
-</div>
-
-
-
-
-<!-- Type D -->
-<div id = "Dtype" class="form-horizontal form-type1 formborder"  >
-<fieldset>
-
-<div class="row">
-	<div class="col-md-12"></div>
-	<LEGEND class="col-md-12">Project Characteristics - Land Use Category D (Other) </LEGEND>
-</div>
-
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Specify Use D">Specify Use(s)</label>  
-  <div class="col-md-6">
-  <input id="SpecifyUseD" name="Specify Use D" type="text" placeholder="PDR
-" class="form-control input-md ProjectCharactInput" >
-    
-  </div>
-</div>
-
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Gross Floor Area D">Gross Floor Area (square footage)</label>  
-  <div class="col-md-6">
-  <input id="DgrossareaInput" name="Gross Floor Area D" type="text" placeholder="0" class="form-control input-md ProjectCharactInput auto" >
-  <span class="help-block">Less than 10,000 square feet is not subject to TDM Program.</span>  
-    
-  </div>
-</div>
-
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Occupied Floor Area D">Occupied Floor Area (square footage)</label>  
-  <div class="col-md-6">
-  <input id="DoccupyareaInput" name="Occupied Floor Area D" type="text" placeholder="0" class="form-control input-md ProjectCharactInput auto">
-    
-  </div>
-</div>
-
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Accessory Parking Spaces D">Accessory Parking Spaces</label>  
-  <div class="col-md-6">
-  <input id="DparkingInput" name="Accessory Parking Spaces D" type="text" placeholder="0" class="form-control input-md ProjectCharactInput auto" >
-    
-  </div>
-</div>
-
-
-
-</fieldset>
-</div>
-</div>
-
-<div class="row">
-	<div class="col-md-1"></div>
-	<LEGEND class="col-md-10"></LEGEND>
-</div>
-
-
-
-
-
-<!-- A type Measures-->
-<div class="col-md-7">
-<div id="measurediv">
-<div id = "AtypeMeasure" class="form-horizontal AllMeasure row" style="margin-bottom:100px;">
-	<div  class="row">
-	<div class="col-xs-1"></div>
-	<LEGEND class="col-md-7 parkingtitle">PARKING </LEGEND>
-	</div>
-
-	<!-- A type Measures PKG1-->
-	<div class="form-group">
-		<label class="col-md-6 control-label" for="Apkg1">PKG 1 Unbundle Parking</label>  
-		<div class="col-md-5">
-		  <input id="Apkg1" type="checkbox" name="Apkg1" data-size="small" data-on-text="Yes" data-off-text="No">
-      <div id="Apkg1measurepoint" class="measurepoint"></div>  
-		  <div class="row" style="margin-left:4px">
-          <label id="Apkg1ratelabel" class="control-label regular parkratetitle">Neighborhood Parking Rate:</label>  
-          <label id="Apkg1rate" class="control-label regular"></label>  
-          <label class="control-label regular">&nbsp&nbsp </label>  
-          <label id="Apkg1loclabel" class="control-label regular">Location</label>  
-          <label id="Apkg1loc" class="control-label regular"></label>  
-      </div>
-
-
-	 </div>
-	</div>
-
-	<!-- A type Measures PKG2-->
-	<div class="form-group">
-	<label class="col-md-6 control-label" for="Apkg2">PKG 2 Parking Pricing</label>  
-		<div class="col-md-5">
-			<input id="Apkg2" type="checkbox" name="Apkg2" data-size="small" data-on-text="Yes" data-off-text="No">
-	</div>
-	</div>
-
-	<!-- A type Measures PKG3-->
-	<div class="form-group">
-	<label class="col-md-6 control-label" for="Apkg3">PKG 3 Parking Cash Out - Non-residential Tenants</label>  
-	<div class="col-md-5">
-		<input id="Apkg3" type="checkbox" name="Apkg3" data-size="small" data-on-text="Yes" data-off-text="No">
-	</div>
-	</div>
-
-	<!-- A type Measures PKG4-->
-	<div class="form-group">
-      <label class="col-md-6 control-label" for="Apkg4">PKG 4 Parking Supply</label>
-      <div class="col-md-5">
-        <input id="Apkg4" class = "allpkg4" name="Apkg4" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-          <label class="control-label regular">&nbsp&nbsp </label> 
-          <label class="control-label regular parkratetitle">Neighborhood Parking Rate:</label>  
-          <label id="Apkg4rate" class="control-label regular"></label>
-          <label class="control-label regular">&nbsp&nbsp </label>  
-          <label class="control-label regular">Project Parking Rate:</label>  
-          <label id="Apkg4projectrate" class="control-label regular"></label>    
-          <label class="control-label regular">&nbsp&nbsp </label>  
-          <label class="control-label regular"></label>  
-          <label id="Apkg4Opt" class="control-label regular"></label>  
-      </div>
-
-	</div>
-
- 
-
-	<div class="row">
-	<div class="col-xs-1"></div>
-	<LEGEND class="col-md-7">ACTIVE TRANSPORTATION </LEGEND>
-	</div>
-
-
-	<!-- A type Measures ACT1-->
-	<div class="form-group">
-	<label class="col-md-6 control-label" for="Aact1">ACTIVE-1 Improve Walking Conditions</label>
-		<div class="col-md-5">
-			<input id="Aact1" type="checkbox" name="Aact1" data-size="small" data-on-text="Yes" data-off-text="No">
-			<div class="btn-group">
-				<input id="Aact1OptA" type="radio" class="OptButtion Aact1Opt" autocomplete="off" name="Aact1Opt" value="1"></input><label class="control-label regular" for="Aact1OptA">Option A</label>
-				<input id="Aact1OptB" type="radio" class="OptButtion Aact1Opt" autocomplete="off" name="Aact1Opt" value="2"></input><label class="control-label regular" for="Aact1OptB">Option B</label>
-	    </div>
-	</div>
-	</div>
-
-	<!-- A type Measures ACT2-->
-	<div class="form-group">
-	<label class="col-md-6 control-label" for="Aact2">ACTIVE-2 Bicycle Parking</label>
-		<div class="col-md-5">
-			<input id="Aact2" type="checkbox" name="Aact2" data-size="small" data-on-text="Yes" data-off-text="No">
-			<div class="btn-group">
-			<input id="Aact2OptA" type="radio" class="OptButtion Aact2Opt" autocomplete="off" name="Aact2Opt" value="1"></input><label class="control-label regular" for="Aact2OptA">Option A</label>
-				<input id="Aact2OptB" type="radio" class="OptButtion Aact2Opt" autocomplete="off" name="Aact2Opt" value="2"></input><label class="control-label regular" for="Aact2OptB">Option B</label>
-				<input id="Aact2OptC" type="radio" class="OptButtion Aact2Opt" autocomplete="off" name="Aact2Opt" value="3"></input><label class="control-label regular" for="Aact2OptC">Option C</label>
-				<input id="Aact2OptD" type="radio" class="OptButtion Aact2Opt" autocomplete="off" name="Aact2Opt" value="4"></input><label class="control-label regular" for="Aact2OptD">Option D</label>
-	    </div>
-	</div>
-	</div>
-
-	<!-- A type Measures ACT3-->
-	<div class="form-group">
-	<label class="col-md-6 control-label" for="Aact3">ACTIVE-3 Showers and Lockers</label>
-		<div class="col-md-5">
-			<input id="Aact3" type="checkbox" name="Aact3" data-size="small" data-on-text="Yes" data-off-text="No">
-	</div>
-	</div>
-
-	<!-- A type Measures ACT4-->
-	<div class="form-group">
-	<label class="col-md-6 control-label" for="Aact4">ACTIVE-4 Bike Share Membership</label>
-		<div class="col-md-5">
-			<input id="Aact4" type="checkbox" name="Aact4" data-size="small" data-on-text="Yes" data-off-text="No">
-			<div class="btn-group">
-			<input id="Aact4OptA" type="radio" class="OptButtion Aact4Opt" autocomplete="off" name="Aact4Opt" value="1"></input><label class="control-label regular" for="Aact4OptA">>1000feet</label>
-				<input id="Aact4OptB" type="radio" class="OptButtion Aact4Opt" autocomplete="off" name="Aact4Opt" value="2"></input><label class="control-label regular" for="Aact4OptB"><=1000feet</label>
-	    </div>
-	</div>
-	</div>
-
-	<!-- A type Measures ACT5a-->
-	<div class="form-group">
-	<label class="col-md-6 control-label" for="Aact5a">ACTIVE-5a Bike Share Membership</label>
-		<div class="col-md-5">
-			<input id="Aact5a" type="checkbox" name="Aact5a" data-size="small" data-on-text="Yes" data-off-text="No">
-	</div>
-	</div>
-
-	<!-- A type Measures ACT5b-->
-	<div class="form-group">
-	<label class="col-md-6 control-label" for="Aact5b">ACTIVE-5b Bicycle Maintenance Services</label>
-		<div class="col-md-5">
-			<input id="Aact5b" type="checkbox" name="Aact5b" data-size="small" data-on-text="Yes" data-off-text="No">
-	</div>
-	</div>
-
-	<!-- A type Measures ACT6-->
-	<div class="form-group">
-	<label class="col-md-6 control-label" for="Aact6">ACTIVE-6 Fleet of Bicycles</label>
-		<div class="col-md-5">
-			<input id="Aact6" type="checkbox" name="Aact6" data-size="small" data-on-text="Yes" data-off-text="No">
-	</div>
-	</div>
-
-	<!-- A type Measures ACT7-->
-	<div class="form-group">
-	<label class="col-md-6 control-label" for="Aact7">ACTIVE-7 Temporary Bicycle Valet Parking</label>
-		<div class="col-md-5">
-			<input id="Aact7" type="checkbox" name="Aact7" data-size="small" data-on-text="Yes" data-off-text="No">
-	</div>
-	</div>
-
-
-	<div class="row">
-	<div class="col-xs-1"></div>
-	<LEGEND class="col-md-7">CAR SHARE</LEGEND>
-	</div>
-
-	<!-- A type Measures CSHARE1-->
-	<div class="form-group">
-	<label class="col-md-6 control-label" for="Acshare1">CSHARE-1 Car-Share Parking</label>
-		<div class="col-md-5">
-			<input id="Acshare1" type="checkbox" name="Acshare1" data-size="small" data-on-text="Yes" data-off-text="No">
-			<div class="btn-group" >
-
-				<input id="Acshare1OptA" type="radio" class="btn-default OptButtion Acshare1Opt" autocomplete="off" name="Acshare1Opt" value="1"></input><label class="control-label regular" for="Acshare1OptA">Option A</label>
-				<input id="Acshare1OptB" type="radio" class="btn-default OptButtion Acshare1Opt" autocomplete="off" name="Acshare1Opt" value="2"></input><label class="control-label regular" for="Acshare1OptB">Option B</label>
-				<input id="Acshare1OptC" type="radio" class="btn-default OptButtion Acshare1Opt" name="Acshare1Opt" value="3"></input><label class="control-label regular" for="Acshare1OptC">Option C</label>
-				<input id="Acshare1OptD" type="radio" class="btn-default OptButtion Acshare1Opt" name="Acshare1Opt" value="4"></input><label class="control-label regular" for="Acshare1OptD">Option D</label>
-				<input id="Acshare1OptE" type="radio" class="btn-default OptButtion Acshare1Opt" name="Acshare1Opt" value="5"></input><label class="control-label regular" for="Acshare1OptE">Option E</label>
-	    </div>
-	</div>
-	</div>
-
-
-	<div class="row">
-	<div class="col-xs-1"></div>
-	<LEGEND class="col-md-7">DELIVERY</LEGEND>
-	</div>
-
-	<!-- A type Measures DELIVERY1-->
-	<div class="form-group">
-	<label class="col-md-6 control-label" for="Adeli1">DELIVERY-1 Delivery Supportive Amenities</label>
-		<div class="col-md-5">
-			<input id="Adeli1" type="checkbox" name="Adelivery1" data-size="small" data-on-text="Yes" data-off-text="No">
-	</div>
-	</div>
-
-	<!-- A type Measures DELIVERY2-->
-	<div class="form-group">
-	<label class="col-md-6 control-label" for="Adeli2">DELIVERY-2 Provide Delivery Services</label>
-		<div class="col-md-5">
-			<input id="Adeli2" type="checkbox"  name="Adelivery2" data-size="small" data-on-text="Yes" data-off-text="No">
-	</div>
-	</div>
-
-
-	<div class="row">
-	<div class="col-xs-1"></div>
-	<LEGEND class="col-md-7">FAMILY</LEGEND>
-	</div>
-
-	<!-- A type Measures FAMILY2-->
-	<div class="form-group">
-	<label class="col-md-6 control-label" for="Afam2">FAM-1 On-site Childcare</label>
-		<div class="col-md-5">
-			<input id="Afam2" type="checkbox"  name="Afam2" data-size="small" data-on-text="Yes" data-off-text="No">
-	</div>
-	</div>
-
-
-	<div class="row">
-	<div class="col-xs-1"></div>
-	<LEGEND class="col-md-7">HIGH OCCUPANCY VEHICLES</LEGEND>
-	</div>
-
-	<!-- A type Measures HOV1-->
-	<div class="form-group">
-	<label class="col-md-6 control-label" for="Ahov1">HOV-1 Contributions or Incentives</label>
-		<div class="col-md-5">
-			<input id="Ahov1" type="checkbox" name="Ahov1" data-size="small" data-on-text="Yes" data-off-text="No">
-			<div class="btn-group">
-			  	<input id="Ahov1OptA" type="radio" class="btn-default OptButtion Ahov1Opt" autocomplete="off" name="Ahov1Opt" value="1"></input><label class="control-label regular" for="Ahov1OptA">Option A</label>
-			  	<input id="Ahov1OptB" type="radio" class="btn-default OptButtion Ahov1Opt" autocomplete="off" name="Ahov1Opt" value="2"></input><label class="control-label regular" for="Ahov1OptB">Option B</label>
-			  	<input id="Ahov1OptC" type="radio" class="btn-default OptButtion Ahov1Opt" autocomplete="off" name="Ahov1Opt" value="3"></input><label class="control-label regular" for="Ahov1OptC">Option C</label>
-	  		<input id="Ahov1OptD" type="radio" class="btn-default OptButtion Ahov1Opt" autocomplete="off" name="Ahov1Opt" value="4"></input><label class="control-label regular" for="Ahov1OptD">Option D</label>
-
-	    </div>
-	</div>
-	</div>
-
-	<!-- A type Measures HOV2-->
-	<div class="form-group">
-	<label class="col-md-6 control-label" for="Ahov2">HOV-2 Shuttle Bus Service</label>
-		<div class="col-md-5">
-			<input id="Ahov2" type="checkbox" name="Ahov2"  data-size="small" data-on-text="Yes" data-off-text="No">
-			<div class="btn-group">
-			  	<input id="Ahov2OptA" type="radio" class="btn-default OptButtion Ahov2Opt" autocomplete="off" name="Ahov2Opt" value="1"></input><label class="control-label regular" for="Ahov2OptA">Option A</label>
-				<input id="Ahov2OptB" type="radio" class="btn-default OptButtion Ahov2Opt" autocomplete="off" name="Ahov2Opt" value="2"></input><label class="control-label regular" for="Ahov2OptB">Option B</label>
-
-	    </div>
-	</div>
-	</div>
-
-	<!-- A type Measures HOV3-->
-	<div class="form-group">
-		<label class="col-md-6 control-label" for="Ahov3">HOV-3 Vanpool Program</label>
-		<div class="col-md-1">
-			<input id="Ahov3" type="checkbox" name="Ahov3"  data-size="small" data-on-text="Yes" data-off-text="No">
-		</div>
-		<div id="hov3Opt" class = "col-md-1 control-label regular"></div>
-	</div>
-
-
-	<div class="row">
-	<div class="col-xs-1"></div>
-	<LEGEND class="col-md-7">COMMUNICATIONS AND INFORMATION	</LEGEND>
-	</div>
-
-	<!-- A type Measures INFO1-->
-	<div class="form-group">
-	<label class="col-md-6 control-label" for="Ainfo1">INFO-1 Multimodal Wayfinding Signage</label>
-		<div class="col-md-5">
-			<input id="Ainfo1" type="checkbox" name="Ainfo1"  data-size="small" data-on-text="Yes" data-off-text="No">
-	</div>
-	</div>
-
-
-	<!-- A type Measures INFO2-->
-	<div class="form-group">
-	<label class="col-md-6 control-label" for="Ainfo2">INFO-2 Real Time Transportation Displays</label>
-		<div class="col-md-5">
-			<input id="Ainfo2" type="checkbox" name="Ainfo2" data-size="small" data-on-text="Yes" data-off-text="No">
-	</div>
-	</div>
-
-	<!-- A type Measures INFO3-->
-	<div class="form-group">
-	<label class="col-md-6 control-label" for="Ainfo3">INFO-3 Tailored Transportation Marketing Services</label>
-		<div class="col-md-5">
-			<input id="Ainfo3" type="checkbox" name="Ainfo3" data-size="small" data-on-text="Yes" data-off-text="No">
-			<div class="btn-group">
-				<input id="Ainfo3OptA" type="radio" class="OptButtion Ainfo3Opt" autocomplete="off" name="Ainfo3Opt" value="1"></input><label class="control-label regular" for="Ainfo3OptA">Option A</label>
-				<input id="Ainfo3OptB" type="radio" class="OptButtion Ainfo3Opt" autocomplete="off" name="Ainfo3Opt" value="2"></input><label class="control-label regular" for="Ainfo3OptB">Option B</label>
-				<input id="Ainfo3OptC" type="radio" class="OptButtion Ainfo3Opt" autocomplete="off" name="Ainfo3Opt" value="3"></input><label class="control-label regular" for="Ainfo3OptC">Option C</label>
-				<input id="Ainfo3OptD" type="radio" class="OptButtion Ainfo3Opt" autocomplete="off" name="Ainfo3Opt" value="4"></input><label class="control-label regular" for="Ainfo3OptD">Option D</label>
-	    </div>
-	</div>
-	</div>
-
-
-	<div class="row">
-	<div class="col-xs-1"></div>
-	<LEGEND class="col-md-7">LAND USE</LEGEND>
-	</div>
-
-	<!-- A type Measures LU1-->
-	<div class="form-group">
-	<label class="col-md-6 control-label" for="Alu1">LU-1 Healthy Food Retail in Underserved Area</label>
-		<div class="col-md-5">
-			<input id="Alu1" type="checkbox" name="Alu1" data-size="small" data-on-text="Yes" data-off-text="No">
-	</div>
-	</div>
-
-
-</div>
-
-
-
-
-
-
-<!-- B type Measures-->
-<div id = "BtypeMeasure" class="form-horizontal AllMeasure row" style="margin-bottom:100px;">
-  <div class="row">
-  <div class="col-xs-1"></div>
-  <LEGEND class="col-md-7 parkingtitle">PARKING </LEGEND>
-  </div>
-
-  <!-- B type Measures PKG1-->
-  <div class="form-group">
-    <label class="col-md-6 control-label" for="Bpkg1">PKG 1 Unbundle Parking</label>  
-    <div class="col-md-5">
-      <input id="Bpkg1" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-
-      <label class="control-label regular parkratetitle">Neighborhood Parking Rate:</label>  
-    <label id="Bpkg1rate" class="control-label regular"></label>  
-    <label class="control-label regular">&nbsp&nbsp </label>  
-      
-
-      <label class="control-label regular">Location</label>  
-    <label id="Bpkg1loc" class="control-label regular"></label>  
-
-  </div>
-
-
-
-  </div>
-
-  <!-- B type Measures PKG2-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Bpkg2">PKG 2 Parking Pricing</label>  
-    <div class="col-md-5">
-      <input id="Bpkg2" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-  </div>
-  </div>
-
-  <!-- B type Measures PKG3-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Bpkg3">PKG 3 Parking Cash Out - Non-residential Tenants</label>  
-  <div class="col-md-5">
-    <input id="Bpkg3" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-  </div>
-  </div>
-
-  <!-- B type Measures PKG4-->
-  <div class="form-group">
-      <label class="col-md-6 control-label" for="Bpkg4">PKG 4 Parking Supply</label>
-      <div class="col-md-5">
-        <input id="Bpkg4" class = "allpkg4" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-          <label class="control-label regular">&nbsp&nbsp </label> 
-          <label class="control-label regular parkratetitle">Neighborhood Parking Rate:</label>  
-          <label id="Bpkg4rate" class="control-label regular"></label>
-          <label class="control-label regular">&nbsp&nbsp </label>  
-          <label class="control-label regular">Project Parking Rate:</label>  
-          <label id="Bpkg4projectrate" class="control-label regular"></label>    
-          <label class="control-label regular">&nbsp&nbsp </label>  
-          <label class="control-label regular"></label>  
-          <label id="Bpkg4Opt" class="control-label regular"></label>  
-      </div>
-
-  </div>
-
+  <input id="AcurrentPointTodatabase" name="AcurrentPointTodatabase" type="text" style="display:none;">
+  <input id="AtargetPointTodatabase" name="AtargetPointTodatabase" type="text" style="display:none;">
+  <input id="BcurrentPointTodatabase" name="BcurrentPointTodatabase" type="text" style="display:none;">
+  <input id="BtargetPointTodatabase" name="BtargetPointTodatabase" type="text" style="display:none;">
+  <input id="CcurrentPointTodatabase" name="CcurrentPointTodatabase" type="text" style="display:none;">
+  <input id="CtargetPointTodatabase" name="CtargetPointTodatabase" type="text" style="display:none;">
+  <input id="DcurrentPointTodatabase" name="DcurrentPointTodatabase" type="text" style="display:none;">
+  <input id="DtargetPointTodatabase" name="DtargetPointTodatabase" type="text" style="display:none;">
+
+
+  <br>
 
   <div class="row">
-  <div class="col-xs-1"></div>
-  <LEGEND class="col-md-7">ACTIVE TRANSPORTATION </LEGEND>
-  </div>
-
-
-  <!-- B type Measures ACT1-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Bact1">ACTIVE-1 Improve Walking Conditions</label>
-    <div class="col-md-5">
-      <input id="Bact1" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-      <div class="btn-group">
-        <input id="Bact1OptA" type="radio" class="OptButtion Bact1Opt" autocomplete="off" name="Bact1Opt" value="1"></input><label class="control-label regular" for="Bact1OptA">Option A</label>
-        <input id="Bact1OptB" type="radio" class="OptButtion Bact1Opt" autocomplete="off" name="Bact1Opt" value="2"></input><label class="control-label regular" for="Bact1OptB">Option B</label>
+    <div style="z-index:0;">
+      <div id="map_canvas">
       </div>
-  </div>
-  </div>
-
-  <!-- B type Measures ACT2-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Bact2">ACTIVE-2 Bicycle Parking</label>
-    <div class="col-md-5">
-      <input id="Bact2" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-      <div class="btn-group">
-      <input id="Bact2OptA" type="radio" class="OptButtion Bact2Opt" autocomplete="off" name="Bact2Opt" value="1"></input><label class="control-label regular" for="Bact2OptA">Option A</label>
-        <input id="Bact2OptB" type="radio" class="OptButtion Bact2Opt" autocomplete="off" name="Bact2Opt" value="2"></input><label class="control-label regular" for="Bact2OptB">Option B</label>
-        <input id="Bact2OptC" type="radio" class="OptButtion Bact2Opt" autocomplete="off" name="Bact2Opt" value="3"></input><label class="control-label regular" for="Bact2OptC">Option C</label>
-        <input id="Bact2OptD" type="radio" class="OptButtion Bact2Opt" autocomplete="off" name="Bact2Opt" value="4"></input><label class="control-label regular" for="Bact2OptD">Option D</label>
-      </div>
-  </div>
-  </div>
-
-  <!-- B type Measures ACT3-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Bact3">ACTIVE-3 Showers and Lockers</label>
-    <div class="col-md-5">
-      <input id="Bact3" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-  </div>
-  </div>
-
-  <!-- B type Measures ACT4-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Bact4">ACTIVE-4 Bike Share Membership</label>
-    <div class="col-md-5">
-      <input id="Bact4" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-      <div class="btn-group">
-      <input id="Bact4OptA" type="radio" class="OptButtion Bact4Opt" autocomplete="off" name="Bact4Opt" value="1"></input><label class="control-label regular" for="Bact4OptA">>1000feet</label>
-        <input id="Bact4OptB" type="radio" class="OptButtion Bact4Opt" autocomplete="off" name="Bact4Opt" value="2"></input><label class="control-label regular" for="Bact4OptB"><=1000feet</label>
-      </div>
-  </div>
-  </div>
-
-  <!-- B type Measures ACT5a-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Bact5a">ACTIVE-5a Bike Share Membership</label>
-    <div class="col-md-5">
-      <input id="Bact5a" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-  </div>
-  </div>
-
-  <!-- B type Measures ACT5b-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Bact5b">ACTIVE-5b Bicycle Maintenance Services</label>
-    <div class="col-md-5">
-      <input id="Bact5b" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-  </div>
-  </div>
-
-  <!-- B type Measures ACT6-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Bact6">ACTIVE-6 Fleet of Bicycles</label>
-    <div class="col-md-5">
-      <input id="Bact6" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-  </div>
-  </div>
-
-
-
-
-  <div class="row">
-  <div class="col-xs-1"></div>
-  <LEGEND class="col-md-7">CAR SHARE</LEGEND>
-  </div>
-
-  <!-- B type Measures CSHARE1-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Bcshare1">CSHARE-1 Car-Share Parking</label>
-    <div class="col-md-5">
-      <input id="Bcshare1" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-      <div class="btn-group" >
-
-        <input id="Bcshare1OptA" type="radio" class="btn-default OptButtion Bcshare1Opt" autocomplete="off" name="Bcshare1Opt" value="1"></input><label class="control-label regular" for="Bcshare1OptA">Option A</label>
-        <input id="Bcshare1OptB" type="radio" class="btn-default OptButtion Bcshare1Opt" autocomplete="off" name="Bcshare1Opt" value="2"></input><label class="control-label regular" for="Bcshare1OptB">Option B</label>
-        <input id="Bcshare1OptC" type="radio" class="btn-default OptButtion Bcshare1Opt" name="Bcshare1Opt" value="3"></input><label class="control-label regular" for="Bcshare1OptC">Option C</label>
-        <input id="Bcshare1OptD" type="radio" class="btn-default OptButtion Bcshare1Opt" name="Bcshare1Opt" value="4"></input><label class="control-label regular" for="Bcshare1OptD">Option D</label>
-        <input id="Bcshare1OptE" type="radio" class="btn-default OptButtion Bcshare1Opt" name="Bcshare1Opt" value="5"></input><label class="control-label regular" for="Bcshare1OptE">Option E</label>
-      </div>
-  </div>
-  </div>
-
-
-  <div class="row">
-  <div class="col-xs-1"></div>
-  <LEGEND class="col-md-7">DELIVERY</LEGEND>
-  </div>
-
-  <!-- B type Measures DELIVERY1-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Bdeli1">DELIVERY-1 Delivery Supportive Amenities</label>
-    <div class="col-md-5">
-      <input id="Bdeli1" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-  </div>
-  </div>
-
-
-  <div class="row">
-  <div class="col-xs-1"></div>
-  <LEGEND class="col-md-7">FAMILY</LEGEND>
-  </div>
-
-  <!-- B type Measures FAMILIY2-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Bfam2">FAM-1 On-site Childcare</label>
-    <div class="col-md-5">
-      <input id="Bfam2" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-  </div>
-  </div>
-
-
-  <div class="row">
-  <div class="col-xs-1"></div>
-  <LEGEND class="col-md-7">HIGH OCCUPANCY VEHICLES</LEGEND>
-  </div>
-
-  <!-- B type Measures HOV1-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Bhov1">HOV-1 Contributions or Incentives</label>
-    <div class="col-md-5">
-      <input id="Bhov1" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-      <div class="btn-group">
-          <input id="Bhov1OptA" type="radio" class="btn-default OptButtion Bhov1Opt" autocomplete="off" name="Bhov1Opt" value="1"></input><label class="control-label regular" for="Bhov1OptA">Option A</label>
-          <input id="Bhov1OptB" type="radio" class="btn-default OptButtion Bhov1Opt" autocomplete="off" name="Bhov1Opt" value="2"></input><label class="control-label regular" for="Bhov1OptB">Option B</label>
-          <input id="Bhov1OptC" type="radio" class="btn-default OptButtion Bhov1Opt" autocomplete="off" name="Bhov1Opt" value="3"></input><label class="control-label regular" for="Bhov1OptC">Option C</label>
-        <input id="Bhov1OptD" type="radio" class="btn-default OptButtion Bhov1Opt" autocomplete="off" name="Bhov1Opt" value="4"></input><label class="control-label regular" for="Bhov1OptD">Option D</label>
-
-      </div>
-  </div>
-  </div>
-
-  <!-- B type Measures HOV2-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Bhov2">HOV-2 Shuttle Bus Service</label>
-    <div class="col-md-5">
-      <input id="Bhov2" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-      <div class="btn-group">
-          <input id="Bhov2OptA" type="radio" class="btn-default OptButtion Bhov2Opt" autocomplete="off" name="Bhov2Opt" value="1"></input><label class="control-label regular" for="Bhov2OptA">Option A</label>
-        <input id="Bhov2OptB" type="radio" class="btn-default OptButtion Bhov2Opt" autocomplete="off" name="Bhov2Opt" value="2"></input><label class="control-label regular" for="Bhov2OptB">Option B</label>
-
-      </div>
-  </div>
-  </div>
-
-  <!-- B type Measures HOV3-->
-  <div class="form-group">
-    <label class="col-md-6 control-label" for="Bhov3">HOV-3 Vanpool Program</label>
-    <div class="col-md-1">
-      <input id="Bhov3" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
     </div>
-    <div id="hov3Opt" class = "col-md-1 control-label regular"></div>
   </div>
 
 
-  <div class="row">
-  <div class="col-xs-1"></div>
-  <LEGEND class="col-md-7">COMMUNICATIONS AND INFORMATION </LEGEND>
-  </div>
+  <br>
 
-  <!-- B type Measures INFO1-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Binfo1">INFO-1 Multimodal Wayfinding Signage</label>
-    <div class="col-md-5">
-      <input id="Binfo1" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-  </div>
-  </div>
+  <div class="col-md-12" id="mainCol" style="padding-right: 20px; padding-left: 30px;">
+
+    <div id="BasicProjectCharacter" class="form-horizontal col-md-5 formborder">
+      <fieldset>
+
+        <div class="row">
+          <LEGEND class="col-md-9">Project Characteristics</LEGEND>
+        </div>
 
 
-  <!-- B type Measures INFO2-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Binfo2">INFO-2 Real Time Transportation Displays</label>
-    <div class="col-md-5">
-      <input id="Binfo2" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-  </div>
-  </div>
-
-  <!-- B type Measures INFO3-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Binfo3">INFO-3 Tailored Transportation Marketing Services</label>
-    <div class="col-md-5">
-      <input id="Binfo3" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-      <div class="btn-group">
-        <input id="Binfo3OptA" type="radio" class="OptButtion Binfo3Opt" autocomplete="off" name="Binfo3Opt" value="1"></input><label class="control-label regular" for="Binfo3OptA">Option A</label>
-        <input id="Binfo3OptB" type="radio" class="OptButtion Binfo3Opt" autocomplete="off" name="Binfo3Opt" value="2"></input><label class="control-label regular" for="Binfo3OptB">Option B</label>
-        <input id="Binfo3OptC" type="radio" class="OptButtion Binfo3Opt" autocomplete="off" name="Binfo3Opt" value="3"></input><label class="control-label regular" for="Binfo3OptC">Option C</label>
-        <input id="Binfo3OptD" type="radio" class="OptButtion Binfo3Opt" autocomplete="off" name="Binfo3Opt" value="4"></input><label class="control-label regular" for="Binfo3OptD">Option D</label>
-      </div>
-  </div>
-  </div>
+        <!--&lt;!&ndash; Text input&ndash;&gt;-->
+        <!--<div class="form-group">-->
+        <!--<label class="col-md-5 control-label" for="Case">Case No.</label>  -->
+        <!--<div class="col-md-6">-->
+        <!--<input id="Case" name="Case" type="text" placeholder="2016-999999ENV" class="form-control input-md" required="">    -->
+        <!--</div>-->
+        <!--</div>-->
 
 
-</div>
+        <div class="form-group">
+          <label class="col-md-5 control-label" for="Street">Street Address of Project</label>
+          <div class="col-md-7">
+            <input id="Street" name="Street" type="text" placeholder="1650 Mission Street" class="form-control input-md"
+                   required="">
+          </div>
+
+        </div>
 
 
+        <div class="form-group">
+          <label class="col-md-5 control-label" for="Assessors Block/Lot">Assessors Block/Lot</label>
+          <div class="col-md-6">
+            <div id="AssessorsBlockLot" name="Assessors Block/Lot" style="font-size:130%; padding-top: 4px;"></div>
+          </div>
+        </div>
 
 
+        <div class="form-group">
+          <label class="col-md-5 control-label" for="Transportation Analysis Zone Number">Transportation Analysis Zone
+            Number </label>
+          <div class="col-md-6">
+            <div id="TAZinput" name="Transportation Analysis Zone Number"
+                 style="font-size:130%; padding-top: 4px;"></div>
+          </div>
 
 
-<!-- C type Measures-->
-<div id = "CtypeMeasure" class="form-horizontal AllMeasure row" style="margin-bottom:100px;">
-  <div class="row">
-  <div class="col-xs-1"></div>
-  <LEGEND class="col-md-7 parkingtitle">PARKING </LEGEND>
-  </div>
-
-  <!-- C type Measures PKG1-->
-  <div class="form-group">
-    <label class="col-md-6 control-label" for="Cpkg1">PKG 1 Unbundle Parking</label>  
-    <div class="col-md-5">
-      <input id="Cpkg1" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-
-      <label class="control-label regular parkratetitle">Neighborhood Parking Rate:</label>  
-    <label id="Cpkg1rate" class="control-label regular"></label>  
-    <label class="control-label regular">&nbsp&nbsp </label>  
-      
-
-      <label class="control-label regular">Location</label>  
-    <label id="Cpkg1loc" class="control-label regular"></label>  
-
-  </div>
+      </fieldset>
+    </div>
 
 
+    <!-- Type A -->
+    <div id="detaileddiv" class="col-md-7">
+      <div id="Atype" class="form-horizontal form-type1 formborder">
 
-  </div>
-
-
-  <!-- C type Measures PKG4-->
-  <div class="form-group">
-      <label class="col-md-6 control-label" for="Cpkg4">PKG 4 Parking Supply</label>
-      <div class="col-md-5">
-        <input id="Cpkg4" class = "allpkg4" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-          <label class="control-label regular">&nbsp&nbsp </label> 
-          <label class="control-label regular parkratetitle">Neighborhood Parking Rate:</label>  
-          <label id="Cpkg4rate" class="control-label regular"></label>
-          <label class="control-label regular">&nbsp&nbsp </label>  
-          <label class="control-label regular">Project Parking Rate:</label>  
-          <label id="Cpkg4projectrate" class="control-label regular"></label>    
-          <label class="control-label regular">&nbsp&nbsp </label>  
-          <label class="control-label regular"></label>  
-          <label id="Cpkg4Opt" class="control-label regular"></label>  
-      </div>
-
-  </div>
+        <LEGEND class="col-md-12">Project Characteristics - Land Use Category A (Retail Type)</LEGEND>
 
 
-  <div class="row">
-  <div class="col-xs-1"></div>
-  <LEGEND class="col-md-7">ACTIVE TRANSPORTATION </LEGEND>
-  </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="Specify Use A">Specify Use(s)</label>
+          <div class="col-md-6">
+            <input id="SpecifyUseA" name="SpecifyUseA" type="text" placeholder="Restaurant"
+                   class="form-control input-md ProjectCharactInput">
+          </div>
+        </div>
 
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="Gross Floor Area A">Gross Floor Area (square footage)</label>
+          <div class="col-md-6">
+            <input id="AgrossareaInput" name="Gross Floor Area A" type="text" placeholder="0"
+                   class="form-control input-md ProjectCharactInput auto">
+            <span class="help-block">Less than 10,000 square feet is not subject to TDM Program.</span>
 
-  <!-- C type Measures ACT1-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Cact1">ACTIVE-1 Improve Walking Conditions</label>
-    <div class="col-md-5">
-      <input id="Cact1" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-      <div class="btn-group">
-        <input id="Cact1OptA" type="radio" class="OptButtion Cact1Opt" autocomplete="off" name="Cact1Opt" value="1"></input><label class="control-label regular" for="Cact1OptA">Option A</label>
-        <input id="Cact1OptB" type="radio" class="OptButtion Cact1Opt" autocomplete="off" name="Cact1Opt" value="2"></input><label class="control-label regular" for="Cact1OptB">Option B</label>
-      </div>
-  </div>
-  </div>
+          </div>
+        </div>
 
-  <!-- C type Measures ACT2-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Cact2">ACTIVE-2 Bicycle Parking</label>
-    <div class="col-md-5">
-      <input id="Cact2" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-      <div class="btn-group">
-      <input id="Cact2OptA" type="radio" class="OptButtion Cact2Opt" autocomplete="off" name="Cact2Opt" value="1"></input><label class="control-label regular" for="Cact2OptA">Option A</label>
-        <input id="Cact2OptB" type="radio" class="OptButtion Cact2Opt" autocomplete="off" name="Cact2Opt" value="2"></input><label class="control-label regular" for="Cact2OptB">Option B</label>
-        <input id="Cact2OptC" type="radio" class="OptButtion Cact2Opt" autocomplete="off" name="Cact2Opt" value="3"></input><label class="control-label regular" for="Cact2OptC">Option C</label>
-        <input id="Cact2OptD" type="radio" class="OptButtion Cact2Opt" autocomplete="off" name="Cact2Opt" value="4"></input><label class="control-label regular" for="Cact2OptD">Option D</label>
-      </div>
-  </div>
-  </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="Occupied Floor Area A">Occupied Floor Area (square footage)</label>
+          <div class="col-md-6">
+            <input id="AoccupyareaInput" name="Occupied Floor Area A" type="text" placeholder="0"
+                   class="form-control input-md ProjectCharactInput auto">
 
+          </div>
+        </div>
 
-
-  <!-- C type Measures ACT4-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Cact4">ACTIVE-4 Bike Share Membership</label>
-    <div class="col-md-5">
-      <input id="Cact4" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-      <div class="btn-group">
-      <input id="Cact4OptA" type="radio" class="OptButtion Cact4Opt" autocomplete="off" name="Cact4Opt" value="1"></input><label class="control-label regular" for="Cact4OptA">>1000feet</label>
-        <input id="Cact4OptB" type="radio" class="OptButtion Cact4Opt" autocomplete="off" name="Cact4Opt" value="2"></input><label class="control-label regular" for="Cact4OptB"><=1000feet</label>
-      </div>
-  </div>
-  </div>
-
-  <!-- C type Measures ACT5a-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Cact5a">ACTIVE-5a Bike Share Membership</label>
-    <div class="col-md-5">
-      <input id="Cact5a" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-  </div>
-  </div>
-
-  <!-- C type Measures ACT5b-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Cact5b">ACTIVE-5b Bicycle Maintenance Services</label>
-    <div class="col-md-5">
-      <input id="Cact5b" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-  </div>
-  </div>
-
-  <!-- C type Measures ACT6-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Cact6">ACTIVE-6 Fleet of Bicycles</label>
-    <div class="col-md-5">
-      <input id="Cact6" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-  </div>
-  </div>
-
-
-
-
-  <div class="row">
-  <div class="col-xs-1"></div>
-  <LEGEND class="col-md-7">CAR SHARE</LEGEND>
-  </div>
-
-  <!-- C type Measures CSHARE1-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Ccshare1">CSHARE-1 Car-Share Parking</label>
-    <div class="col-md-5">
-      <input id="Ccshare1" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-      <div class="btn-group" >
-
-        <input id="Ccshare1OptA" type="radio" class="btn-default OptButtion Ccshare1Opt" autocomplete="off" name="Ccshare1Opt" value="1"></input><label class="control-label regular" for="Ccshare1OptA">Option A</label>
-        <input id="Ccshare1OptB" type="radio" class="btn-default OptButtion Ccshare1Opt" autocomplete="off" name="Ccshare1Opt" value="2"></input><label class="control-label regular" for="Ccshare1OptB">Option B</label>
-        <input id="Ccshare1OptC" type="radio" class="btn-default OptButtion Ccshare1Opt" name="Ccshare1Opt" value="3"></input><label class="control-label regular" for="Ccshare1OptC">Option C</label>
-        <input id="Ccshare1OptD" type="radio" class="btn-default OptButtion Ccshare1Opt" name="Ccshare1Opt" value="4"></input><label class="control-label regular" for="Ccshare1OptD">Option D</label>
-        <input id="Ccshare1OptE" type="radio" class="btn-default OptButtion Ccshare1Opt" name="Ccshare1Opt" value="5"></input><label class="control-label regular" for="Ccshare1OptE">Option E</label>
-      </div>
-  </div>
-  </div>
-
-
-  <div class="row">
-  <div class="col-xs-1"></div>
-  <LEGEND class="col-md-7">DELIVERY</LEGEND>
-  </div>
-
-  <!-- C type Measures DELIVERY1-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Cdeli1">DELIVERY-1 Delivery Supportive Amenities</label>
-    <div class="col-md-5">
-      <input id="Cdeli1" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-  </div>
-  </div>
-
-
-  <div class="row">
-  <div class="col-xs-1"></div>
-  <LEGEND class="col-md-7">FAMILY</LEGEND>
-  </div>
-
->
-
-  <!-- C type Measures FAMILIY1-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Cfam1">FAM-1 Family TDM - Amenities</label>
-    <div class="col-md-5">
-      <input id="Cfam1" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-      <div class="btn-group" >
-
-        <input id="Cfam1OptA" type="checkbox" class="btn-default OptButtion Cfam1Opt" autocomplete="off" name="Cfam1OptA" value="1"></input><label class="control-label regular " for="Cfam1OptA">Option A</label>
-        <input id="Cfam1OptB" type="checkbox" class="btn-default OptButtion Cfam1Opt" autocomplete="off" name="Cfam1OptB" value="2"></input><label class="control-label regular " for="Cfam1OptB">Option B</label>
-      </div>
-  </div>
-  </div>
-
-
-
-  <!-- C type Measures FAMILIY2-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Cfam2">FAM-1 On-site Childcare</label>
-    <div class="col-md-5">
-      <input id="Cfam2" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-  </div>
-  </div>
-  
-
-  <!-- C type Measures FAMILIY3-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Cfam3">FAM-3 Family TDM Package</label>
-    <div class="col-md-5">
-      <input id="Cfam3" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-  </div>
-  </div>
-
-
-
-
-  <div class="row">
-  <div class="col-xs-1"></div>
-  <LEGEND class="col-md-7">HIGH OCCUPANCY VEHICLES</LEGEND>
-  </div>
-
-  <!-- C type Measures HOV1-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Chov1">HOV-1 Contributions or Incentives</label>
-    <div class="col-md-5">
-      <input id="Chov1" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-      <div class="btn-group">
-          <input id="Chov1OptA" type="radio" class="btn-default OptButtion Chov1Opt" autocomplete="off" name="Chov1Opt" value="1"></input><label class="control-label regular" for="Chov1OptA">Option A</label>
-          <input id="Chov1OptB" type="radio" class="btn-default OptButtion Chov1Opt" autocomplete="off" name="Chov1Opt" value="2"></input><label class="control-label regular" for="Chov1OptB">Option B</label>
-          <input id="Chov1OptC" type="radio" class="btn-default OptButtion Chov1Opt" autocomplete="off" name="Chov1Opt" value="3"></input><label class="control-label regular" for="Chov1OptC">Option C</label>
-        <input id="Chov1OptD" type="radio" class="btn-default OptButtion Chov1Opt" autocomplete="off" name="Chov1Opt" value="4"></input><label class="control-label regular" for="Chov1OptD">Option D</label>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="Accessory Parking Spaces A">Accessory Parking Spaces</label>
+          <div class="col-md-6">
+            <input id="AparkingInput" name="Accessory Parking Spaces A" type="text" placeholder="0"
+                   class="form-control input-md ProjectCharactInput auto">
+          </div>
+        </div>
 
       </div>
-  </div>
-  </div>
-
-  <!-- C type Measures HOV2-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Chov2">HOV-2 Shuttle Bus Service</label>
-    <div class="col-md-5">
-      <input id="Chov2" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-      <div class="btn-group">
-          <input id="Chov2OptA" type="radio" class="btn-default OptButtion Chov2Opt" autocomplete="off" name="Chov2Opt" value="1"></input><label class="control-label regular" for="Chov2OptA">Option A</label>
-        <input id="Chov2OptB" type="radio" class="btn-default OptButtion Chov2Opt" autocomplete="off" name="Chov2Opt" value="2"></input><label class="control-label regular" for="Chov2OptB">Option B</label>
-
-      </div>
-  </div>
-  </div>
 
 
+      <!--  Type B -->
+      <div id="Btype" class="form-horizontal form-type1 formborder">
+        <fieldset>
 
-  <div class="row">
-  <div class="col-xs-1"></div>
-  <LEGEND class="col-md-7">COMMUNICATIONS AND INFORMATION </LEGEND>
-  </div>
+          <div class="row">
+            <div class="col-md-12"></div>
+            <LEGEND class="col-md-12">Project Characteristics - Land Use Category B (Office Type)</LEGEND>
+          </div>
 
-  <!-- C type Measures INFO1-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Cinfo1">INFO-1 Multimodal Wayfinding Signage</label>
-    <div class="col-md-5">
-      <input id="Cinfo1" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-  </div>
-  </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="Specify Use B">Specify Use(s)</label>
+            <div class="col-md-6">
+              <input id="SpecifyUseB" name="Specify Use B" type="text" placeholder="Office"
+                     class="form-control input-md ProjectCharactInput">
 
+            </div>
+          </div>
 
-  <!-- C type Measures INFO2-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Cinfo2">INFO-2 Real Time Transportation Displays</label>
-    <div class="col-md-5">
-      <input id="Cinfo2" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-  </div>
-  </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="Gross Floor Area B">Gross Floor Area (square footage)</label>
+            <div class="col-md-6">
+              <input id="BgrossareaInput" name="Gross Floor Area B" type="text" placeholder="0"
+                     class="form-control input-md ProjectCharactInput auto">
+              <span class="help-block">Less than 10,000 square feet is not subject to TDM Program.</span>
 
-  <!-- C type Measures INFO3-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Cinfo3">INFO-3 Tailored Transportation Marketing Services</label>
-    <div class="col-md-5">
-      <input id="Cinfo3" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-      <div class="btn-group">
-        <input id="Cinfo3OptA" type="radio" class="OptButtion Cinfo3Opt" autocomplete="off" name="Cinfo3Opt" value="1"></input><label class="control-label regular" for="Cinfo3OptA">Option A</label>
-        <input id="Cinfo3OptB" type="radio" class="OptButtion Cinfo3Opt" autocomplete="off" name="Cinfo3Opt" value="2"></input><label class="control-label regular" for="Cinfo3OptB">Option B</label>
-        <input id="Cinfo3OptC" type="radio" class="OptButtion Cinfo3Opt" autocomplete="off" name="Cinfo3Opt" value="3"></input><label class="control-label regular" for="Cinfo3OptC">Option C</label>
-        <input id="Cinfo3OptD" type="radio" class="OptButtion Cinfo3Opt" autocomplete="off" name="Cinfo3Opt" value="4"></input><label class="control-label regular" for="Cinfo3OptD">Option D</label>
-      </div>
-  </div>
-  </div>
+            </div>
+          </div>
 
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="Occupied Floor Area B">Occupied Floor Area (square
+              footage)</label>
+            <div class="col-md-6">
+              <input id="BoccupyareaInput" name="Occupied Floor Area B" type="text" placeholder="0"
+                     class="form-control input-md ProjectCharactInput auto">
 
-  <div class="row">
-  <div class="col-xs-1"></div>
-  <LEGEND class="col-md-7">LAND USE</LEGEND>
-  </div>
+            </div>
+          </div>
 
-  <!-- C type Measures LU2-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Clu2">LU-2 On-site Affordable Housing</label>
-    <div class="col-md-5">
-      <input id="Clu2" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-        <div class="btn-group">
-        <input id="Clu2OptA" type="radio" class="OptButtion Clu2Opt" autocomplete="off" name="Clu2Opt" value="1"></input><label class="control-label regular" for="Clu2OptA">Option A</label>
-        <input id="Clu2OptB" type="radio" class="OptButtion Clu2Opt" autocomplete="off" name="Clu2Opt" value="2"></input><label class="control-label regular" for="Clu2OptB">Option B</label>
-        <input id="Clu2OptC" type="radio" class="OptButtion Clu2Opt" autocomplete="off" name="Clu2Opt" value="3"></input><label class="control-label regular" for="Clu2OptC">Option C</label>
-        <input id="Clu2OptD" type="radio" class="OptButtion Clu2Opt" autocomplete="off" name="Clu2Opt" value="4"></input><label class="control-label regular" for="Clu2OptD">Option D</label>
-      </div>
-  </div>
-  </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="Accessory Parking Spaces B">Accessory Parking Spaces</label>
+            <div class="col-md-6">
+              <input id="BparkingInput" name="Accessory Parking Spaces B" type="text" placeholder="0"
+                     class="form-control input-md ProjectCharactInput auto">
 
+            </div>
+          </div>
 
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-<!-- D type Measures-->
-
-<div id = "DtypeMeasure" class="form-horizontal AllMeasure row" style="margin-bottom:100px;" >
-  <div class="row">
-  <div class="col-xs-1"></div>
-  <LEGEND class="col-md-7 parkingtitle">PARKING </LEGEND>
-  </div>
-
-
-  <!-- D type Measures PKG4-->
-  <div class="form-group">
-      <label class="col-md-6 control-label" for="Dpkg4">PKG 4 Parking Supply</label>
-      <div class="col-md-5">
-        <input id="Dpkg4" class = "allpkg4" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-          <label class="control-label regular">&nbsp&nbsp </label> 
-          <label class="control-label regular parkratetitle">Neighborhood Parking Rate:</label>  
-          <label id="Dpkg4rate" class="control-label regular"></label>
-          <label class="control-label regular">&nbsp&nbsp </label>  
-          <label class="control-label regular">Project Parking Rate:</label>  
-          <label id="Dpkg4projectrate" class="control-label regular"></label>    
-          <label class="control-label regular">&nbsp&nbsp </label>  
-          <label class="control-label regular"></label>  
-          <label id="Dpkg4Opt" class="control-label regular"></label>  
+        </fieldset>
       </div>
 
-  </div>
 
+      <!--  Type C -->
+      <div id="Ctype" class="form-horizontal form-type1 formborder">
+        <fieldset>
 
-  <div class="row">
-  <div class="col-xs-1"></div>
-  <LEGEND class="col-md-7">ACTIVE TRANSPORTATION </LEGEND>
-  </div>
+          <div class="row">
+            <div class="col-md-12"></div>
+            <LEGEND class="col-md-12">Project Characteristics - Land Use Category C (Residential Type)</LEGEND>
+          </div>
 
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="Dwelling Units and Beds in Group Housing">Dwelling Units and Beds
+              in Group Housing</label>
+            <div class="col-md-6">
+              <input id="Cunitbed" name="Cunitbed" type="text" placeholder="0"
+                     class="form-control input-md ProjectCharactInput auto">
+              <SPAN class="help-block"> Less than 10 dwelling units or beds is not subject to TDM Program.</SPAN>
 
-  <!-- D type Measures ACT2-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Dact2">ACTIVE-2 Bicycle Parking</label>
-    <div class="col-md-5">
-      <input id="Dact2" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-      <div class="btn-group">
-      <input id="Dact2OptA" type="radio" class="OptButtion Dact2Opt" autocomplete="off" name="Dact2Opt" value="1"></input><label class="control-label regular" for="Dact2OptA">Option A</label>
-        <input id="Dact2OptB" type="radio" class="OptButtion Dact2Opt" autocomplete="off" name="Dact2Opt" value="2"></input><label class="control-label regular" for="Dact2OptB">Option B</label>
-        <input id="Dact2OptC" type="radio" class="OptButtion Dact2Opt" autocomplete="off" name="Dact2Opt" value="3"></input><label class="control-label regular" for="Dact2OptC">Option C</label>
-        <input id="Dact2OptD" type="radio" class="OptButtion Dact2Opt" autocomplete="off" name="Dact2Opt" value="4"></input><label class="control-label regular" for="Dact2OptD">Option D</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="Two-Bedrooms">% of Dwelling Units Two-Bedrooms or larger</label>
+            <div class="col-md-6">
+              <input id="CtwobedroomInput" name="CtwobedroomInput" type="text" placeholder="30"
+                     class="form-control input-md ProjectCharactInput auto">
+
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="On-site Affordable Housing">% On-site Affordable Housing</label>
+            <div class="col-md-6">
+              <input id="CaffordHouseInput" name="CaffordHouseInput" type="text" placeholder="20"
+                     class="form-control input-md ProjectCharactInput auto">
+              <SPAN class="help-block"> 100% Affordable Housing projects are not subject to TDM Program.</SPAN>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="Accessory Parking Spaces C">Accessory Parking Spaces</label>
+            <div class="col-md-6">
+              <input id="CparkingInput" name="CparkingInput" type="text" placeholder="0"
+                     class="form-control input-md ProjectCharactInput auto">
+
+            </div>
+          </div>
+
+        </fieldset>
       </div>
-  </div>
-  </div>
-
-  <!-- D type Measures ACT3-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Dact3">ACTIVE-3 Showers and Lockers</label>
-    <div class="col-md-5">
-      <input id="Dact3" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-  </div>
-  </div>
 
 
-  <div class="row">
-  <div class="col-xs-1"></div>
-  <LEGEND class="col-md-7">CAR SHARE</LEGEND>
-  </div>
+      <!-- Type D -->
+      <div id="Dtype" class="form-horizontal form-type1 formborder">
+        <fieldset>
 
-  <!-- D type Measures CSHARE1-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Dcshare1">CSHARE-1 Car-Share Parking</label>
-    <div class="col-md-5">
-      <input id="Dcshare1" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-      <div class="btn-group" >
+          <div class="row">
+            <div class="col-md-12"></div>
+            <LEGEND class="col-md-12">Project Characteristics - Land Use Category D (Other)</LEGEND>
+          </div>
 
-        <input id="Dcshare1OptA" type="radio" class="btn-default OptButtion Dcshare1Opt" autocomplete="off" name="Dcshare1Opt" value="1"></input><label class="control-label regular" for="Dcshare1OptA">Option A</label>
-        <input id="Dcshare1OptB" type="radio" class="btn-default OptButtion Dcshare1Opt" autocomplete="off" name="Dcshare1Opt" value="2"></input><label class="control-label regular" for="Dcshare1OptB">Option B</label>
-        <input id="Dcshare1OptC" type="radio" class="btn-default OptButtion Dcshare1Opt" name="Dcshare1Opt" value="3"></input><label class="control-label regular" for="Dcshare1OptC">Option C</label>
-        <input id="Dcshare1OptD" type="radio" class="btn-default OptButtion Dcshare1Opt" name="Dcshare1Opt" value="4"></input><label class="control-label regular" for="Dcshare1OptD">Option D</label>
-        <input id="Dcshare1OptE" type="radio" class="btn-default OptButtion Dcshare1Opt" name="Dcshare1Opt" value="5"></input><label class="control-label regular" for="Dcshare1OptE">Option E</label>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="Specify Use D">Specify Use(s)</label>
+            <div class="col-md-6">
+              <input id="SpecifyUseD" name="Specify Use D" type="text" placeholder="PDR
+" class="form-control input-md ProjectCharactInput">
+
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="Gross Floor Area D">Gross Floor Area (square footage)</label>
+            <div class="col-md-6">
+              <input id="DgrossareaInput" name="Gross Floor Area D" type="text" placeholder="0"
+                     class="form-control input-md ProjectCharactInput auto">
+              <span class="help-block">Less than 10,000 square feet is not subject to TDM Program.</span>
+
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="Occupied Floor Area D">Occupied Floor Area (square
+              footage)</label>
+            <div class="col-md-6">
+              <input id="DoccupyareaInput" name="Occupied Floor Area D" type="text" placeholder="0"
+                     class="form-control input-md ProjectCharactInput auto">
+
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="Accessory Parking Spaces D">Accessory Parking Spaces</label>
+            <div class="col-md-6">
+              <input id="DparkingInput" name="Accessory Parking Spaces D" type="text" placeholder="0"
+                     class="form-control input-md ProjectCharactInput auto">
+
+            </div>
+          </div>
+
+
+        </fieldset>
       </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <LEGEND class="col-md-10"></LEGEND>
+    </div>
+
+
+    <!-- A type Measures-->
+    <div class="col-md-8">
+      <div id="measurediv">
+        <div id="AtypeMeasure" class="form-horizontal AllMeasure row" style="margin-bottom:100px;">
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7 parkingtitle">PARKING</LEGEND>
+          </div>
+
+          <!-- A type Measures PKG1-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Apkg1">PKG 1 Unbundle Parking</label>
+            <div class="col-md-6">
+              <input id="Apkg1" type="checkbox" name="Apkg1" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Apkg1pointdiv" class="measurepoint"></div>
+              <div class="row" style="margin-left:4px">
+                <label id="Apkg1ratelabel" class="control-label regular parkratetitle">Neighborhood Parking
+                  Rate:</label>
+                <label id="Apkg1rate" class="control-label regular"></label>
+                <label class="control-label regular">&nbsp&nbsp </label>
+                <label id="Apkg1loclabel" class="control-label regular">Location</label>
+                <label id="Apkg1loc" class="control-label regular"></label>
+              </div>
+
+
+            </div>
+          </div>
+
+          <!-- A type Measures PKG2-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Apkg2">PKG 2 Parking Pricing</label>
+            <div class="col-md-6">
+              <input id="Apkg2" type="checkbox" name="Apkg2" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Apkg2pointdiv" class="measurepoint"></div>
+            </div>
+          </div>
+
+          <!-- A type Measures PKG3-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Apkg3">PKG 3 Parking Cash Out - Non-residential Tenants</label>
+            <div class="col-md-5">
+              <input id="Apkg3" type="checkbox" name="Apkg3" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Apkg3pointdiv" class="measurepoint"></div>
+            </div>
+          </div>
+
+          <!-- A type Measures PKG4-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Apkg4" name="pkg4">PKG 4 Parking Supply</label>
+            <div class="col-md-5">
+              <input id="Apkg4" class="allpkg4" name="Apkg4" type="checkbox" data-size="small" data-on-text="Yes"
+                     data-off-text="No">
+              <div id="Apkg4pointdiv" class="measurepoint"></div>
+
+              <label class="control-label regular">&nbsp&nbsp </label>
+              <label class="control-label regular parkratetitle">Neighborhood Parking Rate:</label>
+              <label id="Apkg4rate" class="control-label regular"></label>
+              <label class="control-label regular">&nbsp&nbsp </label>
+              <label class="control-label regular">Project Parking Rate:</label>
+              <label id="Apkg4projectrate" class="control-label regular"></label>
+              <label class="control-label regular">&nbsp&nbsp </label>
+              <label class="control-label regular"></label>
+              <label id="Apkg4Opt" class="control-label regular"></label>
+            </div>
+
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">ACTIVE TRANSPORTATION</LEGEND>
+          </div>
+
+
+          <!-- A type Measures ACT1-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Aact1">ACTIVE-1 Improve Walking Conditions</label>
+            <div class="col-md-5">
+              <input id="Aact1" type="checkbox" name="Aact1" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Aact1pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+                <input id="Aact1OptA" type="radio" class="OptButtion Aact1Opt" autocomplete="off" name="Aact1Opt"
+                       value="1"></input><label class="control-label regular" for="Aact1OptA">Option A</label>
+                <input id="Aact1OptB" type="radio" class="OptButtion Aact1Opt" autocomplete="off" name="Aact1Opt"
+                       value="2"></input><label class="control-label regular" for="Aact1OptB">Option B</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- A type Measures ACT2-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Aact2">ACTIVE-2 Bicycle Parking</label>
+            <div class="col-md-5">
+              <input id="Aact2" type="checkbox" name="Aact2" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Aact2pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+                <input id="Aact2OptA" type="radio" class="OptButtion Aact2Opt" autocomplete="off" name="Aact2Opt"
+                       value="1"></input><label class="control-label regular" for="Aact2OptA">Option A</label>
+                <input id="Aact2OptB" type="radio" class="OptButtion Aact2Opt" autocomplete="off" name="Aact2Opt"
+                       value="2"></input><label class="control-label regular" for="Aact2OptB">Option B</label>
+                <input id="Aact2OptC" type="radio" class="OptButtion Aact2Opt" autocomplete="off" name="Aact2Opt"
+                       value="3"></input><label class="control-label regular" for="Aact2OptC">Option C</label>
+                <input id="Aact2OptD" type="radio" class="OptButtion Aact2Opt" autocomplete="off" name="Aact2Opt"
+                       value="4"></input><label class="control-label regular" for="Aact2OptD">Option D</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- A type Measures ACT3-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Aact3">ACTIVE-3 Showers and Lockers</label>
+            <div class="col-md-5">
+              <input id="Aact3" type="checkbox" name="Aact3" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Aact3pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+          <!-- A type Measures ACT4-->
+          <div class="form-group">
+
+            <label class="col-md-6 control-label measurename" for="Aact4">ACTIVE-4 Bike Share Membership
+
+            </label>
+
+            <div class="col-md-5">
+              <input id="Aact4" type="checkbox" name="Aact4" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Aact4pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+                <input id="Aact4OptA" type="radio" class="OptButtion Aact4Opt" autocomplete="off" name="Aact4Opt"
+                       value="1"></input><label class="control-label regular" for="Aact4OptA">>1000feet</label>
+                <input id="Aact4OptB" type="radio" class="OptButtion Aact4Opt" autocomplete="off" name="Aact4Opt"
+                       value="2"></input><label class="control-label regular" for="Aact4OptB"><=1000feet</label>
+              </div>
+            </div>
+            <a class="row col-md-5 col-md-offset-6" href="http://www.bayareabikeshare.com/stations">
+              (Click here for the bay area bike share station map)
+            </a>
+          </div>
+
+          <!-- A type Measures ACT5a-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Aact5a">ACTIVE-5a Bicycle Repair Station</label>
+            <div class="col-md-5">
+              <input id="Aact5a" type="checkbox" name="Aact5a" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Aact5apointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+          <!-- A type Measures ACT5b-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Aact5b">ACTIVE-5b Bicycle Maintenance Services</label>
+            <div class="col-md-5">
+              <input id="Aact5b" type="checkbox" name="Aact5b" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Aact5bpointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+          <!-- A type Measures ACT6-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Aact6">ACTIVE-6 Fleet of Bicycles</label>
+            <div class="col-md-5">
+              <input id="Aact6" type="checkbox" name="Aact6" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Aact6pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+          <!-- A type Measures ACT7-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Aact7" >ACTIVE-7 Temporary Bicycle Valet Parking</label>
+            <div class="col-md-5">
+              <input id="Aact7" type="checkbox" name="Aact7" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Aact7pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">CAR SHARE</LEGEND>
+          </div>
+
+          <!-- A type Measures CSHARE1-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Acshare1">CSHARE-1 Car-Share Parking</label>
+            <div class="col-md-5">
+              <input id="Acshare1" type="checkbox" name="Acshare1" data-size="small" data-on-text="Yes"
+                     data-off-text="No">
+              <div id="Acshare1pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+
+                <input id="Acshare1OptA" type="radio" class="btn-default OptButtion Acshare1Opt" autocomplete="off"
+                       name="Acshare1Opt" value="1"></input><label class="control-label regular" for="Acshare1OptA">Option
+                A</label>
+                <input id="Acshare1OptB" type="radio" class="btn-default OptButtion Acshare1Opt" autocomplete="off"
+                       name="Acshare1Opt" value="2"></input><label class="control-label regular" for="Acshare1OptB">Option
+                B</label>
+                <input id="Acshare1OptC" type="radio" class="btn-default OptButtion Acshare1Opt" name="Acshare1Opt"
+                       value="3"></input><label class="control-label regular" for="Acshare1OptC">Option C</label>
+                <input id="Acshare1OptD" type="radio" class="btn-default OptButtion Acshare1Opt" name="Acshare1Opt"
+                       value="4"></input><label class="control-label regular" for="Acshare1OptD">Option D</label>
+                <input id="Acshare1OptE" type="radio" class="btn-default OptButtion Acshare1Opt" name="Acshare1Opt"
+                       value="5"></input><label class="control-label regular" for="Acshare1OptE">Option E</label>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">DELIVERY</LEGEND>
+          </div>
+
+          <!-- A type Measures DELIVERY1-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Adeli1">DELIVERY-1 Delivery Supportive Amenities</label>
+            <div class="col-md-5">
+              <input id="Adeli1" type="checkbox" name="Adelivery1" data-size="small" data-on-text="Yes"
+                     data-off-text="No">
+              <div id="Adeli1pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+          <!-- A type Measures DELIVERY2-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Adeli2">DELIVERY-2 Provide Delivery Services</label>
+            <div class="col-md-5">
+              <input id="Adeli2" type="checkbox" name="Adelivery2" data-size="small" data-on-text="Yes"
+                     data-off-text="No">
+              <div id="Adeli2pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">FAMILY</LEGEND>
+          </div>
+
+          <!-- A type Measures FAMILY2-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Afam2">FAM-2 On-site Childcare</label>
+            <div class="col-md-5">
+              <input id="Afam2" type="checkbox" name="Afam2" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Afam2pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">HIGH OCCUPANCY VEHICLES</LEGEND>
+          </div>
+
+          <!-- A type Measures HOV1-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Ahov1">HOV-1 Contributions or Incentives</label>
+            <div class="col-md-5">
+              <input id="Ahov1" type="checkbox" name="Ahov1" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Ahov1pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+
+                <input id="Ahov1OptA" type="radio" class="btn-default OptButtion Ahov1Opt" autocomplete="off"
+                       name="Ahov1Opt" value="1"></input><label class="control-label regular" for="Ahov1OptA">Option
+                A</label>
+                <input id="Ahov1OptB" type="radio" class="btn-default OptButtion Ahov1Opt" autocomplete="off"
+                       name="Ahov1Opt" value="2"></input><label class="control-label regular" for="Ahov1OptB">Option
+                B</label>
+                <input id="Ahov1OptC" type="radio" class="btn-default OptButtion Ahov1Opt" autocomplete="off"
+                       name="Ahov1Opt" value="3"></input><label class="control-label regular" for="Ahov1OptC">Option
+                C</label>
+                <input id="Ahov1OptD" type="radio" class="btn-default OptButtion Ahov1Opt" autocomplete="off"
+                       name="Ahov1Opt" value="4"></input><label class="control-label regular" for="Ahov1OptD">Option
+                D</label>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- A type Measures HOV2-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Ahov2">HOV-2 Shuttle Bus Service</label>
+            <div class="col-md-5">
+              <input id="Ahov2" type="checkbox" name="Ahov2" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Ahov2pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+                <input id="Ahov2OptA" type="radio" class="btn-default OptButtion Ahov2Opt" autocomplete="off"
+                       name="Ahov2Opt" value="1"></input><label class="control-label regular" for="Ahov2OptA">Option
+                A</label>
+                <input id="Ahov2OptB" type="radio" class="btn-default OptButtion Ahov2Opt" autocomplete="off"
+                       name="Ahov2Opt" value="2"></input><label class="control-label regular" for="Ahov2OptB">Option
+                B</label>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- A type Measures HOV3-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Ahov3">HOV-3 Vanpool Program</label>
+            <div class="col-md-1">
+              <input id="Ahov3" type="checkbox" name="Ahov3" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Ahov3pointdiv" class="measurepoint"></div>
+
+            </div>
+            <div id="Ahov3Opt" class="col-md-1 control-label regular"></div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">COMMUNICATIONS AND INFORMATION</LEGEND>
+          </div>
+
+          <!-- A type Measures INFO1-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Ainfo1">INFO-1 Multimodal Wayfinding Signage</label>
+            <div class="col-md-5">
+              <input id="Ainfo1" type="checkbox" name="Ainfo1" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Ainfo1pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+
+          <!-- A type Measures INFO2-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Ainfo2">INFO-2 Real Time Transportation Displays</label>
+            <div class="col-md-5">
+              <input id="Ainfo2" type="checkbox" name="Ainfo2" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Ainfo2pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+          <!-- A type Measures INFO3-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Ainfo3">INFO-3 Tailored Transportation Marketing Services</label>
+            <div class="col-md-5">
+              <input id="Ainfo3" type="checkbox" name="Ainfo3" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Ainfo3pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+                <input id="Ainfo3OptA" type="radio" class="OptButtion Ainfo3Opt" autocomplete="off" name="Ainfo3Opt"
+                       value="1"></input><label class="control-label regular" for="Ainfo3OptA">Option A</label>
+                <input id="Ainfo3OptB" type="radio" class="OptButtion Ainfo3Opt" autocomplete="off" name="Ainfo3Opt"
+                       value="2"></input><label class="control-label regular" for="Ainfo3OptB">Option B</label>
+                <input id="Ainfo3OptC" type="radio" class="OptButtion Ainfo3Opt" autocomplete="off" name="Ainfo3Opt"
+                       value="3"></input><label class="control-label regular" for="Ainfo3OptC">Option C</label>
+                <input id="Ainfo3OptD" type="radio" class="OptButtion Ainfo3Opt" autocomplete="off" name="Ainfo3Opt"
+                       value="4"></input><label class="control-label regular" for="Ainfo3OptD">Option D</label>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">LAND USE</LEGEND>
+          </div>
+
+          <!-- A type Measures LU1-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Alu1">LU-1 Healthy Food Retail in Underserved Area</label>
+            <div class="col-md-5">
+              <input id="Alu1" type="checkbox" name="Alu1" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Alu1pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <!-- B type Measures-->
+        <div id="BtypeMeasure" class="form-horizontal AllMeasure row" style="margin-bottom:100px;">
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7 parkingtitle">PARKING</LEGEND>
+          </div>
+
+          <!-- B type Measures PKG1-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Bpkg1">PKG 1 Unbundle Parking</label>
+            <div class="col-md-5">
+              <input id="Bpkg1" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Bpkg1pointdiv" class="measurepoint"></div>
+
+
+              <label class="control-label regular parkratetitle">Neighborhood Parking Rate:</label>
+              <label id="Bpkg1rate" class="control-label regular"></label>
+              <label class="control-label regular">&nbsp&nbsp </label>
+
+
+              <label class="control-label regular">Location</label>
+              <label id="Bpkg1loc" class="control-label regular"></label>
+
+            </div>
+
+
+          </div>
+
+          <!-- B type Measures PKG2-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Bpkg2">PKG 2 Parking Pricing</label>
+            <div class="col-md-5">
+              <input id="Bpkg2" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Bpkg2pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+          <!-- B type Measures PKG3-->
+          <div class="form-group">
+            <label class="col-md-6 control-label" for="Bpkg3">PKG 3 Parking Cash Out - Non-residential Tenants</label>
+            <div class="col-md-5">
+              <input id="Bpkg3" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Bpkg3pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+          <!-- B type Measures PKG4-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Bpkg4">PKG 4 Parking Supply</label>
+            <div class="col-md-5">
+              <input id="Bpkg4" class="allpkg4" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Bpkg4pointdiv" class="measurepoint"></div>
+
+              <label class="control-label regular">&nbsp&nbsp </label>
+              <label class="control-label regular parkratetitle">Neighborhood Parking Rate:</label>
+              <label id="Bpkg4rate" class="control-label regular"></label>
+              <label class="control-label regular">&nbsp&nbsp </label>
+              <label class="control-label regular">Project Parking Rate:</label>
+              <label id="Bpkg4projectrate" class="control-label regular"></label>
+              <label class="control-label regular">&nbsp&nbsp </label>
+              <label class="control-label regular"></label>
+              <label id="Bpkg4Opt" class="control-label regular"></label>
+            </div>
+
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">ACTIVE TRANSPORTATION</LEGEND>
+          </div>
+
+
+          <!-- B type Measures ACT1-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Bact1">ACTIVE-1 Improve Walking Conditions</label>
+            <div class="col-md-5">
+              <input id="Bact1" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Bact1pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+                <input id="Bact1OptA" type="radio" class="OptButtion Bact1Opt" autocomplete="off" name="Bact1Opt"
+                       value="1"></input><label class="control-label regular" for="Bact1OptA">Option A</label>
+                <input id="Bact1OptB" type="radio" class="OptButtion Bact1Opt" autocomplete="off" name="Bact1Opt"
+                       value="2"></input><label class="control-label regular" for="Bact1OptB">Option B</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- B type Measures ACT2-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Bact2">ACTIVE-2 Bicycle Parking</label>
+            <div class="col-md-5">
+              <input id="Bact2" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Bact2pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+                <input id="Bact2OptA" type="radio" class="OptButtion Bact2Opt" autocomplete="off" name="Bact2Opt"
+                       value="1"></input><label class="control-label regular" for="Bact2OptA">Option A</label>
+                <input id="Bact2OptB" type="radio" class="OptButtion Bact2Opt" autocomplete="off" name="Bact2Opt"
+                       value="2"></input><label class="control-label regular" for="Bact2OptB">Option B</label>
+                <input id="Bact2OptC" type="radio" class="OptButtion Bact2Opt" autocomplete="off" name="Bact2Opt"
+                       value="3"></input><label class="control-label regular" for="Bact2OptC">Option C</label>
+                <input id="Bact2OptD" type="radio" class="OptButtion Bact2Opt" autocomplete="off" name="Bact2Opt"
+                       value="4"></input><label class="control-label regular" for="Bact2OptD">Option D</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- B type Measures ACT3-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Bact3">ACTIVE-3 Showers and Lockers</label>
+            <div class="col-md-5">
+              <input id="Bact3" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Bact3pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+          <!-- B type Measures ACT4-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Bact4">ACTIVE-4 Bike Share Membership</label>
+            <div class="col-md-5">
+              <input id="Bact4" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Bact4pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+                <input id="Bact4OptA" type="radio" class="OptButtion Bact4Opt" autocomplete="off" name="Bact4Opt"
+                       value="1"></input><label class="control-label regular" for="Bact4OptA">>1000feet</label>
+                <input id="Bact4OptB" type="radio" class="OptButtion Bact4Opt" autocomplete="off" name="Bact4Opt"
+                       value="2"></input><label class="control-label regular" for="Bact4OptB"><=1000feet</label>
+              </div>
+            </div>
+            <a class="row col-md-5 col-md-offset-6" href="http://www.bayareabikeshare.com/stations">
+              (Click here for the bay area bike share station map)
+            </a>
+          </div>
+
+          <!-- B type Measures ACT5a-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Bact5a">ACTIVE-5a Bicycle Repair Station</label>
+            <div class="col-md-5">
+              <input id="Bact5a" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Bact5apointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+          <!-- B type Measures ACT5b-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Bact5b">ACTIVE-5b Bicycle Maintenance Services</label>
+            <div class="col-md-5">
+              <input id="Bact5b" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Bact5bpointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+          <!-- B type Measures ACT6-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Bact6">ACTIVE-6 Fleet of Bicycles</label>
+            <div class="col-md-5">
+              <input id="Bact6" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Bact6pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">CAR SHARE</LEGEND>
+          </div>
+
+          <!-- B type Measures CSHARE1-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Bcshare1">CSHARE-1 Car-Share Parking</label>
+            <div class="col-md-5">
+              <input id="Bcshare1" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Bcshare1pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+
+                <input id="Bcshare1OptA" type="radio" class="btn-default OptButtion Bcshare1Opt" autocomplete="off"
+                       name="Bcshare1Opt" value="1"></input><label class="control-label regular" for="Bcshare1OptA">Option
+                A</label>
+                <input id="Bcshare1OptB" type="radio" class="btn-default OptButtion Bcshare1Opt" autocomplete="off"
+                       name="Bcshare1Opt" value="2"></input><label class="control-label regular" for="Bcshare1OptB">Option
+                B</label>
+                <input id="Bcshare1OptC" type="radio" class="btn-default OptButtion Bcshare1Opt" name="Bcshare1Opt"
+                       value="3"></input><label class="control-label regular" for="Bcshare1OptC">Option C</label>
+                <input id="Bcshare1OptD" type="radio" class="btn-default OptButtion Bcshare1Opt" name="Bcshare1Opt"
+                       value="4"></input><label class="control-label regular" for="Bcshare1OptD">Option D</label>
+                <input id="Bcshare1OptE" type="radio" class="btn-default OptButtion Bcshare1Opt" name="Bcshare1Opt"
+                       value="5"></input><label class="control-label regular" for="Bcshare1OptE">Option E</label>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">DELIVERY</LEGEND>
+          </div>
+
+          <!-- B type Measures DELIVERY1-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Bdeli1">DELIVERY-1 Delivery Supportive Amenities</label>
+            <div class="col-md-5">
+              <input id="Bdeli1" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Bdeli1pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">FAMILY</LEGEND>
+          </div>
+
+          <!-- B type Measures FAMILIY2-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Bfam2">FAM-2 On-site Childcare</label>
+            <div class="col-md-5">
+              <input id="Bfam2" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Bfam1pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">HIGH OCCUPANCY VEHICLES</LEGEND>
+          </div>
+
+          <!-- B type Measures HOV1-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Bhov1">HOV-1 Contributions or Incentives</label>
+            <div class="col-md-5">
+              <input id="Bhov1" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Bhov1pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+                <input id="Bhov1OptA" type="radio" class="btn-default OptButtion Bhov1Opt" autocomplete="off"
+                       name="Bhov1Opt" value="1"></input><label class="control-label regular" for="Bhov1OptA">Option
+                A</label>
+                <input id="Bhov1OptB" type="radio" class="btn-default OptButtion Bhov1Opt" autocomplete="off"
+                       name="Bhov1Opt" value="2"></input><label class="control-label regular" for="Bhov1OptB">Option
+                B</label>
+                <input id="Bhov1OptC" type="radio" class="btn-default OptButtion Bhov1Opt" autocomplete="off"
+                       name="Bhov1Opt" value="3"></input><label class="control-label regular" for="Bhov1OptC">Option
+                C</label>
+                <input id="Bhov1OptD" type="radio" class="btn-default OptButtion Bhov1Opt" autocomplete="off"
+                       name="Bhov1Opt" value="4"></input><label class="control-label regular" for="Bhov1OptD">Option
+                D</label>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- B type Measures HOV2-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Bhov2">HOV-2 Shuttle Bus Service</label>
+            <div class="col-md-5">
+              <input id="Bhov2" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Bhov2pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+                <input id="Bhov2OptA" type="radio" class="btn-default OptButtion Bhov2Opt" autocomplete="off"
+                       name="Bhov2Opt" value="1"></input><label class="control-label regular" for="Bhov2OptA">Option
+                A</label>
+                <input id="Bhov2OptB" type="radio" class="btn-default OptButtion Bhov2Opt" autocomplete="off"
+                       name="Bhov2Opt" value="2"></input><label class="control-label regular" for="Bhov2OptB">Option
+                B</label>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- B type Measures HOV3-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Bhov3">HOV-3 Vanpool Program</label>
+            <div class="col-md-1">
+              <input id="Bhov3" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Bhov3pointdiv" class="measurepoint"></div>
+
+            </div>
+            <div id="Bhov3Opt" class="col-md-1 control-label regular"></div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">COMMUNICATIONS AND INFORMATION</LEGEND>
+          </div>
+
+          <!-- B type Measures INFO1-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Binfo1">INFO-1 Multimodal Wayfinding Signage</label>
+            <div class="col-md-5">
+              <input id="Binfo1" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Binfo1pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+
+          <!-- B type Measures INFO2-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Binfo2">INFO-2 Real Time Transportation Displays</label>
+            <div class="col-md-5">
+              <input id="Binfo2" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Binfo2pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+          <!-- B type Measures INFO3-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Binfo3">INFO-3 Tailored Transportation Marketing Services</label>
+            <div class="col-md-5">
+              <input id="Binfo3" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Binfo3pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+                <input id="Binfo3OptA" type="radio" class="OptButtion Binfo3Opt" autocomplete="off" name="Binfo3Opt"
+                       value="1"></input><label class="control-label regular" for="Binfo3OptA">Option A</label>
+                <input id="Binfo3OptB" type="radio" class="OptButtion Binfo3Opt" autocomplete="off" name="Binfo3Opt"
+                       value="2"></input><label class="control-label regular" for="Binfo3OptB">Option B</label>
+                <input id="Binfo3OptC" type="radio" class="OptButtion Binfo3Opt" autocomplete="off" name="Binfo3Opt"
+                       value="3"></input><label class="control-label regular" for="Binfo3OptC">Option C</label>
+                <input id="Binfo3OptD" type="radio" class="OptButtion Binfo3Opt" autocomplete="off" name="Binfo3Opt"
+                       value="4"></input><label class="control-label regular" for="Binfo3OptD">Option D</label>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <!-- C type Measures-->
+        <div id="CtypeMeasure" class="form-horizontal AllMeasure row" style="margin-bottom:100px;">
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7 parkingtitle">PARKING</LEGEND>
+          </div>
+
+          <!-- C type Measures PKG1-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Cpkg1">PKG 1 Unbundle Parking</label>
+            <div class="col-md-5">
+              <input id="Cpkg1" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Cpkg1pointdiv" class="measurepoint"></div>
+
+
+              <label class="control-label regular parkratetitle">Neighborhood Parking Rate:</label>
+              <label id="Cpkg1rate" class="control-label regular"></label>
+              <label class="control-label regular">&nbsp&nbsp </label>
+
+
+              <label class="control-label regular">Location</label>
+              <label id="Cpkg1loc" class="control-label regular"></label>
+
+            </div>
+
+
+          </div>
+
+
+          <!-- C type Measures PKG4-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Cpkg4">PKG 4 Parking Supply</label>
+            <div class="col-md-5">
+              <input id="Cpkg4" class="allpkg4" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Cpkg4pointdiv" class="measurepoint"></div>
+
+              <label class="control-label regular">&nbsp&nbsp </label>
+              <label class="control-label regular parkratetitle">Neighborhood Parking Rate:</label>
+              <label id="Cpkg4rate" class="control-label regular"></label>
+              <label class="control-label regular">&nbsp&nbsp </label>
+              <label class="control-label regular">Project Parking Rate:</label>
+              <label id="Cpkg4projectrate" class="control-label regular"></label>
+              <label class="control-label regular">&nbsp&nbsp </label>
+              <label class="control-label regular"></label>
+              <label id="Cpkg4Opt" class="control-label regular"></label>
+            </div>
+
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">ACTIVE TRANSPORTATION</LEGEND>
+          </div>
+
+
+          <!-- C type Measures ACT1-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Cact1">ACTIVE-1 Improve Walking Conditions</label>
+            <div class="col-md-5">
+              <input id="Cact1" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Cact1pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+                <input id="Cact1OptA" type="radio" class="OptButtion Cact1Opt" autocomplete="off" name="Cact1Opt"
+                       value="1"></input><label class="control-label regular" for="Cact1OptA">Option A</label>
+                <input id="Cact1OptB" type="radio" class="OptButtion Cact1Opt" autocomplete="off" name="Cact1Opt"
+                       value="2"></input><label class="control-label regular" for="Cact1OptB">Option B</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- C type Measures ACT2-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Cact2">ACTIVE-2 Bicycle Parking</label>
+            <div class="col-md-5">
+              <input id="Cact2" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Cact2pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+                <input id="Cact2OptA" type="radio" class="OptButtion Cact2Opt" autocomplete="off" name="Cact2Opt"
+                       value="1"></input><label class="control-label regular" for="Cact2OptA">Option A</label>
+                <input id="Cact2OptB" type="radio" class="OptButtion Cact2Opt" autocomplete="off" name="Cact2Opt"
+                       value="2"></input><label class="control-label regular" for="Cact2OptB">Option B</label>
+                <input id="Cact2OptC" type="radio" class="OptButtion Cact2Opt" autocomplete="off" name="Cact2Opt"
+                       value="3"></input><label class="control-label regular" for="Cact2OptC">Option C</label>
+                <input id="Cact2OptD" type="radio" class="OptButtion Cact2Opt" autocomplete="off" name="Cact2Opt"
+                       value="4"></input><label class="control-label regular" for="Cact2OptD">Option D</label>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- C type Measures ACT4-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Cact4">ACTIVE-4 Bike Share Membership</label>
+            <div class="col-md-5">
+              <input id="Cact4" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Cact4pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+                <input id="Cact4OptA" type="radio" class="OptButtion Cact4Opt" autocomplete="off" name="Cact4Opt"
+                       value="1"></input><label class="control-label regular" for="Cact4OptA">>1000feet</label>
+                <input id="Cact4OptB" type="radio" class="OptButtion Cact4Opt" autocomplete="off" name="Cact4Opt"
+                       value="2"></input><label class="control-label regular" for="Cact4OptB"><=1000feet</label>
+              </div>
+            </div>
+            <a class="row col-md-5 col-md-offset-6" href="http://www.bayareabikeshare.com/stations">
+              (Click here for the bay area bike share station map)
+            </a>
+          </div>
+
+          <!-- C type Measures ACT5a-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Cact5a">ACTIVE-5a Bicycle Repair Station</label>
+            <div class="col-md-5">
+              <input id="Cact5a" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Cact5apointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+          <!-- C type Measures ACT5b-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Cact5b">ACTIVE-5b Bicycle Maintenance Services</label>
+            <div class="col-md-5">
+              <input id="Cact5b" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Cact5bpointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+          <!-- C type Measures ACT6-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Cact6">ACTIVE-6 Fleet of Bicycles</label>
+            <div class="col-md-5">
+              <input id="Cact6" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Cact6pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">CAR SHARE</LEGEND>
+          </div>
+
+          <!-- C type Measures CSHARE1-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Ccshare1">CSHARE-1 Car-Share Parking</label>
+            <div class="col-md-5">
+              <input id="Ccshare1" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Ccshare1pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+
+                <input id="Ccshare1OptA" type="radio" class="btn-default OptButtion Ccshare1Opt" autocomplete="off"
+                       name="Ccshare1Opt" value="1"></input><label class="control-label regular" for="Ccshare1OptA">Option
+                A</label>
+                <input id="Ccshare1OptB" type="radio" class="btn-default OptButtion Ccshare1Opt" autocomplete="off"
+                       name="Ccshare1Opt" value="2"></input><label class="control-label regular" for="Ccshare1OptB">Option
+                B</label>
+                <input id="Ccshare1OptC" type="radio" class="btn-default OptButtion Ccshare1Opt" name="Ccshare1Opt"
+                       value="3"></input><label class="control-label regular" for="Ccshare1OptC">Option C</label>
+                <input id="Ccshare1OptD" type="radio" class="btn-default OptButtion Ccshare1Opt" name="Ccshare1Opt"
+                       value="4"></input><label class="control-label regular" for="Ccshare1OptD">Option D</label>
+                <input id="Ccshare1OptE" type="radio" class="btn-default OptButtion Ccshare1Opt" name="Ccshare1Opt"
+                       value="5"></input><label class="control-label regular" for="Ccshare1OptE">Option E</label>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">DELIVERY</LEGEND>
+          </div>
+
+          <!-- C type Measures DELIVERY1-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Cdeli1">DELIVERY-1 Delivery Supportive Amenities</label>
+            <div class="col-md-5">
+              <input id="Cdeli1" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Cdeli1pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">FAMILY</LEGEND>
+          </div>
+
+          >
+
+          <!-- C type Measures FAMILIY1-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Cfam1">FAM-1 Family TDM - Amenities</label>
+            <div class="col-md-5">
+              <input id="Cfam1" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Cfam1pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+
+                <input id="Cfam1OptA" type="checkbox" class="btn-default OptButtion Cfam1Opt" autocomplete="off"
+                       name="Cfam1OptA" value="1"></input><label class="control-label regular " for="Cfam1OptA">Option
+                A</label>
+                <input id="Cfam1OptB" type="checkbox" class="btn-default OptButtion Cfam1Opt" autocomplete="off"
+                       name="Cfam1OptB" value="2"></input><label class="control-label regular " for="Cfam1OptB">Option
+                B</label>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- C type Measures FAMILIY2-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Cfam2">FAM-2 On-site Childcare</label>
+            <div class="col-md-5">
+              <input id="Cfam2" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Cfam2pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+
+          <!-- C type Measures FAMILIY3-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Cfam3">FAM-3 Family TDM Package</label>
+            <div class="col-md-5">
+              <input id="Cfam3" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Cfam3pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">HIGH OCCUPANCY VEHICLES</LEGEND>
+          </div>
+
+          <!-- C type Measures HOV1-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Chov1">HOV-1 Contributions or Incentives</label>
+            <div class="col-md-5">
+              <input id="Chov1" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Chov1pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+                <input id="Chov1OptA" type="radio" class="btn-default OptButtion Chov1Opt" autocomplete="off"
+                       name="Chov1Opt" value="1"></input><label class="control-label regular" for="Chov1OptA">Option
+                A</label>
+                <input id="Chov1OptB" type="radio" class="btn-default OptButtion Chov1Opt" autocomplete="off"
+                       name="Chov1Opt" value="2"></input><label class="control-label regular" for="Chov1OptB">Option
+                B</label>
+                <input id="Chov1OptC" type="radio" class="btn-default OptButtion Chov1Opt" autocomplete="off"
+                       name="Chov1Opt" value="3"></input><label class="control-label regular" for="Chov1OptC">Option
+                C</label>
+                <input id="Chov1OptD" type="radio" class="btn-default OptButtion Chov1Opt" autocomplete="off"
+                       name="Chov1Opt" value="4"></input><label class="control-label regular" for="Chov1OptD">Option
+                D</label>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- C type Measures HOV2-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Chov2">HOV-2 Shuttle Bus Service</label>
+            <div class="col-md-5">
+              <input id="Chov2" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Chov2pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+                <input id="Chov2OptA" type="radio" class="btn-default OptButtion Chov2Opt" autocomplete="off"
+                       name="Chov2Opt" value="1"></input><label class="control-label regular" for="Chov2OptA">Option
+                A</label>
+                <input id="Chov2OptB" type="radio" class="btn-default OptButtion Chov2Opt" autocomplete="off"
+                       name="Chov2Opt" value="2"></input><label class="control-label regular" for="Chov2OptB">Option
+                B</label>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">COMMUNICATIONS AND INFORMATION</LEGEND>
+          </div>
+
+          <!-- C type Measures INFO1-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Cinfo1">INFO-1 Multimodal Wayfinding Signage</label>
+            <div class="col-md-5">
+              <input id="Cinfo1" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Cinfo1pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+
+          <!-- C type Measures INFO2-->
+          <div class="form-group">
+            <label class="col-md-6 control-label" for="Cinfo2">INFO-2 Real Time Transportation Displays</label>
+            <div class="col-md-5">
+              <input id="Cinfo2" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Cinfo2pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+          <!-- C type Measures INFO3-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Cinfo3">INFO-3 Tailored Transportation Marketing Services</label>
+            <div class="col-md-5">
+              <input id="Cinfo3" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Cinfo3pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+                <input id="Cinfo3OptA" type="radio" class="OptButtion Cinfo3Opt" autocomplete="off" name="Cinfo3Opt"
+                       value="1"></input><label class="control-label regular" for="Cinfo3OptA">Option A</label>
+                <input id="Cinfo3OptB" type="radio" class="OptButtion Cinfo3Opt" autocomplete="off" name="Cinfo3Opt"
+                       value="2"></input><label class="control-label regular" for="Cinfo3OptB">Option B</label>
+                <input id="Cinfo3OptC" type="radio" class="OptButtion Cinfo3Opt" autocomplete="off" name="Cinfo3Opt"
+                       value="3"></input><label class="control-label regular" for="Cinfo3OptC">Option C</label>
+                <input id="Cinfo3OptD" type="radio" class="OptButtion Cinfo3Opt" autocomplete="off" name="Cinfo3Opt"
+                       value="4"></input><label class="control-label regular" for="Cinfo3OptD">Option D</label>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">LAND USE</LEGEND>
+          </div>
+
+          <!-- C type Measures LU2-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Clu2">LU-2 On-site Affordable Housing</label>
+            <div class="col-md-5">
+              <input id="Clu2" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Clu2pointdiv" class="measurepoint"></div>
+              <div class="row" id="Clu2optiondiv"></div>
+
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <!-- D type Measures-->
+
+        <div id="DtypeMeasure" class="form-horizontal AllMeasure row" style="margin-bottom:100px;">
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7 parkingtitle">PARKING</LEGEND>
+          </div>
+
+
+          <!-- D type Measures PKG4-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Dpkg4">PKG 4 Parking Supply</label>
+            <div class="col-md-5">
+              <input id="Dpkg4" class="allpkg4" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Dpkg4pointdiv" class="measurepoint"></div>
+
+              <label class="control-label regular">&nbsp&nbsp </label>
+              <label class="control-label regular parkratetitle">Neighborhood Parking Rate:</label>
+              <label id="Dpkg4rate" class="control-label regular"></label>
+              <label class="control-label regular">&nbsp&nbsp </label>
+              <label class="control-label regular">Project Parking Rate:</label>
+              <label id="Dpkg4projectrate" class="control-label regular"></label>
+              <label class="control-label regular">&nbsp&nbsp </label>
+              <label class="control-label regular"></label>
+              <label id="Dpkg4Opt" class="control-label regular"></label>
+            </div>
+
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">ACTIVE TRANSPORTATION</LEGEND>
+          </div>
+
+
+          <!-- D type Measures ACT2-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Dact2">ACTIVE-2 Bicycle Parking</label>
+            <div class="col-md-5">
+              <input id="Dact2" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Dact2pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+                <input id="Dact2OptA" type="radio" class="OptButtion Dact2Opt" autocomplete="off" name="Dact2Opt"
+                       value="1"></input><label class="control-label regular" for="Dact2OptA">Option A</label>
+                <input id="Dact2OptB" type="radio" class="OptButtion Dact2Opt" autocomplete="off" name="Dact2Opt"
+                       value="2"></input><label class="control-label regular" for="Dact2OptB">Option B</label>
+                <input id="Dact2OptC" type="radio" class="OptButtion Dact2Opt" autocomplete="off" name="Dact2Opt"
+                       value="3"></input><label class="control-label regular" for="Dact2OptC">Option C</label>
+                <input id="Dact2OptD" type="radio" class="OptButtion Dact2Opt" autocomplete="off" name="Dact2Opt"
+                       value="4"></input><label class="control-label regular" for="Dact2OptD">Option D</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- D type Measures ACT3-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Dact3">ACTIVE-3 Showers and Lockers</label>
+            <div class="col-md-5">
+              <input id="Dact3" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Dact3pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">CAR SHARE</LEGEND>
+          </div>
+
+          <!-- D type Measures CSHARE1-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Dcshare1">CSHARE-1 Car-Share Parking</label>
+            <div class="col-md-5">
+              <input id="Dcshare1" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Dcshare1pointdiv" class="measurepoint"></div>
+
+              <div class="btn-group">
+
+                <input id="Dcshare1OptA" type="radio" class="btn-default OptButtion Dcshare1Opt" autocomplete="off"
+                       name="Dcshare1Opt" value="1"></input><label class="control-label regular" for="Dcshare1OptA">Option
+                A</label>
+                <input id="Dcshare1OptB" type="radio" class="btn-default OptButtion Dcshare1Opt" autocomplete="off"
+                       name="Dcshare1Opt" value="2"></input><label class="control-label regular" for="Dcshare1OptB">Option
+                B</label>
+                <input id="Dcshare1OptC" type="radio" class="btn-default OptButtion Dcshare1Opt" name="Dcshare1Opt"
+                       value="3"></input><label class="control-label regular" for="Dcshare1OptC">Option C</label>
+                <input id="Dcshare1OptD" type="radio" class="btn-default OptButtion Dcshare1Opt" name="Dcshare1Opt"
+                       value="4"></input><label class="control-label regular" for="Dcshare1OptD">Option D</label>
+                <input id="Dcshare1OptE" type="radio" class="btn-default OptButtion Dcshare1Opt" name="Dcshare1Opt"
+                       value="5"></input><label class="control-label regular" for="Dcshare1OptE">Option E</label>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <LEGEND class="col-md-7">COMMUNICATIONS AND INFORMATION</LEGEND>
+          </div>
+
+          <!-- D type Measures INFO1-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Dinfo1">INFO-1 Multimodal Wayfinding Signage</label>
+            <div class="col-md-5">
+              <input id="Dinfo1" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Dinfo1pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+
+          <!-- D type Measures INFO2-->
+          <div class="form-group">
+            <label class="col-md-6 control-label measurename" for="Dinfo2">INFO-2 Real Time Transportation Displays</label>
+            <div class="col-md-5">
+              <input id="Dinfo2" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
+              <div id="Dinfo2pointdiv" class="measurepoint"></div>
+
+            </div>
+          </div>
+
+
+        </div>
+
+        <div id="buttondiv" class="col-md-offset-8" style="margin-bottom: 50px;">
+          <button id="summit" name="summit" class="btn btn-success" type="submit">Submit</button>
+          <button id="Clear" name="Clear" class="btn btn-danger">Clear</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Point panel (float and scroll) -->
+    <div class="nav col-md-4 col-xs-11 container">
+      <!--<div class="row">-->
+        <div id="scrolldiv" >
+          <div id="Apointdiv" class="allpointdiv">
+            <legend style="padding-left: 12px;">
+              Category A - Retail
+            </legend>
+
+            <div class="col-md-5 col-xs-4">
+              <p style="font-size: 120%; ">Current Point:</p>
+              <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
+                <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
+                     id="Atotalpoint">0
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="col-md-1" style="border-left:solid #333333; height:80px;line-height: 80%;border-width: 2px;margin-top:10px;margin-left:-10px;"></div>
+
+
+            <div class="col-md-5 col-xs-5">
+              <p style="font-size: 120%; ">Target Point:</p>
+
+              <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
+                <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
+                     id="Atargetpoint">0
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="Bpointdiv" class="allpointdiv">
+            <legend style="padding-left: 12px;">
+              Category B - Office
+            </legend>
+
+            <div class="col-md-5 col-xs-4">
+              <p style="font-size: 120%; ">Current Point:</p>
+
+              <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
+                <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
+                     id="Btotalpoint">0
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-md-1" style="border-left:solid #333333; height:80px;line-height: 80%;border-width: 2px;margin-top:10px;margin-left:-10px;"></div>
+
+
+            <div class="col-md-5 col-xs-5">
+              <p style="font-size: 120%; ">Target Point:</p>
+
+              <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
+                <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
+                     id="Btargetpoint">0
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="Cpointdiv" class="allpointdiv">
+            <legend style="padding-left: 12px;">
+              Category C - Residential
+            </legend>
+
+            <div class="col-md-5 col-xs-4">
+              <p style="font-size: 120%; ">Current Point:</p>
+
+              <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
+                <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
+                     id="Ctotalpoint">0
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-md-1" style="border-left:solid #333333; height:80px;line-height: 80%;border-width: 2px;margin-top:10px;margin-left:-10px;"></div>
+
+            <div class="col-md-5 col-xs-5">
+              <p style="font-size: 120%; ">Target Point:</p>
+
+              <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
+                <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
+                     id="Ctargetpoint">0
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="Dpointdiv" class="allpointdiv">
+            <legend style="padding-left: 12px;">
+              Category D - Other
+            </legend>
+
+            <div class="col-md-5 col-xs-4">
+              <p style="font-size: 120%; ">Current Point:</p>
+
+              <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
+                <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
+                     id="Dtotalpoint">0
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-md-1" style="border-left:solid #333333; height:80px;line-height: 80%;border-width: 2px;margin-top:10px;margin-left:-10px;"></div>
+
+
+            <div class="col-md-5 col-xs-5">
+              <p style="font-size: 120%; ">Target Point:</p>
+
+              <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
+                <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
+                     id="Dtargetpoint">0
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      <!--</div>-->
+    </div>
+
+
   </div>
   </div>
-
-
-  <div class="row">
-  <div class="col-xs-1"></div>
-  <LEGEND class="col-md-7">COMMUNICATIONS AND INFORMATION </LEGEND>
-  </div>
-
-  <!-- D type Measures INFO1-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Dinfo1">INFO-1 Multimodal Wayfinding Signage</label>
-    <div class="col-md-5">
-      <input id="Dinfo1" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-  </div>
-  </div>
-
-
-  <!-- D type Measures INFO2-->
-  <div class="form-group">
-  <label class="col-md-6 control-label" for="Dinfo2">INFO-2 Real Time Transportation Displays</label>
-    <div class="col-md-5">
-      <input id="Dinfo2" type="checkbox"  data-size="small" data-on-text="Yes" data-off-text="No">
-  </div>
-  </div>
-
-
-</div>
-</div>
-
-</div>
-
-	<!-- Point board (float and scroll) -->
-	<div class="col-md-5">
-		<div class="row" id="scrollarea" style="padding:2px;">
-			<div class="col-md-1 col-xs-2">
-				<div class="col-md-1">
-					<p id="pointdiv" style="font-size: 150%; ">Current Point:</p>
-				</div>
-				<div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
-					<div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;" id="pointnow">0 </div>
-
-				</div>
-
-				<div class="col-md-1" style="border-left:solid #333333; height:50px;line-height: 80%;border-width: 2px;margin-top:5px;margin-left:5px;">  </div>
-
-				<div class="col-md-1">
-					<p style="font-size: 150%; margin-left:-5px;">Target Point:</p>
-				</div>
-				<div class="col-md-2" style="padding-left:40px; margin-top:-10px; margin-left:-5px;">
-					<div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;" id="pointtarget">0 </div>
-				</div>
-
-			</div>
-
-			<div id="buttondiv" class="row" >
-				<button id="summit" name="summit" class="btn btn-success" type = "submit">Submit</button>
-				<button id="Clear" name="Clear" class="btn btn-danger">Clear</button>
-			</div>
-
-		</div>
-	</div>
-
-
-
-
-
-
-</div>
-</div>
-
-
-
 
 
 </form>

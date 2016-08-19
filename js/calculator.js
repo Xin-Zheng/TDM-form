@@ -4,83 +4,97 @@
 
 
 
-// Define measure current point var
-  //Category A measures
-  var Apkg1point = 0;
-  var Apkg2point = 0;
-  var Apkg3point = 0;
-  var Apkg4point = 0;
-  var Aact1point = 0;
-  var Aact2point = 0;
-  var Aact3point = 0;
-  var Aact4point = 0;
-  var Aact5apoint = 0;
-  var Aact5bpoint = 0;
-  var Aact6point = 0;
-  var Aact7point = 0;
-  var Acshare1point = 0;
-  var Adeli1point = 0;
-  var Adeli2point = 0;
-  var Afam2point = 0;
-  var Ahov1point = 0;
-  var Ahov2point = 0;
-  var Ahov3point = 0;
-  var Ainfo1point = 0;
-  var Ainfo2point = 0;
-  var Ainfo3point = 0;
-  var Alu1point = 0;
+// Define measure point var
 
-  //Category B measures
-  var Bpkg1point = 0;
-  var Bpkg2point = 0;
-  var Bpkg3point = 0;
-  var Bpkg4point = 0;
-  var Bact1point = 0;
-  var Bact2point = 0;
-  var Bact3point = 0;
-  var Bact4point = 0;
-  var Bact5apoint = 0;
-  var Bact5bpoint = 0;
-  var Bact6point = 0;
-  var Bcshare1point = 0;
-  var Bdeli1point = 0;
-  var Bfam2point = 0;
-  var Bhov1point = 0;
-  var Bhov2point = 0;
-  var Bhov3point = 0;
-  var Binfo1point = 0;
-  var Binfo2point = 0;
-  var Binfo3point = 0;
+// total point
+var Atotalpoint = 0;
+var Btotalpoint = 0;
+var Ctotalpoint = 0;
+var Dtotalpoint = 0;
 
-  
-  //Category C measures
-  var Cpkg1point = 0;
-  var Cpkg4point = 0;
-  var Cact1point = 0;
-  var Cact2point = 0;
-  var Cact4point = 0;
-  var Cact5apoint = 0;
-  var Cact5bpoint = 0;
-  var Cact6point = 0;
-  var Ccshare1point = 0;
-  var Cdeli1point = 0;
-  var Cfam1point = 0;
-  var Cfam2point = 0;
-  var Cfam3point = 0;
-  var Chov1point = 0;
-  var Chov2point = 0;
-  var Cinfo1point = 0
-  var Cinfo2point = 0;
-  var Cinfo3point = 0;
-  var Clu1point = 0;
+//target point
+var Atargetpoint = 0;
+var Btargetpoint = 0;
+var Ctargetpoint = 0;
+var Dtargetpoint = 0;
 
-  //Category D measures
-  var Dpkg4point = 0;
-  var Dact2point = 0;
-  var Dact3point = 0;
-  var Dcshare1point = 0;
-  var Dinfo1point = 0
-  var Dinfo2point = 0;
+
+//Category A measures
+var Apkg1point = 0;
+var Apkg2point = 0;
+var Apkg3point = 0;
+var Apkg4point = 0;
+var Aact1point = 0;
+var Aact2point = 0;
+var Aact3point = 0;
+var Aact4point = 0;
+var Aact5apoint = 0;
+var Aact5bpoint = 0;
+var Aact6point = 0;
+var Aact7point = 0;
+var Acshare1point = 0;
+var Adeli1point = 0;
+var Adeli2point = 0;
+var Afam2point = 0;
+var Ahov1point = 0;
+var Ahov2point = 0;
+var Ahov3point = 0;
+var Ainfo1point = 0;
+var Ainfo2point = 0;
+var Ainfo3point = 0;
+var Alu1point = 0;
+
+//Category B measures
+var Bpkg1point = 0;
+var Bpkg2point = 0;
+var Bpkg3point = 0;
+var Bpkg4point = 0;
+var Bact1point = 0;
+var Bact2point = 0;
+var Bact3point = 0;
+var Bact4point = 0;
+var Bact5apoint = 0;
+var Bact5bpoint = 0;
+var Bact6point = 0;
+var Bcshare1point = 0;
+var Bdeli1point = 0;
+var Bfam2point = 0;
+var Bhov1point = 0;
+var Bhov2point = 0;
+var Bhov3point = 0;
+var Binfo1point = 0;
+var Binfo2point = 0;
+var Binfo3point = 0;
+
+
+//Category C measures
+var Cpkg1point = 0;
+var Cpkg4point = 0;
+var Cact1point = 0;
+var Cact2point = 0;
+var Cact4point = 0;
+var Cact5apoint = 0;
+var Cact5bpoint = 0;
+var Cact6point = 0;
+var Ccshare1point = 0;
+var Cdeli1point = 0;
+var Cfam1point = 0;
+var Cfam2point = 0;
+var Cfam3point = 0;
+var Chov1point = 0;
+var Chov2point = 0;
+var Cinfo1point = 0
+var Cinfo2point = 0;
+var Cinfo3point = 0;
+var Clu2point = 0;
+
+//Category D measures
+var Dpkg4point = 0;
+var Dact2point = 0;
+var Dact3point = 0;
+var Dcshare1point = 0;
+var Dinfo1point = 0
+var Dinfo2point = 0;
 
 
 // var pkg4point = 0;
@@ -89,10 +103,9 @@
 
 
 var NeighborParking = 0;
-var OccupiedArea = 0;
+
 var PersentageTwoBed = 0;
 var PersentageAffordHouse = 0;
-var ProjectParkRate = 0;
 
 var AparkingSpaceInput = 0;
 var BparkingSpaceInput = 0;
@@ -101,7 +114,7 @@ var DparkingSpaceInput = 0;
 
 
 //clear all
-function clearallitem(){
+function clearallitem() {
   Cfam1point = 0;
   Cfam3point = 0;
   Ccshare1point = 0;
@@ -5981,74 +5994,124 @@ var parkingrate = [
 ]
 
 
+//point panel scroll function
+
+$("#scrolldiv").affix({
+  offset: {
+    top: function () {
+      return ($("#measurediv").offset().top);
+    }
+  }
+});
+
+
 //open or hide the category choice
 $(".form-type1").hide();
 $("#Atype").show();
 $(".AllMeasure").hide();
 $("#AtypeMeasure").show();
+$(".allpointdiv").hide();
+$("#Apointdiv").show();
 
+$("#radios-0").change(function () {
 
-$("#radios-0").change(function(){
-  if($(this).is(":checked")) {
+  if ($(this).is(":checked")) {
     $("#AtypeMeasure").show(500);
     $("#Atype").show(500);
-    $("#Aprojecttype").prop( "checked", true );
+    $("#Apointdiv").show(500);
+    $("#Aprojecttype").prop("checked", true);
   }
-  else{
+  else {
     $("#AtypeMeasure").hide(500);
     $("#Atype").hide(500);
-    $("#Aprojecttype").prop( "checked", false );
+    $("#Apointdiv").hide(500);
+    $("#Aprojecttype").prop("checked", false);
   }
+  $("#scrolldiv").affix({
+    offset: {
+      top: function () {
+        return ($("#measurediv").offset().top);
+      }
+    }
+  });
+
 });
 
 
-
-$("#radios-1").change(function(){
-  if($(this).is(":checked")) {
+$("#radios-1").change(function () {
+  if ($(this).is(":checked")) {
     $("#BtypeMeasure").show(500);
     $("#Btype").show(500);
-    $("#Bprojecttype").prop( "checked", true );
+    $("#Bpointdiv").show(500);
+    $("#Bprojecttype").prop("checked", true);
   }
-  else{
+  else {
     $("#BtypeMeasure").hide(500);
     $("#Btype").hide(500);
-    $("#Bprojecttype").prop( "checked", false );
+    $("#Bpointdiv").hide(500);
+    $("#Bprojecttype").prop("checked", false);
   }
+  $("#scrolldiv").affix({
+    offset: {
+      top: function () {
+        return ($("#measurediv").offset().top);
+      }
+    }
+  });
+
 });
 
 
-
-$("#radios-2").change(function(){
-  if($(this).is(":checked")) {
+$("#radios-2").change(function () {
+  if ($(this).is(":checked")) {
     $("#CtypeMeasure").show(500);
     $("#Ctype").show(500);
-    $("#Cprojecttype").prop( "checked", true );
+    $("#Cpointdiv").show(500);
+    $("#Cprojecttype").prop("checked", true);
   }
-  else{
+  else {
     $("#CtypeMeasure").hide(500);
     $("#Ctype").hide(500);
-    $("#Cprojecttype").prop( "checked", false );
+    $("#Cpointdiv").hide(500);
+    $("#Cprojecttype").prop("checked", false);
   }
+  $("#scrolldiv").affix({
+    offset: {
+      top: function () {
+        return ($("#measurediv").offset().top);
+      }
+    }
+  });
+
 });
 
 
-$("#radios-3").change(function(){
-  if($(this).is(":checked")) {
+$("#radios-3").change(function () {
+  if ($(this).is(":checked")) {
     $("#DtypeMeasure").show(500);
     $("#Dtype").show(500);
-    $("#Dprojecttype").prop( "checked", true );
+    $("#Dpointdiv").show(500);
+    $("#Dprojecttype").prop("checked", true);
   }
-  else{
+  else {
     $("#DtypeMeasure").hide(500);
     $("#Dtype").hide(500);
-    $("#Dprojecttype").prop( "checked", false );
+    $("#Dpointdiv").hide(500);
+    $("#Dprojecttype").prop("checked", false);
   }
+  $("#scrolldiv").affix({
+    offset: {
+      top: function () {
+        return ($("#measurediv").offset().top);
+      }
+    }
+  });
+
 });
 
 
 //start bootstrapSwitch to change checkbox to button style
-$(":checkbox:not(.CategoryRadio)").bootstrapSwitch();
-
+$(":checkbox:not(.CategoryRadio,.Cfam1Opt)").bootstrapSwitch();
 
 
 //Disable button
@@ -6056,392 +6119,367 @@ $(":checkbox:not(.CategoryRadio)").bootstrapSwitch();
 //A measure group
 $('#Apkg4').bootstrapSwitch('disabled', true);
 
-$('.OptButtion').prop("disabled",true);
+$('.OptButtion').prop("disabled", true);
 
-$('#Ainfo3').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Ainfo3').bootstrapSwitch("state")===false){
-    $('.Ainfo3Opt').prop("disabled",true);
+$('#Ainfo3').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Ainfo3').bootstrapSwitch("state") === false) {
+    $('.Ainfo3Opt').prop("disabled", true);
   }
-  else{
-    $('.Ainfo3Opt').prop("disabled",false);
+  else {
+    $('.Ainfo3Opt').prop("disabled", false);
   }
 });
 
 
-$('#Aact1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Aact1').bootstrapSwitch("state")===false){
-    $('.Aact1Opt').prop("disabled",true);
+$('#Aact1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Aact1').bootstrapSwitch("state") === false) {
+    $('.Aact1Opt').prop("disabled", true);
   }
-  else{
-    $('.Aact1Opt').prop("disabled",false);
-  }
-});
-
-$('#Aact2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Aact2').bootstrapSwitch("state")===false){
-    $('.Aact2Opt').prop("disabled",true);
-  }
-  else{
-    $('.Aact2Opt').prop("disabled",false);
+  else {
+    $('.Aact1Opt').prop("disabled", false);
   }
 });
 
-$('#Aact4').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Aact4').bootstrapSwitch("state")===false){
-    $('.Aact4Opt').prop("disabled",true);
+$('#Aact2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Aact2').bootstrapSwitch("state") === false) {
+    $('.Aact2Opt').prop("disabled", true);
   }
-  else{
-    $('.Aact4Opt').prop("disabled",false);
-  }
-});
-
-$('#Acshare1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Acshare1').bootstrapSwitch("state")===false){
-    $('.Acshare1Opt').prop("disabled",true);
-  }
-  else{
-    $('.Acshare1Opt').prop("disabled",false);
+  else {
+    $('.Aact2Opt').prop("disabled", false);
   }
 });
 
-$('#Ahov1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Ahov1').bootstrapSwitch("state")===false){
-    $('.Ahov1Opt').prop("disabled",true);
+$('#Aact4').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Aact4').bootstrapSwitch("state") === false) {
+    $('.Aact4Opt').prop("disabled", true);
   }
-  else{
-    $('.Ahov1Opt').prop("disabled",false);
-  }
-});
-
-$('#Ahov2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Ahov2').bootstrapSwitch("state")===false){
-    $('.Ahov2Opt').prop("disabled",true);
-  }
-  else{
-    $('.Ahov2Opt').prop("disabled",false);
+  else {
+    $('.Aact4Opt').prop("disabled", false);
   }
 });
 
+$('#Acshare1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Acshare1').bootstrapSwitch("state") === false) {
+    $('.Acshare1Opt').prop("disabled", true);
+  }
+  else {
+    $('.Acshare1Opt').prop("disabled", false);
+  }
+});
 
+$('#Ahov1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Ahov1').bootstrapSwitch("state") === false) {
+    $('.Ahov1Opt').prop("disabled", true);
+  }
+  else {
+    $('.Ahov1Opt').prop("disabled", false);
+  }
+});
 
+$('#Ahov2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Ahov2').bootstrapSwitch("state") === false) {
+    $('.Ahov2Opt').prop("disabled", true);
+  }
+  else {
+    $('.Ahov2Opt').prop("disabled", false);
+  }
+});
 
 
 //B measure group
 
-$('#Binfo3').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Binfo3').bootstrapSwitch("state")===false){
-    $('.Binfo3Opt').prop("disabled",true);
+$('#Binfo3').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Binfo3').bootstrapSwitch("state") === false) {
+    $('.Binfo3Opt').prop("disabled", true);
   }
-  else{
-    $('.Binfo3Opt').prop("disabled",false);
-  }
-});
-
-
-$('#Bact1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Bact1').bootstrapSwitch("state")===false){
-    $('.Bact1Opt').prop("disabled",true);
-  }
-  else{
-    $('.Bact1Opt').prop("disabled",false);
-  }
-});
-
-$('#Bact2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Bact2').bootstrapSwitch("state")===false){
-    $('.Bact2Opt').prop("disabled",true);
-  }
-  else{
-    $('.Bact2Opt').prop("disabled",false);
-  }
-});
-
-$('#Bact4').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Bact4').bootstrapSwitch("state")===false){
-    $('.Bact4Opt').prop("disabled",true);
-  }
-  else{
-    $('.Bact4Opt').prop("disabled",false);
-  }
-});
-
-$('#Bcshare1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Bcshare1').bootstrapSwitch("state")===false){
-    $('.Bcshare1Opt').prop("disabled",true);
-  }
-  else{
-    $('.Bcshare1Opt').prop("disabled",false);
-  }
-});
-
-$('#Bhov1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Bhov1').bootstrapSwitch("state")===false){
-    $('.Bhov1Opt').prop("disabled",true);
-  }
-  else{
-    $('.Bhov1Opt').prop("disabled",false);
-  }
-});
-
-$('#Bhov2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Bhov2').bootstrapSwitch("state")===false){
-    $('.Bhov2Opt').prop("disabled",true);
-  }
-  else{
-    $('.Bhov2Opt').prop("disabled",false);
+  else {
+    $('.Binfo3Opt').prop("disabled", false);
   }
 });
 
 
+$('#Bact1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Bact1').bootstrapSwitch("state") === false) {
+    $('.Bact1Opt').prop("disabled", true);
+  }
+  else {
+    $('.Bact1Opt').prop("disabled", false);
+  }
+});
 
+$('#Bact2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Bact2').bootstrapSwitch("state") === false) {
+    $('.Bact2Opt').prop("disabled", true);
+  }
+  else {
+    $('.Bact2Opt').prop("disabled", false);
+  }
+});
 
+$('#Bact4').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Bact4').bootstrapSwitch("state") === false) {
+    $('.Bact4Opt').prop("disabled", true);
+  }
+  else {
+    $('.Bact4Opt').prop("disabled", false);
+  }
+});
+
+$('#Bcshare1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Bcshare1').bootstrapSwitch("state") === false) {
+    $('.Bcshare1Opt').prop("disabled", true);
+  }
+  else {
+    $('.Bcshare1Opt').prop("disabled", false);
+  }
+});
+
+$('#Bhov1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Bhov1').bootstrapSwitch("state") === false) {
+    $('.Bhov1Opt').prop("disabled", true);
+  }
+  else {
+    $('.Bhov1Opt').prop("disabled", false);
+  }
+});
+
+$('#Bhov2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Bhov2').bootstrapSwitch("state") === false) {
+    $('.Bhov2Opt').prop("disabled", true);
+  }
+  else {
+    $('.Bhov2Opt').prop("disabled", false);
+  }
+});
 
 
 //C measure group
 
-$('#Cfam1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Cfam1').bootstrapSwitch("state")===false){
-    $('.Cfam1Opt').prop("disabled",true);
+$('#Cfam1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Cfam1').bootstrapSwitch("state") === false) {
+    $('.Cfam1Opt').prop("disabled", true);
   }
-  else{
-    $('.Cfam1Opt').prop("disabled",false);
-  }
-});
-
-$('#Cinfo3').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Cinfo3').bootstrapSwitch("state")===false){
-    $('.Cinfo3Opt').prop("disabled",true);
-  }
-  else{
-    $('.Cinfo3Opt').prop("disabled",false);
+  else {
+    $('.Cfam1Opt').prop("disabled", false);
   }
 });
 
-
-$('#Cact1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Cact1').bootstrapSwitch("state")===false){
-    $('.Cact1Opt').prop("disabled",true);
+$('#Cinfo3').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Cinfo3').bootstrapSwitch("state") === false) {
+    $('.Cinfo3Opt').prop("disabled", true);
   }
-  else{
-    $('.Cact1Opt').prop("disabled",false);
-  }
-});
-
-$('#Cact2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Cact2').bootstrapSwitch("state")===false){
-    $('.Cact2Opt').prop("disabled",true);
-  }
-  else{
-    $('.Cact2Opt').prop("disabled",false);
-  }
-});
-
-$('#Cact4').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Cact4').bootstrapSwitch("state")===false){
-    $('.Cact4Opt').prop("disabled",true);
-  }
-  else{
-    $('.Cact4Opt').prop("disabled",false);
-  }
-});
-
-$('#Ccshare1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Ccshare1').bootstrapSwitch("state")===false){
-    $('.Ccshare1Opt').prop("disabled",true);
-  }
-  else{
-    $('.Ccshare1Opt').prop("disabled",false);
-  }
-});
-
-$('#Chov1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Chov1').bootstrapSwitch("state")===false){
-    $('.Chov1Opt').prop("disabled",true);
-  }
-  else{
-    $('.Chov1Opt').prop("disabled",false);
-  }
-});
-
-$('#Chov2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Chov2').bootstrapSwitch("state")===false){
-    $('.Chov2Opt').prop("disabled",true);
-  }
-  else{
-    $('.Chov2Opt').prop("disabled",false);
-  }
-});
-
-$('#Clu2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Clu2').bootstrapSwitch("state")===false){
-    $('.Clu2Opt').prop("disabled",true);
-  }
-  else{
-    $('.Clu2Opt').prop("disabled",false);
+  else {
+    $('.Cinfo3Opt').prop("disabled", false);
   }
 });
 
 
+$('#Cact1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Cact1').bootstrapSwitch("state") === false) {
+    $('.Cact1Opt').prop("disabled", true);
+  }
+  else {
+    $('.Cact1Opt').prop("disabled", false);
+  }
+});
 
+$('#Cact2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Cact2').bootstrapSwitch("state") === false) {
+    $('.Cact2Opt').prop("disabled", true);
+  }
+  else {
+    $('.Cact2Opt').prop("disabled", false);
+  }
+});
+
+$('#Cact4').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Cact4').bootstrapSwitch("state") === false) {
+    $('.Cact4Opt').prop("disabled", true);
+  }
+  else {
+    $('.Cact4Opt').prop("disabled", false);
+  }
+});
+
+$('#Ccshare1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Ccshare1').bootstrapSwitch("state") === false) {
+    $('.Ccshare1Opt').prop("disabled", true);
+  }
+  else {
+    $('.Ccshare1Opt').prop("disabled", false);
+  }
+});
+
+$('#Chov1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Chov1').bootstrapSwitch("state") === false) {
+    $('.Chov1Opt').prop("disabled", true);
+  }
+  else {
+    $('.Chov1Opt').prop("disabled", false);
+  }
+});
+
+$('#Chov2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Chov2').bootstrapSwitch("state") === false) {
+    $('.Chov2Opt').prop("disabled", true);
+  }
+  else {
+    $('.Chov2Opt').prop("disabled", false);
+  }
+});
+
+$('#Clu2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Clu2').bootstrapSwitch("state") === false) {
+    $('.Clu2Opt').prop("disabled", true);
+  }
+  else {
+    $('.Clu2Opt').prop("disabled", false);
+  }
+});
 
 
 //D measure group
-$('#Dact2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Dact2').bootstrapSwitch("state")===false){
-    $('.Dact2Opt').prop("disabled",true);
+$('#Dact2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Dact2').bootstrapSwitch("state") === false) {
+    $('.Dact2Opt').prop("disabled", true);
   }
-  else{
-    $('.Dact2Opt').prop("disabled",false);
-  }
-});
-
-
-$('#Dcshare1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Dcshare1').bootstrapSwitch("state")===false){
-    $('.Dcshare1Opt').prop("disabled",true);
-  }
-  else{
-    $('.Dcshare1Opt').prop("disabled",false);
+  else {
+    $('.Dact2Opt').prop("disabled", false);
   }
 });
 
 
+$('#Dcshare1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Dcshare1').bootstrapSwitch("state") === false) {
+    $('.Dcshare1Opt').prop("disabled", true);
+  }
+  else {
+    $('.Dcshare1Opt').prop("disabled", false);
+  }
+});
 
 
-
-
-
-//Calculate points now
-
-//AtargetPoint
+//Calculate A targetPoint
 var Abasepoint = 13;
-var AtargetPoint = 0;
-$("#AparkingInput").on("input",function(e){
+$("#AparkingInput").on("input", function (e) {
   AparkingSpaceInput = $("#AparkingInput").val();
-  if (AparkingSpaceInput < 0 ){
-    AtargetPoint = 0;
+  if (AparkingSpaceInput < 0) {
+    Atargetpoint = 0;
     alert("Your input of Accessory Parking Spaces is not valid. It should be greater than or equal to 0");
-    $("#pointtarget").html("not valid");
+    $("#Atargetpoint").html("not valid");
   }
 
 
-  if (AparkingSpaceInput <= 4 & AparkingSpaceInput >=0 ){
-    AtargetPoint = Abasepoint;
-    $("#pointtarget").html(AtargetPoint.toString());
+  if (AparkingSpaceInput <= 4 & AparkingSpaceInput >= 0) {
+    Atargetpoint = Abasepoint;
+    $("#Atargetpoint").html(Atargetpoint.toString());
   }
 
-  if (AparkingSpaceInput <=116 & AparkingSpaceInput > 4 ){
-    AtargetPoint = Abasepoint + Math.ceil(AparkingSpaceInput/2)-2;
-    $("#pointtarget").html(AtargetPoint.toString());
+  if (AparkingSpaceInput <= 116 & AparkingSpaceInput > 4) {
+    Atargetpoint = Abasepoint + Math.ceil(AparkingSpaceInput / 2) - 2;
+    $("#Atargetpoint").html(Atargetpoint.toString());
   }
 
-  if (AparkingSpaceInput > 116 ){
-    AtargetPoint = Abasepoint + 57;
-    $("#pointtarget").html(AtargetPoint.toString());
+  if (AparkingSpaceInput > 116) {
+    Atargetpoint = Abasepoint + 57;
+    $("#Atargetpoint").html(Atargetpoint.toString());
   }
-  $("#AtargetPointTodatabase").val(AtargetPoint.toString());
+  $("#AtargetPointTodatabase").val(Atargetpoint.toString());
 });
 
 
 //BtargetPoint
 var Bbasepoint = 13;
-var BtargetPoint = 0;
-$("#BparkingInput").on("input",function(e){
+$("#BparkingInput").on("input", function (e) {
   var BparkingSpaceInput = $("#BparkingInput").val();
 
 
-  if (BparkingSpaceInput < 0 ){
-    BtargetPoint = 0;
+  if (BparkingSpaceInput < 0) {
+    Btargetpoint = 0;
     alert("Your input of Accessory Parking Spaces is not valid. It should be greater than or equal to 0");
-    $("#pointtarget").html("not valid");
+    $("#Btargetpoint").html("not valid");
   }
 
 
-  if (BparkingSpaceInput <= 20 & BparkingSpaceInput >=0 ){
-    BtargetPoint = Bbasepoint;
-    $("#pointtarget").html(BtargetPoint.toString());
+  if (BparkingSpaceInput <= 20 & BparkingSpaceInput >= 0) {
+    Btargetpoint = Bbasepoint;
+    $("#Btargetpoint").html(Btargetpoint.toString());
   }
 
-  if (BparkingSpaceInput <=540 & BparkingSpaceInput > 20 ){
-    BtargetPoint = Bbasepoint + Math.ceil(BparkingSpaceInput/10)-2;
-    $("#pointtarget").html(BtargetPoint.toString());
+  if (BparkingSpaceInput <= 540 & BparkingSpaceInput > 20) {
+    Btargetpoint = Bbasepoint + Math.ceil(BparkingSpaceInput / 10) - 2;
+    $("#Btargetpoint").html(Btargetpoint.toString());
   }
 
 
-  if (BparkingSpaceInput > 540 ){
-    BtargetPoint = Bbasepoint + 53;
-    $("#pointtarget").html(BtargetPoint.toString());
+  if (BparkingSpaceInput > 540) {
+    Btargetpoint = Bbasepoint + 53;
+    $("#Btargetpoint").html(Btargetpoint.toString());
   }
 
 });
-
-
 
 
 //CtargetPoint
 var Cbasepoint = 13;
-var CtargetPoint = 0;
-$("#CparkingInput").on("input",function(e){
+$("#CparkingInput").on("input", function (e) {
   var CparkingSpaceInput = $("#CparkingInput").val();
 
 
-  if (CparkingSpaceInput < 0 ){
-    CtargetPoint = 0;
+  if (CparkingSpaceInput < 0) {
+    Ctargetpoint = 0;
     alert("Your input of Accessory Parking Spaces is not valid. It should be greater than or equal to 0");
-    $("#pointtarget").html("not valid");
+    $("#Ctargetpoint").html("not valid");
   }
 
 
-  if (CparkingSpaceInput <= 20 & CparkingSpaceInput >=0 ){
-    CtargetPoint = Cbasepoint;
-    $("#pointtarget").html(CtargetPoint.toString());
+  if (CparkingSpaceInput <= 20 & CparkingSpaceInput >= 0) {
+    Ctargetpoint = Cbasepoint;
+    $("#Ctargetpoint").html(Ctargetpoint.toString());
   }
 
-  if (CparkingSpaceInput <=570 & CparkingSpaceInput > 20 ){
-    CtargetPoint = Cbasepoint + Math.ceil(CparkingSpaceInput/10)-2;
-    $("#pointtarget").html(CtargetPoint.toString());
+  if (CparkingSpaceInput <= 570 & CparkingSpaceInput > 20) {
+    Ctargetpoint = Cbasepoint + Math.ceil(CparkingSpaceInput / 10) - 2;
+    $("#Ctargetpoint").html(Ctargetpoint.toString());
   }
 
 
-  if (CparkingSpaceInput > 570 ){
-    CtargetPoint = Cbasepoint + 56;
-    $("#pointtarget").html(CtargetPoint.toString());
+  if (CparkingSpaceInput > 570) {
+    Ctargetpoint = Cbasepoint + 56;
+    $("#Ctargetpoint").html(Ctargetpoint.toString());
   }
 
 });
 
 
-
-
 //DtargetPoint
-var DtargetPoint = 3;
+Dtargetpoint = 3;
+$("#Dtargetpoint").html(Dtargetpoint.toString());
 
 
-
-
+//Calculate current point
 //Apkg1
-//Change Neighborhood Parking Rate and location category based on input for both Apkg1
 
-$("#TAZinput").change(function(){
+$("#TAZinput").change(function () {
   var iffind = 0;
   var tazinput = $(this).text();
-  $.each(parkingrate, function(i,v) {
+  $.each(parkingrate, function (i, v) {
     if (v.TAZ == tazinput) {
       $("#Apkg1rate").html(v.NonResParkingRate);
       NeighborParking = v.NonResParkingRate;
-      if (NeighborParking > 1.4){
+      if (NeighborParking > 1.4) {
         $("#Apkg1loc").html("A");
       }
-      if (NeighborParking <= 1.4 & NeighborParking > 1){
+      if (NeighborParking <= 1.4 & NeighborParking > 1) {
         $("#Apkg1loc").html("B");
       }
-      if (NeighborParking > 0.6 & NeighborParking <=1){
+      if (NeighborParking > 0.6 & NeighborParking <= 1) {
         $("#Apkg1loc").html("C");
       }
-      if (NeighborParking > 0.2 & NeighborParking <= 0.6){
+      if (NeighborParking > 0.2 & NeighborParking <= 0.6) {
         $("#Apkg1loc").html("D");
       }
-      if (NeighborParking <= 0.2){
+      if (NeighborParking <= 0.2) {
         $("#Apkg1loc").html("E");
       }
 
@@ -6449,695 +6487,718 @@ $("#TAZinput").change(function(){
       return;
     }
 
-    if (iffind === 0){
+    if (iffind === 0) {
       $("#Apkg1rate").html("TAZ error");
     }
   })
   updateApkg1();
 });
 
-
-
-$('#Apkg1').on('switchChange.bootstrapSwitch', function(event, state) {
+$('#Apkg1').on('switchChange.bootstrapSwitch', function (event, state) {
   updateApkg1();
 });
 
-function updateApkg1(){
-  if ($('#Apkg1').bootstrapSwitch("state")===true){
-    if ($('#AparkingInput') <= 0 | $('#AparkingInput') === ""){
+function updateApkg1() {
+  if ($('#Apkg1').bootstrapSwitch("state") === true) {
+    if ($('#AparkingInput').val() <= 0 | $('#AparkingInput').val() === "") {
       Apkg1point = 0;
     }
-    else{
-      if (NeighborParking > 1.4){
+    else {
+      if (NeighborParking > 1.4) {
         Apkg1point = 1;
       }
-      if (NeighborParking > 1 & NeighborParking <= 1.4){
+      if (NeighborParking > 1 & NeighborParking <= 1.4) {
         Apkg1point = 2;
       }
-      if (NeighborParking > 0.6 & NeighborParking <= 1){
+      if (NeighborParking > 0.6 & NeighborParking <= 1) {
         Apkg1point = 3;
       }
-      if (NeighborParking > 0.2 & NeighborParking <= 0.6){
+      if (NeighborParking > 0.2 & NeighborParking <= 0.6) {
         Apkg1point = 4;
       }
-      if (NeighborParking >0  & NeighborParking <= 0.2){
+      if (NeighborParking > 0 & NeighborParking <= 0.2) {
         Apkg1point = 5;
       }
     }
-    // $('#Apkg1measurepoint').html('+'+Apkg1point);
+    $('#Apkg1pointdiv').html('+' + Apkg1point);
   }
-  else{
+  else {
     Apkg1point = 0;
-    // $('#Apkg1measurepoint').html('');
+    $('#Apkg1pointdiv').html('');
   }
   UpdateCurPoint();
 }
 
 
-
 //Apkg2
-$('#Apkg2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Apkg2').bootstrapSwitch("state")===true){
-    pointnow += 2;
-    console.log(pointnow);
+$('#Apkg2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Apkg2').bootstrapSwitch("state") === true) {
+    Apkg2point = 2;
+    $('#Apkg2pointdiv').html('+' + Apkg2point);
+
   }
-  else{
-    pointnow -= 2;
+  else {
+    Apkg2point = 0;
+    $('#Apkg2pointdiv').html('');
+
   }
+  UpdateCurPoint();
 
 });
 
 
 //Apkg3
-$('#Apkg3').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Apkg3').bootstrapSwitch("state")===true){
-    pointnow += 2;
+$('#Apkg3').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Apkg3').bootstrapSwitch("state") === true) {
+    Apkg3point = 2;
+    $('#Apkg3pointdiv').html('+' + Apkg3point);
   }
-  else{
-    pointnow -= 2;
+  else {
+    Apkg3point = 0;
+    $('#Apkg3pointdiv').html('');
   }
 
 });
 
 //Apkg4
 //Change Neighborhood Parking Rate, Project parking rate and location category based on input
-var OccupiedArea = 0;
-var ProjectParkRate = 0;
+var AOccupiedArea = 0;
+var AProjectParkRate = 0;
 
-$("#TAZinput").change("input",function(e){
+$("#TAZinput").change("input", function (e) {
   $("#Apkg4rate").html(NeighborParking.toString());
-  updateProjectParking();
+  AupdateProjectParking();
   updateApkg4();
 })
 
-$("#AoccupyareaInput").on("input",function(e){
-  OccupiedArea = $("#AoccupyareaInput").val();
-  updateProjectParking();
+$("#AoccupyareaInput").on("input", function (e) {
+  AOccupiedArea = $("#AoccupyareaInput").val();
+  AupdateProjectParking();
   updateApkg4();
 })
 
-$("#AparkingInput").on("input",function(e){
+$("#AparkingInput").on("input", function (e) {
   AparkingSpaceInput = $("#AparkingInput").val();
-  updateProjectParking();
+  AupdateProjectParking();
   updateApkg4();
 })
 
-function updateProjectParking(){
-  ProjectParkRate = AparkingSpaceInput/(OccupiedArea/1000);
-  $("#Apkg4projectrate").html(ProjectParkRate.toFixed(2).toString());
+function AupdateProjectParking() {
+  AProjectParkRate = AparkingSpaceInput / (AOccupiedArea / 1000);
+  $("#Apkg4projectrate").html(AProjectParkRate.toFixed(2).toString());
 }
 
 
-function updateApkg4(){
-  if ( ProjectParkRate > NeighborParking){
-    pkg4point = 0;
+function updateApkg4() {
+  if (AProjectParkRate > NeighborParking) {
+    Apkg4point = 0;
     $('#Apkg4').bootstrapSwitch('disabled', false);
     $('#Apkg4').bootstrapSwitch('state', false);
     $('#Apkg4').bootstrapSwitch('disabled', true);
     $('#Apkg4Opt').html("Parked > neighborhood rate");
 
   }
-  if ( ProjectParkRate ===0 ){
-    pkg4point = 11;
+  if (AProjectParkRate === 0) {
+    Apkg4point = 11;
     $('#Apkg4').bootstrapSwitch('disabled', false);
     $('#Apkg4').bootstrapSwitch('state', true);
     $('#Apkg4').bootstrapSwitch('disabled', true);
     $('#Apkg4Opt').html("Option K");
   }
-  if ((ProjectParkRate<=NeighborParking*0.1) && (ProjectParkRate>0) ){
-    pkg4point = 10;
+  if ((AProjectParkRate <= NeighborParking * 0.1) && (AProjectParkRate > 0)) {
+    Apkg4point = 10;
     $('#Apkg4').bootstrapSwitch('disabled', false);
     $('#Apkg4').bootstrapSwitch('state', true);
     $('#Apkg4').bootstrapSwitch('disabled', true);
     $('#Apkg4Opt').html("Option J");
   }
-  if ( ProjectParkRate<=NeighborParking*0.2 && ProjectParkRate>NeighborParking*0.1 ){
-    pkg4point = 9;
+  if (AProjectParkRate <= NeighborParking * 0.2 && AProjectParkRate > NeighborParking * 0.1) {
+    Apkg4point = 9;
     $('#Apkg4').bootstrapSwitch('disabled', false);
     $('#Apkg4').bootstrapSwitch('state', true);
     $('#Apkg4').bootstrapSwitch('disabled', true);
     $('#Apkg4Opt').html("Option I");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.3) && ProjectParkRate > (NeighborParking*0.2) ){
-    pkg4point = 8;
+  if (AProjectParkRate <= (NeighborParking * 0.3) && AProjectParkRate > (NeighborParking * 0.2)) {
+    Apkg4point = 8;
     $('#Apkg4').bootstrapSwitch('disabled', false);
     $('#Apkg4').bootstrapSwitch('state', true);
     $('#Apkg4').bootstrapSwitch('disabled', true);
     $('#Apkg4Opt').html("Option H");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.4) && ProjectParkRate > (NeighborParking*0.3) ){
-    pkg4point = 7;
+  if (AProjectParkRate <= (NeighborParking * 0.4) && AProjectParkRate > (NeighborParking * 0.3)) {
+    Apkg4point = 7;
     $('#Apkg4').bootstrapSwitch('disabled', false);
     $('#Apkg4').bootstrapSwitch('state', true);
     $('#Apkg4').bootstrapSwitch('disabled', true);
     $('#Apkg4Opt').html("Option G");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.5) && ProjectParkRate > (NeighborParking*0.4) ){
-    pkg4point = 6;
+  if (AProjectParkRate <= (NeighborParking * 0.5) && AProjectParkRate > (NeighborParking * 0.4)) {
+    Apkg4point = 6;
     $('#Apkg4').bootstrapSwitch('disabled', false);
     $('#Apkg4').bootstrapSwitch('state', true);
     $('#Apkg4').bootstrapSwitch('disabled', true);
     $('#Apkg4Opt').html("Option F");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.6) && ProjectParkRate > (NeighborParking*0.5) ){
-    pkg4point = 5;
+  if (AProjectParkRate <= (NeighborParking * 0.6) && AProjectParkRate > (NeighborParking * 0.5)) {
+    Apkg4point = 5;
     $('#Apkg4').bootstrapSwitch('disabled', false);
     $('#Apkg4').bootstrapSwitch('state', true);
     $('#Apkg4').bootstrapSwitch('disabled', true);
     $('#Apkg4Opt').html("Option E");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.7) && ProjectParkRate > (NeighborParking*0.6) ){
-    pkg4point = 4;
+  if (AProjectParkRate <= (NeighborParking * 0.7) && AProjectParkRate > (NeighborParking * 0.6)) {
+    Apkg4point = 4;
     $('#Apkg4').bootstrapSwitch('disabled', false);
     $('#Apkg4').bootstrapSwitch('state', true);
     $('#Apkg4').bootstrapSwitch('disabled', true);
     $('#Apkg4Opt').html("Option D");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.8) && ProjectParkRate > (NeighborParking*0.7) ){
-    pkg4point = 3;
+  if (AProjectParkRate <= (NeighborParking * 0.8) && AProjectParkRate > (NeighborParking * 0.7)) {
+    Apkg4point = 3;
     $('#Apkg4').bootstrapSwitch('disabled', false);
     $('#Apkg4').bootstrapSwitch('state', true);
     $('#Apkg4').bootstrapSwitch('disabled', true);
     $('#Apkg4Opt').html("Option C");
 
   }
-  if ( ProjectParkRate <= (NeighborParking*0.9) && ProjectParkRate > (NeighborParking*0.8) ){
-    pkg4point = 2;
+  if (AProjectParkRate <= (NeighborParking * 0.9) && AProjectParkRate > (NeighborParking * 0.8)) {
+    Apkg4point = 2;
     $('#Apkg4').bootstrapSwitch('disabled', false);
     $('#Apkg4').bootstrapSwitch('state', true);
     $('#Apkg4').bootstrapSwitch('disabled', true);
     $('#Apkg4Opt').html("Option B");
 
   }
-  if ( ProjectParkRate <= (NeighborParking*1) && ProjectParkRate > (NeighborParking*0.9) ){
-    pkg4point = 1;
+  if (AProjectParkRate <= (NeighborParking * 1) && AProjectParkRate > (NeighborParking * 0.9)) {
+    Apkg4point = 1;
     $('#Apkg4').bootstrapSwitch('disabled', false);
     $('#Apkg4').bootstrapSwitch('state', true);
     $('#Apkg4').bootstrapSwitch('disabled', true);
     $('#Apkg4Opt').html("Option A");
 
   }
-  console.log(pkg4point);
   UpdateCurPoint();
 }
 
 
-
-
 //Aact1
-$('#Aact1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Aact1').bootstrapSwitch("state")===false){
-    $('.Aact1Opt').prop('checked',false);
-    pointnow -= Aact1pre;
-
-    Aact1pre = 0;
-
+$('#Aact1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Aact1').bootstrapSwitch("state") === false) {
+    $('.Aact1Opt').prop('checked', false);
+    Aact1point = 0;
+    $('#Aact1pointdiv').html('');
+    UpdateCurPoint();
   }
 });
 
-var Aact1pre = 0;
-$('.Aact1Opt').change(function() {
-  switch($("input[name = Aact1Opt]:checked").val()){
+$('.Aact1Opt').change(function () {
+  switch ($("input[name = Aact1Opt]:checked").val()) {
     case "1":
-      pointnow -= Aact1pre;
-      pointnow += 1;
-      Aact1pre = 1;
+      Aact1point = 1;
+      $('#Aact1pointdiv').html('+' + Aact1point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Aact1pre;
-      pointnow += 2;
-      Aact1pre = 2;
+      Aact1point = 1;
+      $('#Aact1pointdiv').html('+' + Aact1point);
+      UpdateCurPoint();
       break;
-    default:
-      alert("no value");
-
-  };
-
+  }
+  ;
 });
 
 
 //Aact2
-$('#Aact2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Aact2').bootstrapSwitch("state")===false){
-    $('.Aact2Opt').prop('checked',false);
-    pointnow -= Aact2pre;
-
-    Aact2pre = 0;
+$('#Aact2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Aact2').bootstrapSwitch("state") === false) {
+    $('.Aact2Opt').prop('checked', false);
+    Aact2point = 0;
+    $('#Aact2pointdiv').html('');
+    UpdateCurPoint();
 
   }
 });
 
-var Aact2pre = 0;
-$('.Aact2Opt').change(function() {
-  switch($("input[name = Aact2Opt]:checked").val()){
+$('.Aact2Opt').change(function () {
+  switch ($("input[name = Aact2Opt]:checked").val()) {
     case "1":
-      pointnow -= Aact2pre;
-      pointnow += 1;
-      Aact2pre = 1;
+      Aact2point = 1;
+      $('#Aact2pointdiv').html('+' + Aact2point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Aact2pre;
-      pointnow += 2;
-      Aact2pre = 2;
+      Aact2point = 2;
+      $('#Aact2pointdiv').html('+' + Aact2point);
+      UpdateCurPoint();
       break;
     case "3":
-      pointnow -= Aact2pre;
-      pointnow += 3;
-      Aact2pre = 3;
+      Aact2point = 3;
+      $('#Aact2pointdiv').html('+' + Aact2point);
+      UpdateCurPoint();
       break;
     case "4":
-      pointnow -= Aact2pre;
-      pointnow += 4;
-      Aact2pre = 4;
+      Aact2point = 4;
+      $('#Aact2pointdiv').html('+' + Aact2point);
+      UpdateCurPoint();
       break;
     default:
       alert("no value");
 
-  };
+  }
+  ;
 
 });
 
 //Aact3
-$('#Aact3').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Aact3').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Aact3').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Aact3').bootstrapSwitch("state") === true) {
+    Aact3point = 1;
+    $('#Aact3pointdiv').html('+' + Aact3point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Aact3point = 0;
+    $('#Aact3pointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 //Aact4
-$('#Aact4').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Aact4').bootstrapSwitch("state")===false){
-    $('.Aact4Opt').prop('checked',false);
-    pointnow -= Aact4pre;
-
-    Aact4pre = 0;
+$('#Aact4').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Aact4').bootstrapSwitch("state") === false) {
+    $('.Aact4Opt').prop('checked', false);
+    Aact4point = 0;
+    $('#Aact4pointdiv').html('');
+    UpdateCurPoint();
 
   }
 });
 
-var Aact4pre = 0;
-$('.Aact4Opt').change(function() {
-  switch($("input[name = Aact4Opt]:checked").val()){
+$('.Aact4Opt').change(function () {
+  switch ($("input[name = Aact4Opt]:checked").val()) {
     case "1":
-      pointnow -= Aact4pre;
-      pointnow += 1;
-      Aact4pre = 1;
+      Aact4point = 1;
+      $('#Aact4pointdiv').html('+' + Aact4point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Aact4pre;
-      pointnow += 2;
-      Aact4pre = 2;
+      Aact4point = 2;
+      $('#Aact4pointdiv').html('+' + Aact4point);
+      UpdateCurPoint();
       break;
     default:
       alert("no value");
 
-  };
+  }
+  ;
 
 });
 
 //Aact5a
-$('#Aact5a').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Aact5a').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Aact5a').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Aact5a').bootstrapSwitch("state") === true) {
+    Aact5apoint = 1;
+    $('#Aact5apointdiv').html('+' + Aact5apoint);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Aact5apoint = 0;
+    $('#Aact5apointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 //Aact5b
-$('#Aact5b').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Aact5b').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Aact5b').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Aact5b').bootstrapSwitch("state") === true) {
+    Aact5bpoint = 1;
+    $('#Aact5bpointdiv').html('+' + Aact5bpoint);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Aact5bpoint = 0;
+    $('#Aact5bpointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 //Aact6
-$('#Aact6').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Aact6').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Aact6').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Aact6').bootstrapSwitch("state") === true) {
+    Aact6point = 1;
+    $('#Aact6pointdiv').html('+' + Aact6point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Aact6point = 0;
+    $('#Aact6pointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 //Aact7
-$('#Aact7').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Aact7').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Aact7').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Aact7').bootstrapSwitch("state") === true) {
+    Aact7point = 1;
+    $('#Aact7pointdiv').html('+' + Aact7point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Aact7point = 0;
+    $('#Aact7pointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
-
 
 
 //Acshare1
-$('#Acshare1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Acshare1').bootstrapSwitch("state")===false){
-    $('.Acshare1Opt').prop('checked',false);
-    pointnow -= Acshare1pre;
-
-    Acshare1pre = 0;
-
+$('#Acshare1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Acshare1').bootstrapSwitch("state") === false) {
+    $('.Acshare1Opt').prop('checked', false);
+    Acshare1point = 0;
+    $('#Acshare1pointdiv').html('');
+    UpdateCurPoint();
   }
 });
 
-var Acshare1pre = 0;
-$('.Acshare1Opt').change(function() {
-  switch($("input[name = Acshare1Opt]:checked").val()){
+$('.Acshare1Opt').change(function () {
+  switch ($("input[name = Acshare1Opt]:checked").val()) {
     case "1":
-      pointnow -= Acshare1pre;
-      pointnow += 1;
-      Acshare1pre = 1;
+      Acshare1point = 1;
+      $('#Acshare1pointdiv').html('+' + Acshare1point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Acshare1pre;
-      pointnow += 2;
-      Acshare1pre = 2;
+      Acshare1point = 2;
+      $('#Acshare1pointdiv').html('+' + Acshare1point);
+      UpdateCurPoint();
       break;
     case "3":
-      pointnow -= Acshare1pre;
-      pointnow += 3;
-      Acshare1pre = 3;
+      Acshare1point = 3;
+      $('#Acshare1pointdiv').html('+' + Acshare1point);
+      UpdateCurPoint();
       break;
     case "4":
-      pointnow -= Acshare1pre;
-      pointnow += 4;
-      Acshare1pre = 4;
+      Acshare1point = 4;
+      $('#Acshare1pointdiv').html('+' + Acshare1point);
+      UpdateCurPoint();
       break;
     case "5":
-      pointnow -= Acshare1pre;
-      pointnow += 5;
-      Acshare1pre = 5;
+      Acshare1point = 5;
+      $('#Acshare1pointdiv').html('+' + Acshare1point);
+      UpdateCurPoint();
       break;
     default:
       alert("no value");
 
-  };
+  }
+  ;
 
 });
 
 
-
 //Adeli1
-$('#Adeli1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Adeli1').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Adeli1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Adeli1').bootstrapSwitch("state") === true) {
+    Adeli1point = 1;
+    $('#Adeli1pointdiv').html('+' + Adeli1point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Adeli1point = 0;
+    $('#Adeli1pointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 
 //Adeli2
-$('#Adeli2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Adeli2').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Adeli2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Adeli2').bootstrapSwitch("state") === true) {
+    Adeli2point = 1;
+    $('#Adeli2pointdiv').html('+' + Adeli2point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Adeli2point = 0;
+    $('#Adeli2pointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 //Afam2
-$('#Afam2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Afam2').bootstrapSwitch("state")===true){
-    pointnow += 2;
-    console.log(pointnow);
+$('#Afam2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Afam2').bootstrapSwitch("state") === true) {
+    Afam2point = 2;
+    $('#Afam2pointdiv').html('+' + Afam2point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 2;
+  else {
+    Afam2point = 0;
+    $('#Afam2pointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
-
 
 
 //Ahov1
-$('#Ahov1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Ahov1').bootstrapSwitch("state")===false){
-    $('.Ahov1Opt').prop('checked',false);
-    pointnow -= Ahov1pre;
-
-    Ahov1pre = 0;
-
+$('#Ahov1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Ahov1').bootstrapSwitch("state") === false) {
+    $('.Ahov1Opt').prop('checked', false);
+    Ahov1point = 0;
+    $('#Ahov1pointdiv').html('');
+    UpdateCurPoint();
   }
 });
 
-var Ahov1pre = 0;
-$('.Ahov1Opt').change(function() {
-  switch($("input[name = Ahov1Opt]:checked").val()){
+$('.Ahov1Opt').change(function () {
+  switch ($("input[name = Ahov1Opt]:checked").val()) {
     case "1":
-      pointnow -= Ahov1pre;
-      pointnow += 2;
-      Ahov1pre = 2;
+      Ahov1point = 2;
+      $('#Ahov1pointdiv').html('+' + Ahov1point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Ahov1pre;
-      pointnow += 4;
-      Ahov1pre = 4;
+      Ahov1point = 4;
+      $('#Ahov1pointdiv').html('+' + Ahov1point);
+      UpdateCurPoint();
       break;
     case "3":
-      pointnow -= Ahov1pre;
-      pointnow += 6;
-      Ahov1pre = 6;
+      Ahov1point = 6;
+      $('#Ahov1pointdiv').html('+' + Ahov1point);
+      UpdateCurPoint();
       break;
     case "4":
-      pointnow -= Ahov1pre;
-      pointnow += 8;
-      Ahov1pre = 8;
+      Ahov1point = 8;
+      $('#Ahov1pointdiv').html('+' + Ahov1point);
+      UpdateCurPoint();
       break;
     default:
 
-  };
+  }
+  ;
 
 });
 
 
 //Ahov2
-$('#Ahov2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Ahov2').bootstrapSwitch("state")===false){
-    $('.Ahov2Opt').prop('checked',false);
-    pointnow -= Ahov2pre;
-
-    Ahov2pre = 0;
-
+$('#Ahov2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Ahov2').bootstrapSwitch("state") === false) {
+    $('.Ahov2Opt').prop('checked', false);
+    Ahov2point = 0;
+    $('#Ahov2pointdiv').html('');
+    UpdateCurPoint();
   }
 });
 
-var Ahov2pre = 0;
-$('.Ahov2Opt').change(function() {
-  switch($("input[name = Ahov2Opt]:checked").val()){
+$('.Ahov2Opt').change(function () {
+  switch ($("input[name = Ahov2Opt]:checked").val()) {
     case "1":
-      pointnow -= Ahov2pre;
-      pointnow += 7;
-      Ahov2pre = 7;
+      Ahov2point = 7;
+      $('#Ahov2pointdiv').html('+' + Ahov2point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Ahov2pre;
-      pointnow += 14;
-      Ahov2pre = 14;
+      Ahov2point = 14;
+      $('#Ahov2pointdiv').html('+' + Ahov2point);
+      UpdateCurPoint();
       break;
     default:
       alert("no value")
-  };
+  }
+  ;
 
 });
 
 
 //Ahov3
-$("#AgrossareaInput").on("input",function(e){
+$("#AgrossareaInput").on("input", function (e) {
   updateAhov3();
 });
 
 
-$('#Ahov3').on('switchChange.bootstrapSwitch', function(event, state) {
+$('#Ahov3').on('switchChange.bootstrapSwitch', function (event, state) {
   updateAhov3();
 });
 
-function updateAhov3(){
-  var grossareaInput = $("#AgrossareaInput").val();
-  console.log(grossareaInput);
-  if ($('#Ahov3').bootstrapSwitch("state")===true){
-    if(grossareaInput < 100000){
-      $('#hov3Opt').html("Option A");
-      hov3point = 1;
+function updateAhov3() {
+  var AgrossareaInput = $("#AgrossareaInput").val();
+  console.log(AgrossareaInput);
+  if ($('#Ahov3').bootstrapSwitch("state") === true) {
+    if (AgrossareaInput < 100000) {
+      $('#Ahov3Opt').html("Option A");
+      Ahov3point = 1;
+      $('#Ahov3pointdiv').html('+' + Ahov3point);
       UpdateCurPoint();
     }
-    if(grossareaInput >= 100000 & grossareaInput < 200000 ){
-      $('#hov3Opt').html("Option B");
-      hov3point = 2;
+    if (AgrossareaInput >= 100000 & AgrossareaInput < 200000) {
+      $('#Ahov3Opt').html("Option B");
+      Ahov3point = 2;
+      $('#Ahov3pointdiv').html('+' + Ahov3point);
       UpdateCurPoint();
     }
-    if(grossareaInput >= 200000 & grossareaInput < 300000 ){
-      $('#hov3Opt').html("Option C");
-      hov3point = 3;
+    if (AgrossareaInput >= 200000 & AgrossareaInput < 300000) {
+      $('#Ahov3Opt').html("Option C");
+      Ahov3point = 3;
+      $('#Ahov3pointdiv').html('+' + Ahov3point);
       UpdateCurPoint();
     }
-    if(grossareaInput >= 300000 & grossareaInput < 400000 ){
-      $('#hov3Opt').html("Option D");
-      hov3point = 4;
+    if (AgrossareaInput >= 300000 & AgrossareaInput < 400000) {
+      $('#Ahov3Opt').html("Option D");
+      Ahov3point = 4;
+      $('#Ahov3pointdiv').html('+' + Ahov3point);
       UpdateCurPoint();
     }
-    if(grossareaInput >= 400000 & grossareaInput < 500000 ){
-      $('#hov3Opt').html("Option E");
-      hov3point = 5;
+    if (AgrossareaInput >= 400000 & AgrossareaInput < 500000) {
+      $('#Ahov3Opt').html("Option E");
+      Ahov3point = 5;
+      $('#Ahov3pointdiv').html('+' + Ahov3point);
       UpdateCurPoint();
     }
-    if(grossareaInput >= 500000 & grossareaInput < 600000 ){
-      $('#hov3Opt').html("Option F");
-      hov3point = 6;
+    if (AgrossareaInput >= 500000 & AgrossareaInput < 600000) {
+      $('#Ahov3Opt').html("Option F");
+      Ahov3point = 6;
+      $('#Ahov3pointdiv').html('+' + Ahov3point);
       UpdateCurPoint();
     }
-    if(grossareaInput >= 600000 ){
-      $('#hov3Opt').html("Option G");
-      hov3point = 7;
+    if (AgrossareaInput >= 600000) {
+      $('#Ahov3Opt').html("Option G");
+      Ahov3point = 7;
+      $('#Ahov3pointdiv').html('+' + Ahov3point);
       UpdateCurPoint();
     }
-
 
 
   }
-  else{
-    hov3point = 0;
-    $('#hov3Opt').html("")
+  else {
+    Ahov3point = 0;
+    $('#Ahov3Opt').html("")
     UpdateCurPoint();
   }
 
-  console.log(hov3point);
 
 }
 
 //Ainfo1
-$('#Ainfo1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Ainfo1').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Ainfo1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Ainfo1').bootstrapSwitch("state") === true) {
+    Ainfo1point = 1;
+    $('#Ainfo1pointdiv').html('+' + Ainfo1point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Ainfo1point = 0;
+    $('#Ainfo1pointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 //Ainfo2
-$('#Ainfo2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Ainfo2').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Ainfo2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Ainfo2').bootstrapSwitch("state") === true) {
+    Ainfo2point = 1;
+    $('#Ainfo2pointdiv').html('+' + Ainfo2point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Ainfo2point = 0;
+    $('#Ainfo2pointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 
 //Ainfo3
-$('#Ainfo3').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Ainfo3').bootstrapSwitch("state")===false){
-    $('.Ainfo3Opt').prop('checked',false);
-    pointnow -= Ainfo3pre;
-
-    Ainfo3pre = 0;
+$('#Ainfo3').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Ainfo3').bootstrapSwitch("state") === false) {
+    $('.Ainfo3Opt').prop('checked', false);
+    Ainfo3point = 0;
+    $('#Ainfo3pointdiv').html('');
+    UpdateCurPoint();
 
   }
 });
 
-var Ainfo3pre = 0;
-$('.Ainfo3Opt').change(function() {
-  switch($("input[name = Ainfo3Opt]:checked").val()){
+$('.Ainfo3Opt').change(function () {
+  switch ($("input[name = Ainfo3Opt]:checked").val()) {
     case "1":
-      pointnow -= Ainfo3pre;
-      pointnow += 1;
-      Ainfo3pre = 1;
+      Ainfo3point = 1;
+      $('#Ainfo3pointdiv').html('+' + Ainfo3point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Ainfo3pre;
-      pointnow += 2;
-      Ainfo3pre = 2;
+      Ainfo3point = 2;
+      $('#Ainfo3pointdiv').html('+' + Ainfo3point);
+      UpdateCurPoint();
       break;
     case "3":
-      pointnow -= Ainfo3pre;
-      pointnow += 3;
-      Ainfo3pre = 3;
+      Ainfo3point = 3;
+      $('#Ainfo3pointdiv').html('+' + Ainfo3point);
+      UpdateCurPoint();
       break;
     case "4":
-      pointnow -= Ainfo3pre;
-      pointnow += 4;
-      Ainfo3pre = 4;
+      Ainfo3point = 4;
+      $('#Ainfo3pointdiv').html('+' + Ainfo3point);
+      UpdateCurPoint();
       break;
     default:
 
-  };
+  }
+  ;
 
 });
 
 
 //Alu1
-$('#Alu1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Alu1').bootstrapSwitch("state")===true){
-    pointnow += 2;
-    console.log(pointnow);
+$('#Alu1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Alu1').bootstrapSwitch("state") === true) {
+    Alu1point = 1;
+    $('#Alu1pointdiv').html('+' + Alu1point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 2;
+  else {
+    Alu1point = 0;
+    $('#Alu1pointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 
-
-
-
 //Bpkg1
 //Change Neighborhood Parking Rate and location category based on input
-var NeighborParking = 0;
-$("#TAZinput").change("input",function(e){
+$("#TAZinput").change("input", function (e) {
   var iffind = 0;
   var tazinput = $(this).text();
-  $.each(parkingrate, function(i,v) {
+  $.each(parkingrate, function (i, v) {
     if (v.TAZ == tazinput) {
       $("#Bpkg1rate").html(v.NonResParkingRate);
 
       NeighborParking = v.NonResParkingRate;
-      if (NeighborParking > 1.4){
+      if (NeighborParking > 1.4) {
         $("#Bpkg1loc").html("A");
       }
-      if (NeighborParking <= 1.4 & NeighborParking > 1){
+      if (NeighborParking <= 1.4 & NeighborParking > 1) {
         $("#Bpkg1loc").html("B");
       }
-      if (NeighborParking > 0.6 & NeighborParking <=1){
+      if (NeighborParking > 0.6 & NeighborParking <= 1) {
         $("#Bpkg1loc").html("C");
       }
-      if (NeighborParking > 0.2 & NeighborParking <= 0.6){
+      if (NeighborParking > 0.2 & NeighborParking <= 0.6) {
         $("#Bpkg1loc").html("D");
       }
-      if (NeighborParking <= 0.2){
+      if (NeighborParking <= 0.2) {
         $("#Bpkg1loc").html("E");
       }
 
@@ -7145,7 +7206,7 @@ $("#TAZinput").change("input",function(e){
       return;
     }
 
-    if (iffind === 0){
+    if (iffind === 0) {
       $("#Bpkg1rate").html("TAZ error");
     }
   })
@@ -7153,646 +7214,679 @@ $("#TAZinput").change("input",function(e){
 });
 
 
-
-$('#Bpkg1').on('switchChange.bootstrapSwitch', function(event, state) {
+$('#Bpkg1').on('switchChange.bootstrapSwitch', function (event, state) {
   updateBpkg1();
 });
 
-function updateBpkg1(){
-  if ($('#Bpkg1').bootstrapSwitch("state")===true){
-    if ($('#BparkingInput') <= 0 | $('#BparkingInput') === ""){
+function updateBpkg1() {
+  if ($('#Bpkg1').bootstrapSwitch("state") === true) {
+    if ($('#BparkingInput') <= 0 | $('#BparkingInput') === "") {
       Bpkg1point = 0;
     }
-    else{
-      if (NeighborParking > 1.4){
+    else {
+      if (NeighborParking > 1.4) {
         Bpkg1point = 1;
       }
-      if (NeighborParking > 1 & NeighborParking <= 1.4){
+      if (NeighborParking > 1 & NeighborParking <= 1.4) {
         Bpkg1point = 2;
       }
-      if (NeighborParking > 0.6 & NeighborParking <= 1){
+      if (NeighborParking > 0.6 & NeighborParking <= 1) {
         Bpkg1point = 3;
       }
-      if (NeighborParking > 0.2 & NeighborParking <= 0.6){
+      if (NeighborParking > 0.2 & NeighborParking <= 0.6) {
         Bpkg1point = 4;
       }
-      if (NeighborParking >0  & NeighborParking <= 0.2){
+      if (NeighborParking > 0 & NeighborParking <= 0.2) {
         Bpkg1point = 5;
       }
+      $('#Bpkg1pointdiv').html('+' + Bpkg1point);
+
     }
   }
-  else{
+  else {
     Bpkg1point = 0;
+    $('#Bpkg1pointdiv').html('');
+
   }
+
   UpdateCurPoint();
 }
 
 
-
 //Bpkg2
-$('#Bpkg2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Bpkg2').bootstrapSwitch("state")===true){
-    pointnow += 2;
+$('#Bpkg2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Bpkg2').bootstrapSwitch("state") === true) {
+    Bpkg2point = 2;
+    $('#Bpkg2pointdiv').html('+' + Bpkg2point);
   }
-  else{
-    pointnow -= 2;
+  else {
+    Bpkg2point = 0;
+    $('#Bpkg2pointdiv').html('');
   }
 
 });
 
 
 //Bpkg3
-$('#Bpkg3').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Bpkg3').bootstrapSwitch("state")===true){
-    pointnow += 2;
+$('#Bpkg3').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Bpkg3').bootstrapSwitch("state") === true) {
+    Bpkg3point = 2;
+    $('#Bpkg3pointdiv').html('+' + Bpkg3point);
   }
-  else{
-    pointnow -= 2;
+  else {
+    Bpkg3point = 0;
+    $('#Bpkg3pointdiv').html('');
   }
 
 });
 
 //Bpkg4
 //ChBnge Neighborhood Parking Rate, Project parking rate and location category based on input
+var BOccupiedArea = 0;
+var BProjectParkRate = 0;
 
-$("#TAZinput").change("input",function(e){
+$("#TAZinput").change("input", function (e) {
   $("#Bpkg4rate").html(NeighborParking.toString());
-  updateBProjectParking();
+  BupdateProjectParking();
   updateBpkg4();
 })
 
-$("#BoccupyareaInput").on("input",function(e){
+$("#BoccupyareaInput").on("input", function (e) {
   OccupiedArea = $("#BoccupyareaInput").val();
-  updateBProjectParking();
+  BupdateProjectParking();
   updateBpkg4();
 })
 
-$("#BparkingInput").on("input",function(e){
+$("#BparkingInput").on("input", function (e) {
   BparkingSpaceInput = $("#BparkingInput").val();
-  updateBProjectParking();
+  BupdateProjectParking();
   updateBpkg4();
 })
 
-function updateBProjectParking(){
-  ProjectParkRate = BparkingSpaceInput/(OccupiedArea/1000);
-  $("#Bpkg4projectrate").html(ProjectParkRate.toFixed(2).toString());
+function BupdateProjectParking() {
+  BProjectParkRate = BparkingSpaceInput / (BOccupiedArea / 1000);
+  $("#Bpkg4projectrate").html(BProjectParkRate.toFixed(2).toString());
 }
 
 
-function updateBpkg4(){
-  if ( ProjectParkRate > NeighborParking){
-    pkg4point = 0;
+function updateBpkg4() {
+  if (BProjectParkRate > NeighborParking) {
+    Bpkg4point = 0;
     $('#Bpkg4').bootstrapSwitch('disabled', false);
     $('#Bpkg4').bootstrapSwitch('state', false);
     $('#Bpkg4').bootstrapSwitch('disabled', true);
     $('#Bpkg4Opt').html("Parked > neighborhood rate");
 
   }
-  if ( ProjectParkRate ===0 ){
-    pkg4point = 11;
+  if (BProjectParkRate === 0) {
+    Bpkg4point = 11;
     $('#Bpkg4').bootstrapSwitch('disabled', false);
     $('#Bpkg4').bootstrapSwitch('state', true);
     $('#Bpkg4').bootstrapSwitch('disabled', true);
     $('#Bpkg4Opt').html("Option K");
   }
-  if ((ProjectParkRate<=NeighborParking*0.1) && (ProjectParkRate>0) ){
-    pkg4point = 10;
+  if ((BProjectParkRate <= NeighborParking * 0.1) && (BProjectParkRate > 0)) {
+    Bpkg4point = 10;
     $('#Bpkg4').bootstrapSwitch('disabled', false);
     $('#Bpkg4').bootstrapSwitch('state', true);
     $('#Bpkg4').bootstrapSwitch('disabled', true);
     $('#Bpkg4Opt').html("Option J");
   }
-  if ( ProjectParkRate<=NeighborParking*0.2 && ProjectParkRate>NeighborParking*0.1 ){
-    pkg4point = 9;
+  if (BProjectParkRate <= NeighborParking * 0.2 && BProjectParkRate > NeighborParking * 0.1) {
+    Bpkg4point = 9;
     $('#Bpkg4').bootstrapSwitch('disabled', false);
     $('#Bpkg4').bootstrapSwitch('state', true);
     $('#Bpkg4').bootstrapSwitch('disabled', true);
     $('#Bpkg4Opt').html("Option I");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.3) && ProjectParkRate > (NeighborParking*0.2) ){
-    pkg4point = 8;
+  if (BProjectParkRate <= (NeighborParking * 0.3) && BProjectParkRate > (NeighborParking * 0.2)) {
+    Bpkg4point = 8;
     $('#Bpkg4').bootstrapSwitch('disabled', false);
     $('#Bpkg4').bootstrapSwitch('state', true);
     $('#Bpkg4').bootstrapSwitch('disabled', true);
     $('#Bpkg4Opt').html("Option H");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.4) && ProjectParkRate > (NeighborParking*0.3) ){
-    pkg4point = 7;
+  if (BProjectParkRate <= (NeighborParking * 0.4) && BProjectParkRate > (NeighborParking * 0.3)) {
+    Bpkg4point = 7;
     $('#Bpkg4').bootstrapSwitch('disabled', false);
     $('#Bpkg4').bootstrapSwitch('state', true);
     $('#Bpkg4').bootstrapSwitch('disabled', true);
     $('#Bpkg4Opt').html("Option G");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.5) && ProjectParkRate > (NeighborParking*0.4) ){
-    pkg4point = 6;
+  if (BProjectParkRate <= (NeighborParking * 0.5) && BProjectParkRate > (NeighborParking * 0.4)) {
+    Bpkg4point = 6;
     $('#Bpkg4').bootstrapSwitch('disabled', false);
     $('#Bpkg4').bootstrapSwitch('state', true);
     $('#Bpkg4').bootstrapSwitch('disabled', true);
     $('#Bpkg4Opt').html("Option F");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.6) && ProjectParkRate > (NeighborParking*0.5) ){
-    pkg4point = 5;
+  if (BProjectParkRate <= (NeighborParking * 0.6) && BProjectParkRate > (NeighborParking * 0.5)) {
+    Bpkg4point = 5;
     $('#Bpkg4').bootstrapSwitch('disabled', false);
     $('#Bpkg4').bootstrapSwitch('state', true);
     $('#Bpkg4').bootstrapSwitch('disabled', true);
     $('#Bpkg4Opt').html("Option E");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.7) && ProjectParkRate > (NeighborParking*0.6) ){
-    pkg4point = 4;
+  if (BProjectParkRate <= (NeighborParking * 0.7) && BProjectParkRate > (NeighborParking * 0.6)) {
+    Bpkg4point = 4;
     $('#Bpkg4').bootstrapSwitch('disabled', false);
     $('#Bpkg4').bootstrapSwitch('state', true);
     $('#Bpkg4').bootstrapSwitch('disabled', true);
     $('#Bpkg4Opt').html("Option D");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.8) && ProjectParkRate > (NeighborParking*0.7) ){
-    pkg4point = 3;
+  if (BProjectParkRate <= (NeighborParking * 0.8) && BProjectParkRate > (NeighborParking * 0.7)) {
+    Bpkg4point = 3;
     $('#Bpkg4').bootstrapSwitch('disabled', false);
     $('#Bpkg4').bootstrapSwitch('state', true);
     $('#Bpkg4').bootstrapSwitch('disabled', true);
     $('#Bpkg4Opt').html("Option C");
 
   }
-  if ( ProjectParkRate <= (NeighborParking*0.9) && ProjectParkRate > (NeighborParking*0.8) ){
-    pkg4point = 2;
+  if (BProjectParkRate <= (NeighborParking * 0.9) && BProjectParkRate > (NeighborParking * 0.8)) {
+    Bpkg4point = 2;
     $('#Bpkg4').bootstrapSwitch('disabled', false);
     $('#Bpkg4').bootstrapSwitch('state', true);
     $('#Bpkg4').bootstrapSwitch('disabled', true);
     $('#Bpkg4Opt').html("Option B");
 
   }
-  if ( ProjectParkRate <= (NeighborParking*1) && ProjectParkRate > (NeighborParking*0.9) ){
-    pkg4point = 1;
+  if (BProjectParkRate <= (NeighborParking * 1) && BProjectParkRate > (NeighborParking * 0.9)) {
+    Bpkg4point = 1;
     $('#Bpkg4').bootstrapSwitch('disabled', false);
     $('#Bpkg4').bootstrapSwitch('state', true);
     $('#Bpkg4').bootstrapSwitch('disabled', true);
     $('#Bpkg4Opt').html("Option A");
 
   }
-  console.log(pkg4point);
   UpdateCurPoint();
 }
 
 
-
 //Bact1
-$('#Bact1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Bact1').bootstrapSwitch("state")===false){
-    $('.Bact1Opt').prop('checked',false);
-    pointnow -= Bact1pre;
-
-    Bact1pre = 0;
+$('#Bact1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Bact1').bootstrapSwitch("state") === false) {
+    $('.Bact1Opt').prop('checked', false);
+    Bact1point = 0;
+    $('#Bact1pointdiv').html('');
+    UpdateCurPoint();
 
   }
 });
 
 var Bact1pre = 0;
-$('.Bact1Opt').change(function() {
-  switch($("input[name = Bact1Opt]:checked").val()){
+$('.Bact1Opt').change(function () {
+  switch ($("input[name = Bact1Opt]:checked").val()) {
     case "1":
-      pointnow -= Bact1pre;
-      pointnow += 1;
-      Bact1pre = 1;
+      Bact1point = 1;
+      $('#Bact1pointdiv').html('+' + Bact1point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Bact1pre;
-      pointnow += 2;
-      Bact1pre = 2;
+      Bact1point = 1;
+      $('#Bact1pointdiv').html('+' + Bact1point);
+      UpdateCurPoint();
       break;
     default:
       alert("no value");
 
-  };
+  }
+  ;
 
 });
 
 
 //Bact2
-$('#Bact2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Bact2').bootstrapSwitch("state")===false){
-    $('.Bact2Opt').prop('checked',false);
-    pointnow -= Bact2pre;
-
-    Bact2pre = 0;
+$('#Bact2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Bact2').bootstrapSwitch("state") === false) {
+    $('.Bact2Opt').prop('checked', false);
+    Bact2point = 0;
+    $('#Bact2pointdiv').html('');
+    UpdateCurPoint();
 
   }
 });
 
 var Bact2pre = 0;
-$('.Bact2Opt').change(function() {
-  switch($("input[name = Bact2Opt]:checked").val()){
+$('.Bact2Opt').change(function () {
+  switch ($("input[name = Bact2Opt]:checked").val()) {
     case "1":
-      pointnow -= Bact2pre;
-      pointnow += 1;
-      Bact2pre = 1;
+      Bact2point = 1;
+      $('#Bact2pointdiv').html('+' + Bact2point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Bact2pre;
-      pointnow += 2;
-      Bact2pre = 2;
+      Bact2point = 2;
+      $('#Bact2pointdiv').html('+' + Bact2point);
+      UpdateCurPoint();
       break;
     case "3":
-      pointnow -= Bact2pre;
-      pointnow += 3;
-      Bact2pre = 3;
+      Bact2point = 3;
+      $('#Bact2pointdiv').html('+' + Bact2point);
+      UpdateCurPoint();
       break;
     case "4":
-      pointnow -= Bact2pre;
-      pointnow += 4;
-      Bact2pre = 4;
+      Bact2point = 4;
+      $('#Bact2pointdiv').html('+' + Bact2point);
+      UpdateCurPoint();
       break;
     default:
       alert("no value");
 
-  };
+  }
+  ;
 
 });
 
 //Bact3
-$('#Bact3').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Bact3').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Bact3').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Bact3').bootstrapSwitch("state") === true) {
+    Bact3point = 1;
+    $('#Bact3pointdiv').html('+' + Bact3point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Bact3point = 0;
+    $('#Bact3pointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 //Bact4
-$('#Bact4').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Bact4').bootstrapSwitch("state")===false){
-    $('.Bact4Opt').prop('checked',false);
-    pointnow -= Bact4pre;
-
-    Bact4pre = 0;
-
+$('#Bact4').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Bact4').bootstrapSwitch("state") === false) {
+    $('.Bact4Opt').prop('checked', false);
+    Bact4point = 0;
+    $('#Bact4pointdiv').html('');
+    UpdateCurPoint();
   }
 });
 
 var Bact4pre = 0;
-$('.Bact4Opt').change(function() {
-  switch($("input[name = Bact4Opt]:checked").val()){
+$('.Bact4Opt').change(function () {
+  switch ($("input[name = Bact4Opt]:checked").val()) {
     case "1":
-      pointnow -= Bact4pre;
-      pointnow += 1;
-      Bact4pre = 1;
+      Bact4point = 1;
+      $('#Bact4pointdiv').html('+' + Bact4point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Bact4pre;
-      pointnow += 2;
-      Bact4pre = 2;
+      Bact4point = 2;
+      $('#Bact4pointdiv').html('+' + Bact4point);
+      UpdateCurPoint();
       break;
     default:
       alert("no value");
 
-  };
+  }
+  ;
 
 });
 
 //Bact5a
-$('#Bact5a').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Bact5a').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Bact5a').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Bact5a').bootstrapSwitch("state") === true) {
+    Bact5apoint = 1;
+    $('#Bact5apointdiv').html('+' + Bact5apoint);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Bact5apoint = 0;
+    $('#Bact5apointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 //Bact5b
-$('#Bact5b').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Bact5b').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Bact5b').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Bact5b').bootstrapSwitch("state") === true) {
+    Bact5bpoint = 1;
+    $('#Bact5bpointdiv').html('+' + Bact5bpoint);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Bact5bpoint = 0;
+    $('#Bact5bpointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 //Bact6
-$('#Bact6').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Bact6').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Bact6').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Bact6').bootstrapSwitch("state") === true) {
+    Bact6point = 1;
+    $('#Bact6pointdiv').html('+' + Bact6point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Bact6point = 0;
+    $('#Bact6pointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 
-
 //Bcshare1
-$('#Bcshare1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Bcshare1').bootstrapSwitch("state")===false){
-    $('.Bcshare1Opt').prop('checked',false);
-    pointnow -= Bcshare1pre;
-
-    Bcshare1pre = 0;
+$('#Bcshare1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Bcshare1').bootstrapSwitch("state") === false) {
+    $('.Bcshare1Opt').prop('checked', false);
+    Bcshare1point = 0;
+    $('#Bcshare1pointdiv').html('');
+    UpdateCurPoint();
 
   }
 });
 
 var Bcshare1pre = 0;
-$('.Bcshare1Opt').change(function() {
-  switch($("input[name = Bcshare1Opt]:checked").val()){
+$('.Bcshare1Opt').change(function () {
+  switch ($("input[name = Bcshare1Opt]:checked").val()) {
     case "1":
-      pointnow -= Bcshare1pre;
-      pointnow += 1;
-      Bcshare1pre = 1;
+      Bcshare1point = 1;
+      $('#Bcshare1pointdiv').html('+' + Bcshare1point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Bcshare1pre;
-      pointnow += 2;
-      Bcshare1pre = 2;
+      Bcshare1point = 2;
+      $('#Bcshare1pointdiv').html('+' + Bcshare1point);
+      UpdateCurPoint();
       break;
     case "3":
-      pointnow -= Bcshare1pre;
-      pointnow += 3;
-      Bcshare1pre = 3;
+      Bcshare1point = 3;
+      $('#Bcshare1pointdiv').html('+' + Bcshare1point);
+      UpdateCurPoint();
       break;
     case "4":
-      pointnow -= Bcshare1pre;
-      pointnow += 4;
-      Bcshare1pre = 4;
+      Bcshare1point = 4;
+      $('#Bcshare1pointdiv').html('+' + Bcshare1point);
+      UpdateCurPoint();
       break;
     case "5":
-      pointnow -= Bcshare1pre;
-      pointnow += 5;
-      Bcshare1pre = 5;
+      Bcshare1point = 5;
+      $('#Bcshare1pointdiv').html('+' + Bcshare1point);
+      UpdateCurPoint();
       break;
     default:
       alert("no value");
 
-  };
+  }
+  ;
 
 });
-
 
 
 //Bdeli1
-$('#Bdeli1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Bdeli1').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Bdeli1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Bdeli1').bootstrapSwitch("state") === true) {
+    Bdeli1point = 1;
+    $('#Bdeli1pointdiv').html('+' + Bdeli1point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Bdeli1point = 0;
+    $('#Bdeli1pointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
-
 
 
 //Bfam2
-$('#Bfam2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Bfam2').bootstrapSwitch("state")===true){
-    pointnow += 2;
-    console.log(pointnow);
+$('#Bfam2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Bfam2').bootstrapSwitch("state") === true) {
+    Bfam2point = 2;
+    $('#Bfam2pointdiv').html('+' + Bfam2point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 2;
+  else {
+    Bfam2point = 0;
+    $('#Bfam2pointdiv').html('');
+    UpdateCurPoint();
   }
+
 
 });
-
 
 
 //Bhov1
-$('#Bhov1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Bhov1').bootstrapSwitch("state")===false){
-    $('.Bhov1Opt').prop('checked',false);
-    pointnow -= Bhov1pre;
-
-    Bhov1pre = 0;
+$('#Bhov1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Bhov1').bootstrapSwitch("state") === false) {
+    $('.Bhov1Opt').prop('checked', false);
+    Bhov1point = 0;
+    $('#Bhov1pointdiv').html('');
+    UpdateCurPoint();
 
   }
 });
 
-var Bhov1pre = 0;
-$('.Bhov1Opt').change(function() {
-  switch($("input[name = Bhov1Opt]:checked").val()){
+$('.Bhov1Opt').change(function () {
+  switch ($("input[name = Bhov1Opt]:checked").val()) {
     case "1":
-      pointnow -= Bhov1pre;
-      pointnow += 2;
-      Bhov1pre = 2;
+      Bhov1point = 2;
+      $('#Bhov1pointdiv').html('+' + Bhov1point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Bhov1pre;
-      pointnow += 4;
-      Bhov1pre = 4;
+      Bhov1point = 4;
+      $('#Bhov1pointdiv').html('+' + Bhov1point);
+      UpdateCurPoint();
       break;
     case "3":
-      pointnow -= Bhov1pre;
-      pointnow += 6;
-      Bhov1pre = 6;
+      Bhov1point = 6;
+      $('#Bhov1pointdiv').html('+' + Bhov1point);
+      UpdateCurPoint();
       break;
     case "4":
-      pointnow -= Bhov1pre;
-      pointnow += 8;
-      Bhov1pre = 8;
+      Bhov1point = 8;
+      $('#Bhov1pointdiv').html('+' + Bhov1point);
+      UpdateCurPoint();
       break;
     default:
 
-  };
+  }
+  ;
 
 });
 
 
 //Bhov2
-$('#Bhov2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Bhov2').bootstrapSwitch("state")===false){
-    $('.Bhov2Opt').prop('checked',false);
-    pointnow -= Bhov2pre;
-
-    Bhov2pre = 0;
-
+$('#Bhov2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Bhov2').bootstrapSwitch("state") === false) {
+    $('.Bhov2Opt').prop('checked', false);
+    Bhov2point = 0;
+    $('#Bhov2pointdiv').html('');
+    UpdateCurPoint();
   }
 });
 
-var Bhov2pre = 0;
-$('.Bhov2Opt').change(function() {
-  switch($("input[name = Bhov2Opt]:checked").val()){
+$('.Bhov2Opt').change(function () {
+  switch ($("input[name = Bhov2Opt]:checked").val()) {
     case "1":
-      pointnow -= Bhov2pre;
-      pointnow += 7;
-      Bhov2pre = 7;
+      Bhov2point = 7;
+      $('#Bhov2pointdiv').html('+' + Bhov2point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Bhov2pre;
-      pointnow += 14;
-      Bhov2pre = 14;
+      Bhov2point = 14;
+      $('#Bhov2pointdiv').html('+' + Bhov2point);
+      UpdateCurPoint();
       break;
     default:
       alert("no value")
-  };
+  }
+  ;
 
 });
 
 
 //Bhov3
-$("#BgrossareaInput").on("input",function(e){
+$("#BgrossareaInput").on("input", function (e) {
   updateBhov3();
 });
 
 
-$('#Bhov3').on('switchChange.bootstrapSwitch', function(event, state) {
+$('#Bhov3').on('switchChange.bootstrapSwitch', function (event, state) {
   updateBhov3();
 });
 
-function updateBhov3(){
-  var grossareaInput = $("#BgrossareaInput").val();
-  console.log(grossareaInput);
-  if ($('#Bhov3').bootstrapSwitch("state")===true){
-    if(grossareaInput < 100000){
-      $('#hov3Opt').html("Option A");
-      hov3point = 1;
+function updateBhov3() {
+  var BgrossareaInput = $("#BgrossareaInput").val();
+  if ($('#Bhov3').bootstrapSwitch("state") === true) {
+    if (BgrossareaInput < 100000) {
+      $('#Bhov3Opt').html("Option A");
+      Bhov3point = 1;
+      $('#Bhov3pointdiv').html('+' + Bhov3point);
       UpdateCurPoint();
     }
-    if(grossareaInput >= 100000 & grossareaInput < 200000 ){
-      $('#hov3Opt').html("Option B");
-      hov3point = 2;
+    if (BgrossareaInput >= 100000 & BgrossareaInput < 200000) {
+      $('#Bhov3Opt').html("Option B");
+      Bhov3point = 2;
+      $('#Bhov3pointdiv').html('+' + Bhov3point);
       UpdateCurPoint();
     }
-    if(grossareaInput >= 200000 & grossareaInput < 300000 ){
-      $('#hov3Opt').html("Option C");
-      hov3point = 3;
+    if (BgrossareaInput >= 200000 & BgrossareaInput < 300000) {
+      $('#Bhov3Opt').html("Option C");
+      Bhov3point = 3;
+      $('#Bhov3pointdiv').html('+' + Bhov3point);
       UpdateCurPoint();
     }
-    if(grossareaInput >= 300000 & grossareaInput < 400000 ){
-      $('#hov3Opt').html("Option D");
-      hov3point = 4;
+    if (BgrossareaInput >= 300000 & BgrossareaInput < 400000) {
+      $('#Bhov3Opt').html("Option D");
+      Bhov3point = 4;
+      $('#Bhov3pointdiv').html('+' + Bhov3point);
       UpdateCurPoint();
     }
-    if(grossareaInput >= 400000 & grossareaInput < 500000 ){
-      $('#hov3Opt').html("Option E");
-      hov3point = 5;
+    if (BgrossareaInput >= 400000 & BgrossareaInput < 500000) {
+      $('#Bhov3Opt').html("Option E");
+      Bhov3point = 5;
+      $('#Bhov3pointdiv').html('+' + Bhov3point);
       UpdateCurPoint();
     }
-    if(grossareaInput >= 500000 & grossareaInput < 600000 ){
-      $('#hov3Opt').html("Option F");
-      hov3point = 6;
+    if (BgrossareaInput >= 500000 & BgrossareaInput < 600000) {
+      $('#Bhov3Opt').html("Option F");
+      Bhov3point = 6;
+      $('#Bhov3pointdiv').html('+' + Bhov3point);
       UpdateCurPoint();
     }
-    if(grossareaInput >= 600000 ){
-      $('#hov3Opt').html("Option G");
-      hov3point = 7;
+    if (BgrossareaInput >= 600000) {
+      $('#Bhov3Opt').html("Option G");
+      Bhov3point = 7;
+      $('#Bhov3pointdiv').html('+' + Bhov3point);
       UpdateCurPoint();
     }
-
 
 
   }
-  else{
-    hov3point = 0;
-    $('#hov3Opt').html("")
+  else {
+    Bhov3point = 0;
+    $('#Bhov3Opt').html("")
     UpdateCurPoint();
   }
 
-  console.log(hov3point);
 
 }
 
 //Binfo1
-$('#Binfo1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Binfo1').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Binfo1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Binfo1').bootstrapSwitch("state") === true) {
+    Binfo1point = 1;
+    $('#Binfo1pointdiv').html('+' + Binfo1point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Binfo1point = 0;
+    $('#Binfo1pointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 //Binfo2
-$('#Binfo2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Binfo2').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Binfo2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Binfo2').bootstrapSwitch("state") === true) {
+    Binfo2point = 1;
+    $('#Binfo2pointdiv').html('+' + Binfo2point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Binfo2point = 0;
+    $('#Binfo2pointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 
 //Binfo3
-$('#Binfo3').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Binfo3').bootstrapSwitch("state")===false){
-    $('.Binfo3Opt').prop('checked',false);
-    pointnow -= Binfo3pre;
-
-    Binfo3pre = 0;
+$('#Binfo3').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Binfo3').bootstrapSwitch("state") === false) {
+    $('.Binfo3Opt').prop('checked', false);
+    Binfo3point = 0;
+    $('#Binfo3pointdiv').html('');
+    UpdateCurPoint();
 
   }
 });
 
 var Binfo3pre = 0;
-$('.Binfo3Opt').change(function() {
-  switch($("input[name = Binfo3Opt]:checked").val()){
+$('.Binfo3Opt').change(function () {
+  switch ($("input[name = Binfo3Opt]:checked").val()) {
     case "1":
-      pointnow -= Binfo3pre;
-      pointnow += 1;
-      Binfo3pre = 1;
+      Binfo3point = 1;
+      $('#Binfo3pointdiv').html('+' + Binfo3point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Binfo3pre;
-      pointnow += 2;
-      Binfo3pre = 2;
+      Binfo3point = 2;
+      $('#Binfo3pointdiv').html('+' + Binfo3point);
+      UpdateCurPoint();
       break;
     case "3":
-      pointnow -= Binfo3pre;
-      pointnow += 3;
-      Binfo3pre = 3;
+      Binfo3point = 3;
+      $('#Binfo3pointdiv').html('+' + Binfo3point);
+      UpdateCurPoint();
       break;
     case "4":
-      pointnow -= Binfo3pre;
-      pointnow += 4;
-      Binfo3pre = 4;
+      Binfo3point = 4;
+      $('#Binfo3pointdiv').html('+' + Binfo3point);
+      UpdateCurPoint();
       break;
     default:
 
-  };
+  }
+  ;
 
 });
-
-
 
 
 //C current point
 
 //Cpkg1
 //Change Neighborhood Parking Rate and location category based on input
-var NeighborParking = 0;
-$("#TAZinput").change("input",function(e){
+var ResNeighborParking = 0;
+$("#TAZinput").change("input", function (e) {
   var iffind = 0;
   var tazinput = $(this).text();
-  $.each(parkingrate, function(i,v) {
+  $.each(parkingrate, function (i, v) {
     if (v.TAZ == tazinput) {
       $("#Cpkg1rate").html(v.ResParkingRateLow);
 
-      NeighborParking = v.ResParkingRateLow;
-      if (NeighborParking > 0.8){
+      ResNeighborParking = v.ResParkingRateLow;
+      if (ResNeighborParking > 0.8) {
         $("#Cpkg1loc").html("A");
       }
-      if (NeighborParking <= 0.8 & NeighborParking > 0.6){
+      if (ResNeighborParking <= 0.8 & ResNeighborParking > 0.6) {
         $("#Cpkg1loc").html("B");
       }
-      if (NeighborParking > 0.4 & NeighborParking <=0.6){
+      if (ResNeighborParking > 0.4 & ResNeighborParking <= 0.6) {
         $("#Cpkg1loc").html("C");
       }
-      if (NeighborParking > 0.2 & NeighborParking <= 0.4){
+      if (ResNeighborParking > 0.2 & ResNeighborParking <= 0.4) {
         $("#Cpkg1loc").html("D");
       }
-      if (NeighborParking <= 0.2){
+      if (ResNeighborParking <= 0.2) {
         $("#Cpkg1loc").html("E");
       }
 
@@ -7800,7 +7894,7 @@ $("#TAZinput").change("input",function(e){
       return;
     }
 
-    if (iffind === 0){
+    if (iffind === 0) {
       $("#Cpkg1rate").html("TAZ error");
     }
   })
@@ -7808,369 +7902,373 @@ $("#TAZinput").change("input",function(e){
 });
 
 
-
-$('#Cpkg1').on('switchChange.bootstrapSwitch', function(event, state) {
+$('#Cpkg1').on('switchChange.bootstrapSwitch', function (event, state) {
   updateCpkg1();
 });
 
-function updateCpkg1(){
-  if ($('#Cpkg1').bootstrapSwitch("state")===true){
-    if ($('#CparkingInput') <= 0 | $('#CparkingInput') === ""){
+function updateCpkg1() {
+  if ($('#Cpkg1').bootstrapSwitch("state") === true) {
+    if ($('#CparkingInput') <= 0 | $('#CparkingInput') === "") {
       Cpkg1point = 0;
     }
-    else{
-      if (NeighborParking > 0.8){
+    else {
+      if (ResNeighborParking > 0.8) {
         Cpkg1point = 1;
       }
-      if (NeighborParking > 0.6 & NeighborParking <= 0.8){
+      if (ResNeighborParking > 0.6 & ResNeighborParking <= 0.8) {
         Cpkg1point = 2;
       }
-      if (NeighborParking > 0.4 & NeighborParking <= 0.6){
+      if (ResNeighborParking > 0.4 & ResNeighborParking <= 0.6) {
         Cpkg1point = 3;
       }
-      if (NeighborParking > 0.2 & NeighborParking <= 0.4){
+      if (ResNeighborParking > 0.2 & ResNeighborParking <= 0.4) {
         Cpkg1point = 4;
       }
-      if (NeighborParking >0  & NeighborParking <= 0.2){
+      if (ResNeighborParking > 0 & ResNeighborParking <= 0.2) {
         Cpkg1point = 5;
       }
     }
+    $('#Cpkg1pointdiv').html('+' + Cpkg1point);
+
   }
-  else{
+  else {
     Cpkg1point = 0;
+    $('#Cpkg1pointdiv').html('');
+
   }
   UpdateCurPoint();
 }
 
 
 //Cpkg4
-//Change Neighborhood Parking Rate, Project parking rate and location category based on input
-
-$("#TAZinput").change("input",function(e){
-  $("#Cpkg4rate").html(NeighborParking.toString());
-  updateCProjectParking();
+var Cunitbed = 0;
+var CProjectParkRate = 0;
+$("#TAZinput").change("input", function (e) {
+  $("#Cpkg4rate").html(ResNeighborParking.toString());
+  CupdateProjectParking();
   updateCpkg4();
 })
 
-$("#Cunitbed").on("input",function(e){
-  PersentageTwoBed = $("#Cunitbed").val();
-  updateCProjectParking();
+$("#Cunitbed").on("input", function (e) {
+  Cunitbed = $("#Cunitbed").val();
+  CupdateProjectParking();
   updateCpkg4();
 })
 
-$("#CparkingInput").on("input",function(e){
+$("#CparkingInput").on("input", function (e) {
   CparkingSpaceInput = $("#CparkingInput").val();
-  updateCProjectParking();
+  CupdateProjectParking();
   updateCpkg4();
 })
 
-function updateCProjectParking(){
-  ProjectParkRate = CparkingSpaceInput/(PersentageTwoBed);
-  $("#Cpkg4projectrate").html(ProjectParkRate.toFixed(2).toString());
+function CupdateProjectParking() {
+  CProjectParkRate = CparkingSpaceInput / Cunitbed;
+  $("#Cpkg4projectrate").html(CProjectParkRate.toFixed(2).toString());
 }
 
 
-function updateCpkg4(){
-  if ( ProjectParkRate > NeighborParking){
-    pkg4point = 0;
+function updateCpkg4() {
+  if (CProjectParkRate > ResNeighborParking) {
+    Cpkg4point = 0;
     $('#Cpkg4').bootstrapSwitch('disabled', false);
     $('#Cpkg4').bootstrapSwitch('state', false);
     $('#Cpkg4').bootstrapSwitch('disabled', true);
     $('#Cpkg4Opt').html("Parked > neighborhood rate");
 
   }
-  if ( ProjectParkRate ===0 ){
-    pkg4point = 11;
+  if (CProjectParkRate === 0) {
+    Cpkg4point = 11;
     $('#Cpkg4').bootstrapSwitch('disabled', false);
     $('#Cpkg4').bootstrapSwitch('state', true);
     $('#Cpkg4').bootstrapSwitch('disabled', true);
     $('#Cpkg4Opt').html("Option K");
   }
-  if ((ProjectParkRate<=NeighborParking*0.1) && (ProjectParkRate>0) ){
-    pkg4point = 10;
+  if ((CProjectParkRate <= ResNeighborParking * 0.1) && (CProjectParkRate > 0)) {
+    Cpkg4point = 10;
     $('#Cpkg4').bootstrapSwitch('disabled', false);
     $('#Cpkg4').bootstrapSwitch('state', true);
     $('#Cpkg4').bootstrapSwitch('disabled', true);
     $('#Cpkg4Opt').html("Option J");
   }
-  if ( ProjectParkRate<=NeighborParking*0.2 && ProjectParkRate>NeighborParking*0.1 ){
-    pkg4point = 9;
+  if (CProjectParkRate <= ResNeighborParking * 0.2 && CProjectParkRate > ResNeighborParking * 0.1) {
+    Cpkg4point = 9;
     $('#Cpkg4').bootstrapSwitch('disabled', false);
     $('#Cpkg4').bootstrapSwitch('state', true);
     $('#Cpkg4').bootstrapSwitch('disabled', true);
     $('#Cpkg4Opt').html("Option I");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.3) && ProjectParkRate > (NeighborParking*0.2) ){
-    pkg4point = 8;
+  if (CProjectParkRate <= (ResNeighborParking * 0.3) && CProjectParkRate > (ResNeighborParking * 0.2)) {
+    Cpkg4point = 8;
     $('#Cpkg4').bootstrapSwitch('disabled', false);
     $('#Cpkg4').bootstrapSwitch('state', true);
     $('#Cpkg4').bootstrapSwitch('disabled', true);
     $('#Cpkg4Opt').html("Option H");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.4) && ProjectParkRate > (NeighborParking*0.3) ){
-    pkg4point = 7;
+  if (CProjectParkRate <= (ResNeighborParking * 0.4) && CProjectParkRate > (ResNeighborParking * 0.3)) {
+    Cpkg4point = 7;
     $('#Cpkg4').bootstrapSwitch('disabled', false);
     $('#Cpkg4').bootstrapSwitch('state', true);
     $('#Cpkg4').bootstrapSwitch('disabled', true);
     $('#Cpkg4Opt').html("Option G");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.5) && ProjectParkRate > (NeighborParking*0.4) ){
-    pkg4point = 6;
+  if (CProjectParkRate <= (ResNeighborParking * 0.5) && CProjectParkRate > (ResNeighborParking * 0.4)) {
+    Cpkg4point = 6;
     $('#Cpkg4').bootstrapSwitch('disabled', false);
     $('#Cpkg4').bootstrapSwitch('state', true);
     $('#Cpkg4').bootstrapSwitch('disabled', true);
     $('#Cpkg4Opt').html("Option F");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.6) && ProjectParkRate > (NeighborParking*0.5) ){
-    pkg4point = 5;
+  if (CProjectParkRate <= (ResNeighborParking * 0.6) && CProjectParkRate > (ResNeighborParking * 0.5)) {
+    Cpkg4point = 5;
     $('#Cpkg4').bootstrapSwitch('disabled', false);
     $('#Cpkg4').bootstrapSwitch('state', true);
     $('#Cpkg4').bootstrapSwitch('disabled', true);
     $('#Cpkg4Opt').html("Option E");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.7) && ProjectParkRate > (NeighborParking*0.6) ){
-    pkg4point = 4;
+  if (CProjectParkRate <= (ResNeighborParking * 0.7) && CProjectParkRate > (ResNeighborParking * 0.6)) {
+    Cpkg4point = 4;
     $('#Cpkg4').bootstrapSwitch('disabled', false);
     $('#Cpkg4').bootstrapSwitch('state', true);
     $('#Cpkg4').bootstrapSwitch('disabled', true);
     $('#Cpkg4Opt').html("Option D");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.8) && ProjectParkRate > (NeighborParking*0.7) ){
-    pkg4point = 3;
+  if (CProjectParkRate <= (ResNeighborParking * 0.8) && CProjectParkRate > (ResNeighborParking * 0.7)) {
+    Cpkg4point = 3;
     $('#Cpkg4').bootstrapSwitch('disabled', false);
     $('#Cpkg4').bootstrapSwitch('state', true);
     $('#Cpkg4').bootstrapSwitch('disabled', true);
     $('#Cpkg4Opt').html("Option C");
 
   }
-  if ( ProjectParkRate <= (NeighborParking*0.9) && ProjectParkRate > (NeighborParking*0.8) ){
-    pkg4point = 2;
+  if (CProjectParkRate <= (ResNeighborParking * 0.9) && CProjectParkRate > (ResNeighborParking * 0.8)) {
+    Cpkg4point = 2;
     $('#Cpkg4').bootstrapSwitch('disabled', false);
     $('#Cpkg4').bootstrapSwitch('state', true);
     $('#Cpkg4').bootstrapSwitch('disabled', true);
     $('#Cpkg4Opt').html("Option B");
 
   }
-  if ( ProjectParkRate <= (NeighborParking*1) && ProjectParkRate > (NeighborParking*0.9) ){
-    pkg4point = 1;
+  if (CProjectParkRate <= (ResNeighborParking * 1) && CProjectParkRate > (ResNeighborParking * 0.9)) {
+    Cpkg4point = 1;
     $('#Cpkg4').bootstrapSwitch('disabled', false);
     $('#Cpkg4').bootstrapSwitch('state', true);
     $('#Cpkg4').bootstrapSwitch('disabled', true);
     $('#Cpkg4Opt').html("Option A");
 
   }
-  console.log(pkg4point);
   UpdateCurPoint();
 }
 
 
-
-
 //Cact1
-$('#Cact1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Cact1').bootstrapSwitch("state")===false){
-    $('.Cact1Opt').prop('checked',false);
-    pointnow -= Cact1pre;
-
-    Cact1pre = 0;
-
+$('#Cact1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Cact1').bootstrapSwitch("state") === false) {
+    $('.Cact1Opt').prop('checked', false);
+    Cact1point = 0;
+    $('#Cact1pointdiv').html('');
+    UpdateCurPoint();
   }
 });
 
-var Cact1pre = 0;
-$('.Cact1Opt').change(function() {
-  switch($("input[name = Cact1Opt]:checked").val()){
+$('.Cact1Opt').change(function () {
+  switch ($("input[name = Cact1Opt]:checked").val()) {
     case "1":
-      pointnow -= Cact1pre;
-      pointnow += 1;
-      Cact1pre = 1;
+      Cact1point = 1;
+      $('#Cact1pointdiv').html('+' + Cact1point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Cact1pre;
-      pointnow += 2;
-      Cact1pre = 2;
+      Cact1point = 1;
+      $('#Cact1pointdiv').html('+' + Cact1point);
+      UpdateCurPoint();
       break;
     default:
       alert("no value");
 
-  };
+  }
+  ;
 
 });
 
 
 //Cact2
-$('#Cact2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Cact2').bootstrapSwitch("state")===false){
-    $('.Cact2Opt').prop('checked',false);
-    pointnow -= Cact2pre;
-
-    Cact2pre = 0;
+$('#Cact2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Cact2').bootstrapSwitch("state") === false) {
+    $('.Cact2Opt').prop('checked', false);
+    Cact2point = 0;
+    $('#Cact2pointdiv').html('');
+    UpdateCurPoint();
 
   }
 });
 
-var Cact2pre = 0;
-$('.Cact2Opt').change(function() {
-  switch($("input[name = Cact2Opt]:checked").val()){
+$('.Cact2Opt').change(function () {
+  switch ($("input[name = Cact2Opt]:checked").val()) {
     case "1":
-      pointnow -= Cact2pre;
-      pointnow += 1;
-      Cact2pre = 1;
+      Cact2point = 1;
+      $('#Cact2pointdiv').html('+' + Cact2point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Cact2pre;
-      pointnow += 2;
-      Cact2pre = 2;
+      Cact2point = 2;
+      $('#Cact2pointdiv').html('+' + Cact2point);
+      UpdateCurPoint();
       break;
     case "3":
-      pointnow -= Cact2pre;
-      pointnow += 3;
-      Cact2pre = 3;
+      Cact2point = 3;
+      $('#Cact2pointdiv').html('+' + Cact2point);
+      UpdateCurPoint();
       break;
     case "4":
-      pointnow -= Cact2pre;
-      pointnow += 4;
-      Cact2pre = 4;
+      Cact2point = 4;
+      $('#Cact2pointdiv').html('+' + Cact2point);
+      UpdateCurPoint();
       break;
     default:
       alert("no value");
 
-  };
+  }
+  ;
 
 });
 
 
 //Cact4
-$('#Cact4').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Cact4').bootstrapSwitch("state")===false){
-    $('.Cact4Opt').prop('checked',false);
-    pointnow -= Cact4pre;
-
-    Cact4pre = 0;
-
+$('#Cact4').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Cact4').bootstrapSwitch("state") === false) {
+    $('.Cact4Opt').prop('checked', false);
+    Cact4point = 0;
+    $('#Cact4pointdiv').html('');
+    UpdateCurPoint();
   }
 });
 
-var Cact4pre = 0;
-$('.Cact4Opt').change(function() {
-  switch($("input[name = Cact4Opt]:checked").val()){
+$('.Cact4Opt').change(function () {
+  switch ($("input[name = Cact4Opt]:checked").val()) {
     case "1":
-      pointnow -= Cact4pre;
-      pointnow += 1;
-      Cact4pre = 1;
+      Cact4point = 1;
+      $('#Cact4pointdiv').html('+' + Cact4point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Cact4pre;
-      pointnow += 2;
-      Cact4pre = 2;
+      Cact4point = 2;
+      $('#Cact4pointdiv').html('+' + Cact4point);
+      UpdateCurPoint();
       break;
     default:
       alert("no value");
 
-  };
+  }
+  ;
 
 });
 
 //Cact5a
-$('#Cact5a').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Cact5a').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Cact5a').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Cact5a').bootstrapSwitch("state") === true) {
+    Cact5apoint = 1;
+    $('#Cact5apointdiv').html('+' + Cact5apoint);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Cact5apoint = 0;
+    $('#Cact5apointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 //Cact5b
-$('#Cact5b').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Cact5b').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Cact5b').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Cact5b').bootstrapSwitch("state") === true) {
+    Cact5bpoint = 1;
+    $('#Cact5bpointdiv').html('+' + Cact5bpoint);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Cact5bpoint = 0;
+    $('#Cact5bpointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 //Cact6
-$('#Cact6').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Cact6').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Cact6').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Cact6').bootstrapSwitch("state") === true) {
+    Cact6point = 1;
+    $('#Cact6pointdiv').html('+' + Cact6point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Cact6point = 0;
+    $('#Cact6pointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 
-
 //Ccshare1
 
-$('#Ccshare1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Ccshare1').bootstrapSwitch("state")===false){
-    $('.Ccshare1Opt').prop('checked',false);
-    pointnow -= Ccshare1pre;
+$('#Ccshare1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Ccshare1').bootstrapSwitch("state") === false) {
+    $('.Ccshare1Opt').prop('checked', false);
     Ccshare1point = 0;
-    Ccshare1pre = 0;
+    $('#Ccshare1pointdiv').html('');
+    UpdateCurPoint();
 
   }
 });
 
 var Ccshare1pre = 0;
-$('.Ccshare1Opt').change(function() {
-  switch($("input[name = Ccshare1Opt]:checked").val()){
+$('.Ccshare1Opt').change(function () {
+  switch ($("input[name = Ccshare1Opt]:checked").val()) {
     case "1":
-      pointnow -= Ccshare1pre;
-      pointnow += 1;
-      Ccshare1pre = 1;
       Ccshare1point = 1;
+      $('#Ccshare1pointdiv').html('+' + Ccshare1point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Ccshare1pre;
-      pointnow += 2;
-      Ccshare1pre = 2;
       Ccshare1point = 2;
+      $('#Ccshare1pointdiv').html('+' + Ccshare1point);
+      UpdateCurPoint();
       break;
     case "3":
-      pointnow -= Ccshare1pre;
-      pointnow += 3;
-      Ccshare1pre = 3;
       Ccshare1point = 3;
+      $('#Ccshare1pointdiv').html('+' + Ccshare1point);
+      UpdateCurPoint();
       break;
     case "4":
-      pointnow -= Ccshare1pre;
-      pointnow += 4;
-      Ccshare1pre = 4;
       Ccshare1point = 4;
+      $('#Ccshare1pointdiv').html('+' + Ccshare1point);
+      UpdateCurPoint();
       break;
     case "5":
-      pointnow -= Ccshare1pre;
-      pointnow += 5;
-      Ccshare1pre = 5;
       Ccshare1point = 5;
+      $('#Ccshare1pointdiv').html('+' + Ccshare1point);
+      UpdateCurPoint();
       break;
     default:
       alert("no value");
 
-  };
+  }
+  ;
 
 });
 
 
-
 //Cdeli1
-$('#Cdeli1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Cdeli1').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Cdeli1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Cdeli1').bootstrapSwitch("state") === true) {
+    Cdeli1point = 1;
+    $('#Cdeli1pointdiv').html('+' + Cdeli1point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Cdeli1point = 0;
+    $('#Cdeli1pointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
@@ -8178,652 +8276,594 @@ $('#Cdeli1').on('switchChange.bootstrapSwitch', function(event, state) {
 //Cfam1
 
 
-$('#Cfam1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Cfam1').bootstrapSwitch("state")===false){
-    $('.Cfam1Opt').prop('checked',false);
+$('#Cfam1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Cfam1').bootstrapSwitch("state") === false) {
+    $('.Cfam1Opt').prop('checked', false);
     Cfam1point = 0;
     UpdateCurPoint();
-    console.log("0");
+    $('#Cfam1pointdiv').html('');
+
   }
 });
 
-$('.Cfam1Opt').change(function() {
-  if ($('#Cfam1OptA').prop("checked") || $('#Cfam1OptB').prop("checked") ){
+$('.Cfam1Opt').change(function () {
+  if ($('#Cfam1OptA').prop("checked") || $('#Cfam1OptB').prop("checked")) {
     Cfam1point = 1;
     UpdateCurPoint();
-    console.log("1");
+    $('#Cfam1pointdiv').html('+' + Cfam1point);
+
 
   }
-  if ($('#Cfam1OptA').prop("checked") && $('#Cfam1OptB').prop("checked") ){
+  if ($('#Cfam1OptA').prop("checked") && $('#Cfam1OptB').prop("checked")) {
     Cfam1point = 2;
     UpdateCurPoint();
-    console.log("2");
+    $('#Cfam1pointdiv').html('+' + Cfam1point);
+
 
   }
-  if (!($('#Cfam1OptA').prop("checked")) && !($('#Cfam1OptB').prop("checked"))){
+  if (!($('#Cfam1OptA').prop("checked")) && !($('#Cfam1OptB').prop("checked"))) {
     Cfam1point = 0;
     UpdateCurPoint();
-    console.log("3");
-
+    $('#Cfam1pointdiv').html('+' + Cfam1point);
   }
 });
-
 
 
 //Cfam2
-$('#Cfam2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Cfam2').bootstrapSwitch("state")===true){
-    pointnow += 2;
-    console.log(pointnow);
+$('#Cfam2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Cfam2').bootstrapSwitch("state") === true) {
+    Cfam2point = 2;
+    $('#Cfam2pointdiv').html('+' + Cfam2point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 2;
+  else {
+    Cfam2point = 0;
+    $('#Cfam2pointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 //Cfam3
-$("#CtwobedroomInput").on("input",function(e){
+$("#CtwobedroomInput").on("input", function (e) {
+  PersentageTwoBed = $("#CtwobedroomInput").val();
   updateCfam3();
 })
-$('#Cfam1').on('switchChange.bootstrapSwitch', function(event, state) {
+$('#Cfam1').on('switchChange.bootstrapSwitch', function (event, state) {
   updateCfam3();
 })
-$('.Cfam1Opt').change(function() {
-  updateCfam3();
-}   )
-$('.Ccshare1').change(function() {
+$('.Cfam1Opt').change(function () {
   updateCfam3();
 })
-$('.Ccshare1Opt').change(function() {
+$('.Ccshare1').change(function () {
+  updateCfam3();
+})
+$('.Ccshare1Opt').change(function () {
   updateCfam3();
 })
 
-function updateCfam3(){
-  if ( ProjectParkRate > NeighborParking){
-    pkg4point = 0;
-    $('#Cpkg4').bootstrapSwitch('disabled', false);
-    $('#Cpkg4').bootstrapSwitch('state', false);
-    $('#Cpkg4').bootstrapSwitch('disabled', true);
-    $('#Cpkg4Opt').html("Parked > neighborhood rate");
+function updateCfam3() {
+  if (PersentageTwoBed >= 40) {
+    if ((Ccshare1point === 4) && (Cfam1point === 2)) {
+      Cfam3point = 2;
+      $('#Cfam3pointdiv').html('+' + Cfam3point);
+      $('#Cfam3').bootstrapSwitch('disabled', false);
+      $('#Cfam3').bootstrapSwitch('state', true);
+      $('#Cfam3').bootstrapSwitch('disabled', true);
 
+    }
+    if ((Ccshare1point === 5) && (Cfam1point === 2)) {
+      Cfam3point = 2;
+      $('#Cfam3pointdiv').html('+' + Cfam3point);
+      $('#Cfam3').bootstrapSwitch('disabled', false);
+      $('#Cfam3').bootstrapSwitch('state', true);
+      $('#Cfam3').bootstrapSwitch('disabled', true);
+    }
+    if ((Ccshare1point === 6) && (Cfam1point === 2)) {
+      Cfam3point = 2;
+      $('#Cfam3pointdiv').html('+' + Cfam3point);
+      $('#Cfam3').bootstrapSwitch('disabled', false);
+      $('#Cfam3').bootstrapSwitch('state', true);
+      $('#Cfam3').bootstrapSwitch('disabled', true);
+    }
   }
-  if ( ProjectParkRate ===0 ){
-    pkg4point = 11;
-    $('#Cpkg4').bootstrapSwitch('disabled', false);
-    $('#Cpkg4').bootstrapSwitch('state', true);
-    $('#Cpkg4').bootstrapSwitch('disabled', true);
-    $('#Cpkg4Opt').html("Option K");
-  }
-  if ((ProjectParkRate<=NeighborParking*0.1) && (ProjectParkRate>0) ){
-    pkg4point = 10;
-    $('#Cpkg4').bootstrapSwitch('disabled', false);
-    $('#Cpkg4').bootstrapSwitch('state', true);
-    $('#Cpkg4').bootstrapSwitch('disabled', true);
-    $('#Cpkg4Opt').html("Option J");
-  }
-  if ( ProjectParkRate<=NeighborParking*0.2 && ProjectParkRate>NeighborParking*0.1 ){
-    pkg4point = 9;
-    $('#Cpkg4').bootstrapSwitch('disabled', false);
-    $('#Cpkg4').bootstrapSwitch('state', true);
-    $('#Cpkg4').bootstrapSwitch('disabled', true);
-    $('#Cpkg4Opt').html("Option I");
-  }
-  if ( ProjectParkRate <= (NeighborParking*0.3) && ProjectParkRate > (NeighborParking*0.2) ){
-    pkg4point = 8;
-    $('#Cpkg4').bootstrapSwitch('disabled', false);
-    $('#Cpkg4').bootstrapSwitch('state', true);
-    $('#Cpkg4').bootstrapSwitch('disabled', true);
-    $('#Cpkg4Opt').html("Option H");
-  }
-  if ( ProjectParkRate <= (NeighborParking*0.4) && ProjectParkRate > (NeighborParking*0.3) ){
-    pkg4point = 7;
-    $('#Cpkg4').bootstrapSwitch('disabled', false);
-    $('#Cpkg4').bootstrapSwitch('state', true);
-    $('#Cpkg4').bootstrapSwitch('disabled', true);
-    $('#Cpkg4Opt').html("Option G");
-  }
-  if ( ProjectParkRate <= (NeighborParking*0.5) && ProjectParkRate > (NeighborParking*0.4) ){
-    pkg4point = 6;
-    $('#Cpkg4').bootstrapSwitch('disabled', false);
-    $('#Cpkg4').bootstrapSwitch('state', true);
-    $('#Cpkg4').bootstrapSwitch('disabled', true);
-    $('#Cpkg4Opt').html("Option F");
-  }
-  if ( ProjectParkRate <= (NeighborParking*0.6) && ProjectParkRate > (NeighborParking*0.5) ){
-    pkg4point = 5;
-    $('#Cpkg4').bootstrapSwitch('disabled', false);
-    $('#Cpkg4').bootstrapSwitch('state', true);
-    $('#Cpkg4').bootstrapSwitch('disabled', true);
-    $('#Cpkg4Opt').html("Option E");
-  }
-  if ( ProjectParkRate <= (NeighborParking*0.7) && ProjectParkRate > (NeighborParking*0.6) ){
-    pkg4point = 4;
-    $('#Cpkg4').bootstrapSwitch('disabled', false);
-    $('#Cpkg4').bootstrapSwitch('state', true);
-    $('#Cpkg4').bootstrapSwitch('disabled', true);
-    $('#Cpkg4Opt').html("Option D");
-  }
-  if ( ProjectParkRate <= (NeighborParking*0.8) && ProjectParkRate > (NeighborParking*0.7) ){
-    pkg4point = 3;
-    $('#Cpkg4').bootstrapSwitch('disabled', false);
-    $('#Cpkg4').bootstrapSwitch('state', true);
-    $('#Cpkg4').bootstrapSwitch('disabled', true);
-    $('#Cpkg4Opt').html("Option C");
 
+  if ((Ccshare1point < 4 ) || (Cfam1point < 2) || (PersentageTwoBed < 40)) {
+    Cfam3point = 0;
+    $('#Cfam3pointdiv').html('');
+    $('#Cfam3').bootstrapSwitch('disabled', false);
+    $('#Cfam3').bootstrapSwitch('state', false);
+    $('#Cfam3').bootstrapSwitch('disabled', true);
   }
-  if ( ProjectParkRate <= (NeighborParking*0.9) && ProjectParkRate > (NeighborParking*0.8) ){
-    pkg4point = 2;
-    $('#Cpkg4').bootstrapSwitch('disabled', false);
-    $('#Cpkg4').bootstrapSwitch('state', true);
-    $('#Cpkg4').bootstrapSwitch('disabled', true);
-    $('#Cpkg4Opt').html("Option B");
 
-  }
-  if ( ProjectParkRate <= (NeighborParking*1) && ProjectParkRate > (NeighborParking*0.9) ){
-    pkg4point = 1;
-    $('#Cpkg4').bootstrapSwitch('disabled', false);
-    $('#Cpkg4').bootstrapSwitch('state', true);
-    $('#Cpkg4').bootstrapSwitch('disabled', true);
-    $('#Cpkg4Opt').html("Option A");
-
-  }
   UpdateCurPoint();
 }
 
 
-
 //Chov1
-$('#Chov1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Chov1').bootstrapSwitch("state")===false){
-    $('.Chov1Opt').prop('checked',false);
-    pointnow -= Chov1pre;
-
-    Chov1pre = 0;
+$('#Chov1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Chov1').bootstrapSwitch("state") === false) {
+    $('.Chov1Opt').prop('checked', false);
+    Chov1point = 0;
+    $('#Chov1pointdiv').html('');
+    UpdateCurPoint();
 
   }
 });
 
-var Chov1pre = 0;
-$('.Chov1Opt').change(function() {
-  switch($("input[name = Chov1Opt]:checked").val()){
+$('.Chov1Opt').change(function () {
+  switch ($("input[name = Chov1Opt]:checked").val()) {
     case "1":
-      pointnow -= Chov1pre;
-      pointnow += 2;
-      Chov1pre = 2;
+      Chov1point = 2;
+      $('#Chov1pointdiv').html('+' + Chov1point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Chov1pre;
-      pointnow += 4;
-      Chov1pre = 4;
+      Chov1point = 4;
+      $('#Chov1pointdiv').html('+' + Chov1point);
+      UpdateCurPoint();
       break;
     case "3":
-      pointnow -= Chov1pre;
-      pointnow += 6;
-      Chov1pre = 6;
+      Chov1point = 6;
+      $('#Chov1pointdiv').html('+' + Chov1point);
+      UpdateCurPoint();
       break;
     case "4":
-      pointnow -= Chov1pre;
-      pointnow += 8;
-      Chov1pre = 8;
+      Chov1point = 8;
+      $('#Chov1pointdiv').html('+' + Chov1point);
+      UpdateCurPoint();
       break;
     default:
 
-  };
+  }
+  ;
 
 });
 
 
 //Chov2
-$('#Chov2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Chov2').bootstrapSwitch("state")===false){
-    $('.Chov2Opt').prop('checked',false);
-    pointnow -= Chov2pre;
-
-    Chov2pre = 0;
+$('#Chov2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Chov2').bootstrapSwitch("state") === false) {
+    $('.Chov2Opt').prop('checked', false);
+    Chov2point = 0;
+    $('#Chov2pointdiv').html('');
+    UpdateCurPoint();
 
   }
 });
 
-var Chov2pre = 0;
-$('.Chov2Opt').change(function() {
-  switch($("input[name = Chov2Opt]:checked").val()){
+$('.Chov2Opt').change(function () {
+  switch ($("input[name = Chov2Opt]:checked").val()) {
     case "1":
-      pointnow -= Chov2pre;
-      pointnow += 7;
-      Chov2pre = 7;
+      Chov2point = 7;
+      $('#Chov2pointdiv').html('+' + Chov2point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Chov2pre;
-      pointnow += 14;
-      Chov2pre = 14;
+      Chov2point = 14;
+      $('#Chov2pointdiv').html('+' + Chov2point);
+      UpdateCurPoint();
       break;
     default:
       alert("no value")
-  };
+  }
+  ;
 
 });
 
 
 //Cinfo1
-$('#Cinfo1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Cinfo1').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Cinfo1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Cinfo1').bootstrapSwitch("state") === true) {
+    Cinfo1point = 1;
+    $('#Cinfo1pointdiv').html('+' + Cinfo1point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Cinfo1point = 0;
+    $('#Cinfo1pointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 //Cinfo2
-$('#Cinfo2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Cinfo2').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Cinfo2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Cinfo2').bootstrapSwitch("state") === true) {
+    Cinfo2point = 1;
+    $('#Cinfo2pointdiv').html('+' + Cinfo2point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Cinfo2point = 0;
+    $('#Cinfo2pointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 
 //Cinfo3
-$('#Cinfo3').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Cinfo3').bootstrapSwitch("state")===false){
-    $('.Cinfo3Opt').prop('checked',false);
-    pointnow -= Cinfo3pre;
-
-    Cinfo3pre = 0;
-
-  }
-});
-
-var Cinfo3pre = 0;
-$('.Cinfo3Opt').change(function() {
-  switch($("input[name = Cinfo3Opt]:checked").val()){
-    case "1":
-      pointnow -= Cinfo3pre;
-      pointnow += 1;
-      Cinfo3pre = 1;
-      break;
-    case "2":
-      pointnow -= Cinfo3pre;
-      pointnow += 2;
-      Cinfo3pre = 2;
-      break;
-    case "3":
-      pointnow -= Cinfo3pre;
-      pointnow += 3;
-      Cinfo3pre = 3;
-      break;
-    case "4":
-      pointnow -= Cinfo3pre;
-      pointnow += 4;
-      Cinfo3pre = 4;
-      break;
-    default:
-
-  };
-
-});
-
-
-//Clu2
-$('#Clu2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Clu2').bootstrapSwitch("state")===false){
-    $('.Clu2Opt').prop('checked',false);
-    pointnow -= Clu2pre;
-
-    Clu2pre = 0;
+$('#Cinfo3').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Cinfo3').bootstrapSwitch("state") === false) {
+    $('.Cinfo3Opt').prop('checked', false);
+    Cinfo3point = 0;
+    $('#Cinfo3pointdiv').html('');
+    UpdateCurPoint();
 
   }
 });
 
-var Clu2pre = 0;
-$('.Clu2Opt').change(function() {
-  switch($("input[name = Clu2Opt]:checked").val()){
+$('.Cinfo3Opt').change(function () {
+  switch ($("input[name = Cinfo3Opt]:checked").val()) {
     case "1":
-      pointnow -= Clu2pre;
-      pointnow += 1;
-      Clu2pre = 1;
+      Cinfo3point = 1;
+      $('#Cinfo3pointdiv').html('+' + Cinfo3point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Clu2pre;
-      pointnow += 2;
-      Clu2pre = 2;
+      Cinfo3point = 2;
+      $('#Cinfo3pointdiv').html('+' + Cinfo3point);
+      UpdateCurPoint();
       break;
     case "3":
-      pointnow -= Clu2pre;
-      pointnow += 3;
-      Clu2pre = 3;
+      Cinfo3point = 3;
+      $('#Cinfo3pointdiv').html('+' + Cinfo3point);
+      UpdateCurPoint();
       break;
     case "4":
-      pointnow -= Clu2pre;
-      pointnow += 4;
-      Clu2pre = 4;
+      Cinfo3point = 4;
+      $('#Cinfo3pointdiv').html('+' + Cinfo3point);
+      UpdateCurPoint();
       break;
     default:
 
-  };
+  }
+  ;
 
 });
 
+
+//Clu2 PersentageAffordHouse Clu2optiondiv
+
+$("#CaffordHouseInput").change("input", function (e) {
+  PersentageAffordHouse = $("#CaffordHouseInput").val();
+  updateClu2();
+})
+
+function updateClu2() {
+  if (PersentageAffordHouse >= 12) {
+    $('#Clu2').bootstrapSwitch('disabled', false);
+    $('#Clu2').bootstrapSwitch('state', true);
+    $('#Clu2').bootstrapSwitch('disabled', true);
+
+    if (PersentageAffordHouse <= 25){
+      Clu2point = 1;
+      $("#Clu2optiondiv").html("Option A");
+      $("#Clu2pointdiv").html('+' + Clu2point);
+    }
+    if ((PersentageAffordHouse > 25) && (PersentageAffordHouse <= 50)){
+      Clu2point = 2;
+      $("#Clu2optiondiv").html("Option B");
+      $("#Clu2pointdiv").html('+' + Clu2point);
+    }
+
+    if ((PersentageAffordHouse > 50) && (PersentageAffordHouse <= 75)){
+      Clu2point = 3;
+      $("#Clu2optiondiv").html("Option C");
+      $("#Clu2pointdiv").html('+' + Clu2point);
+    }
+
+    if ((PersentageAffordHouse > 75) ){
+      Clu2point = 4;
+      $("#Clu2optiondiv").html("Option D");
+      $("#Clu2pointdiv").html('+' + Clu2point);
+    }
+
+  }
+  else {
+    Clu2point = 0;
+    $('#Clu2').bootstrapSwitch('disabled', false);
+    $('#Clu2').bootstrapSwitch('state', false);
+    $('#Clu2').bootstrapSwitch('disabled', true);
+    $("#Clu2optiondiv").html('');
+    $("#Clu2pointdiv").html('');
+
+  }
+
+  UpdateCurPoint();
+}
 
 
 //Dpkg4
 //Change Neighborhood Parking Rate, Project parking rate and location category based on input
+var DOccupiedArea = 0;
+var DProjectParkRate = 0;
 
-$("#TAZinput").change("input",function(e){
+$("#TAZinput").change("input", function (e) {
   $("#Dpkg4rate").html(NeighborParking.toString());
-  updateDProjectParking();
+  DupdateProjectParking();
   updateDpkg4();
 })
 
-$("#DoccupyareaInput").on("input",function(e){
-  OccupiedArea = $("#DoccupyareaInput").val();
-  updateDProjectParking();
+$("#DoccupyareaInput").on("input", function (e) {
+  DOccupiedArea = $("#DoccupyareaInput").val();
+  DupdateProjectParking();
   updateDpkg4();
 })
 
-$("#DparkingInput").on("input",function(e){
+$("#DparkingInput").on("input", function (e) {
   DparkingSpaceInput = $("#DparkingInput").val();
-  updateDProjectParking();
+  DupdateProjectParking();
   updateDpkg4();
 })
 
-function updateDProjectParking(){
-  ProjectParkRate = DparkingSpaceInput/(OccupiedArea/1000);
-  $("#Dpkg4projectrate").html(ProjectParkRate.toFixed(2).toString());
+function DupdateProjectParking() {
+  DProjectParkRate = DparkingSpaceInput / (DOccupiedArea / 1000);
+  $("#Dpkg4projectrate").html(DProjectParkRate.toFixed(2).toString());
 }
 
 
-function updateDpkg4(){
-  if ( ProjectParkRate > NeighborParking){
-    pkg4point = 0;
+function updateDpkg4() {
+  if (DProjectParkRate > NeighborParking) {
+    Dpkg4point = 0;
     $('#Dpkg4').bootstrapSwitch('disabled', false);
     $('#Dpkg4').bootstrapSwitch('state', false);
     $('#Dpkg4').bootstrapSwitch('disabled', true);
     $('#Dpkg4Opt').html("Parked > neighborhood rate");
 
   }
-  if ( ProjectParkRate ===0 ){
-    pkg4point = 11;
+  if (DProjectParkRate === 0) {
+    Dpkg4point = 11;
     $('#Dpkg4').bootstrapSwitch('disabled', false);
     $('#Dpkg4').bootstrapSwitch('state', true);
     $('#Dpkg4').bootstrapSwitch('disabled', true);
     $('#Dpkg4Opt').html("Option K");
   }
-  if ((ProjectParkRate<=NeighborParking*0.1) && (ProjectParkRate>0) ){
-    pkg4point = 10;
+  if ((DProjectParkRate <= NeighborParking * 0.1) && (DProjectParkRate > 0)) {
+    Dpkg4point = 10;
     $('#Dpkg4').bootstrapSwitch('disabled', false);
     $('#Dpkg4').bootstrapSwitch('state', true);
     $('#Dpkg4').bootstrapSwitch('disabled', true);
     $('#Dpkg4Opt').html("Option J");
   }
-  if ( ProjectParkRate<=NeighborParking*0.2 && ProjectParkRate>NeighborParking*0.1 ){
-    pkg4point = 9;
+  if (DProjectParkRate <= NeighborParking * 0.2 && DProjectParkRate > NeighborParking * 0.1) {
+    Dpkg4point = 9;
     $('#Dpkg4').bootstrapSwitch('disabled', false);
     $('#Dpkg4').bootstrapSwitch('state', true);
     $('#Dpkg4').bootstrapSwitch('disabled', true);
     $('#Dpkg4Opt').html("Option I");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.3) && ProjectParkRate > (NeighborParking*0.2) ){
-    pkg4point = 8;
+  if (DProjectParkRate <= (NeighborParking * 0.3) && DProjectParkRate > (NeighborParking * 0.2)) {
+    Dpkg4point = 8;
     $('#Dpkg4').bootstrapSwitch('disabled', false);
     $('#Dpkg4').bootstrapSwitch('state', true);
     $('#Dpkg4').bootstrapSwitch('disabled', true);
     $('#Dpkg4Opt').html("Option H");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.4) && ProjectParkRate > (NeighborParking*0.3) ){
-    pkg4point = 7;
+  if (DProjectParkRate <= (NeighborParking * 0.4) && DProjectParkRate > (NeighborParking * 0.3)) {
+    Dpkg4point = 7;
     $('#Dpkg4').bootstrapSwitch('disabled', false);
     $('#Dpkg4').bootstrapSwitch('state', true);
     $('#Dpkg4').bootstrapSwitch('disabled', true);
     $('#Dpkg4Opt').html("Option G");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.5) && ProjectParkRate > (NeighborParking*0.4) ){
-    pkg4point = 6;
+  if (DProjectParkRate <= (NeighborParking * 0.5) && DProjectParkRate > (NeighborParking * 0.4)) {
+    Dpkg4point = 6;
     $('#Dpkg4').bootstrapSwitch('disabled', false);
     $('#Dpkg4').bootstrapSwitch('state', true);
     $('#Dpkg4').bootstrapSwitch('disabled', true);
     $('#Dpkg4Opt').html("Option F");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.6) && ProjectParkRate > (NeighborParking*0.5) ){
-    pkg4point = 5;
+  if (DProjectParkRate <= (NeighborParking * 0.6) && DProjectParkRate > (NeighborParking * 0.5)) {
+    Dpkg4point = 5;
     $('#Dpkg4').bootstrapSwitch('disabled', false);
     $('#Dpkg4').bootstrapSwitch('state', true);
     $('#Dpkg4').bootstrapSwitch('disabled', true);
     $('#Dpkg4Opt').html("Option E");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.7) && ProjectParkRate > (NeighborParking*0.6) ){
-    pkg4point = 4;
+  if (DProjectParkRate <= (NeighborParking * 0.7) && DProjectParkRate > (NeighborParking * 0.6)) {
+    Dpkg4point = 4;
     $('#Dpkg4').bootstrapSwitch('disabled', false);
     $('#Dpkg4').bootstrapSwitch('state', true);
     $('#Dpkg4').bootstrapSwitch('disabled', true);
     $('#Dpkg4Opt').html("Option D");
   }
-  if ( ProjectParkRate <= (NeighborParking*0.8) && ProjectParkRate > (NeighborParking*0.7) ){
-    pkg4point = 3;
+  if (DProjectParkRate <= (NeighborParking * 0.8) && DProjectParkRate > (NeighborParking * 0.7)) {
+    Dpkg4point = 3;
     $('#Dpkg4').bootstrapSwitch('disabled', false);
     $('#Dpkg4').bootstrapSwitch('state', true);
     $('#Dpkg4').bootstrapSwitch('disabled', true);
     $('#Dpkg4Opt').html("Option C");
 
   }
-  if ( ProjectParkRate <= (NeighborParking*0.9) && ProjectParkRate > (NeighborParking*0.8) ){
-    pkg4point = 2;
+  if (DProjectParkRate <= (NeighborParking * 0.9) && DProjectParkRate > (NeighborParking * 0.8)) {
+    Dpkg4point = 2;
     $('#Dpkg4').bootstrapSwitch('disabled', false);
     $('#Dpkg4').bootstrapSwitch('state', true);
     $('#Dpkg4').bootstrapSwitch('disabled', true);
     $('#Dpkg4Opt').html("Option B");
 
   }
-  if ( ProjectParkRate <= (NeighborParking*1) && ProjectParkRate > (NeighborParking*0.9) ){
-    pkg4point = 1;
+  if (DProjectParkRate <= (NeighborParking * 1) && DProjectParkRate > (NeighborParking * 0.9)) {
+    Dpkg4point = 1;
     $('#Dpkg4').bootstrapSwitch('disabled', false);
     $('#Dpkg4').bootstrapSwitch('state', true);
     $('#Dpkg4').bootstrapSwitch('disabled', true);
     $('#Dpkg4Opt').html("Option A");
 
   }
-  console.log(pkg4point);
+  console.log(Dpkg4point);
   UpdateCurPoint();
 }
 
 
 //Dact2
-$('#Dact2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Dact2').bootstrapSwitch("state")===false){
-    $('.Dact2Opt').prop('checked',false);
-    pointnow -= Dact2pre;
-
-    Dact2pre = 0;
+$('#Dact2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Dact2').bootstrapSwitch("state") === false) {
+    $('.Dact2Opt').prop('checked', false);
+    Dact2point = 0;
+    $('#Dact2pointdiv').html('');
+    UpdateCurPoint();
 
   }
 });
 
-var Dact2pre = 0;
-$('.Dact2Opt').change(function() {
-  switch($("input[name = Dact2Opt]:checked").val()){
+$('.Dact2Opt').change(function () {
+  switch ($("input[name = Dact2Opt]:checked").val()) {
     case "1":
-      pointnow -= Dact2pre;
-      pointnow += 1;
-      Dact2pre = 1;
+      Dact2point = 1;
+      $('#Dact2pointdiv').html('+' + Dact2point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Dact2pre;
-      pointnow += 2;
-      Dact2pre = 2;
+      Dact2point = 2;
+      $('#Dact2pointdiv').html('+' + Dact2point);
+      UpdateCurPoint();
       break;
     case "3":
-      pointnow -= Dact2pre;
-      pointnow += 3;
-      Dact2pre = 3;
+      Dact2point = 3;
+      $('#Dact2pointdiv').html('+' + Dact2point);
+      UpdateCurPoint();
       break;
     case "4":
-      pointnow -= Dact2pre;
-      pointnow += 4;
-      Dact2pre = 4;
+      Dact2point = 4;
+      $('#Dact2pointdiv').html('+' + Dact2point);
+      UpdateCurPoint();
       break;
     default:
       alert("no value");
 
-  };
+  }
+  ;
 
 });
 
 //Dact3
-$('#Dact3').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Dact3').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Dact3').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Dact3').bootstrapSwitch("state") === true) {
+    Dact3point = 1;
+    $('#Dact3pointdiv').html('+' + Dact3point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Dact3point = 0;
+    $('#Dact3pointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 
-
 //Dcshare1
-$('#Dcshare1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Dcshare1').bootstrapSwitch("state")===false){
-    $('.Dcshare1Opt').prop('checked',false);
-    pointnow -= Dcshare1pre;
-
-    Dcshare1pre = 0;
+$('#Dcshare1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Dcshare1').bootstrapSwitch("state") === false) {
+    $('.Dcshare1Opt').prop('checked', false);
+    Dcshare1point = 0;
+    $('#Dcshare1pointdiv').html('');
+    UpdateCurPoint();
 
   }
 });
 
 var Dcshare1pre = 0;
-$('.Dcshare1Opt').change(function() {
-  switch($("input[name = Dcshare1Opt]:checked").val()){
+$('.Dcshare1Opt').change(function () {
+  switch ($("input[name = Dcshare1Opt]:checked").val()) {
     case "1":
-      pointnow -= Dcshare1pre;
-      pointnow += 1;
-      Dcshare1pre = 1;
+      Dcshare1point = 1;
+      $('#Dcshare1pointdiv').html('+' + Dcshare1point);
+      UpdateCurPoint();
       break;
     case "2":
-      pointnow -= Dcshare1pre;
-      pointnow += 2;
-      Dcshare1pre = 2;
+      Dcshare1point = 2;
+      $('#Dcshare1pointdiv').html('+' + Dcshare1point);
+      UpdateCurPoint();
       break;
     case "3":
-      pointnow -= Dcshare1pre;
-      pointnow += 3;
-      Dcshare1pre = 3;
+      Dcshare1point = 3;
+      $('#Dcshare1pointdiv').html('+' + Dcshare1point);
+      UpdateCurPoint();
       break;
     case "4":
-      pointnow -= Dcshare1pre;
-      pointnow += 4;
-      Dcshare1pre = 4;
+      Dcshare1point = 4;
+      $('#Dcshare1pointdiv').html('+' + Dcshare1point);
+      UpdateCurPoint();
       break;
     case "5":
-      pointnow -= Dcshare1pre;
-      pointnow += 5;
-      Dcshare1pre = 5;
+      Dcshare1point = 5;
+      $('#Dcshare1pointdiv').html('+' + Dcshare1point);
+      UpdateCurPoint();
       break;
     default:
       alert("no value");
 
-  };
+  }
+  ;
 
 });
 
 
-
 //Dinfo1
-$('#Dinfo1').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Dinfo1').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Dinfo1').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Dinfo1').bootstrapSwitch("state") === true) {
+    Dinfo1point = 1;
+    $('#Dinfo1pointdiv').html('+' + Dinfo1point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Dinfo1point = 0;
+    $('#Dinfo1pointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 //Dinfo2
-$('#Dinfo2').on('switchChange.bootstrapSwitch', function(event, state) {
-  if ($('#Dinfo2').bootstrapSwitch("state")===true){
-    pointnow += 1;
-    console.log(pointnow);
+$('#Dinfo2').on('switchChange.bootstrapSwitch', function (event, state) {
+  if ($('#Dinfo2').bootstrapSwitch("state") === true) {
+    Dinfo2point = 1;
+    $('#Dinfo2pointdiv').html('+' + Dinfo2point);
+    UpdateCurPoint();
   }
-  else{
-    pointnow -= 1;
+  else {
+    Dinfo2point = 0;
+    $('#Dinfo2pointdiv').html('');
+    UpdateCurPoint();
   }
 
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$(":checkbox:not(.CategoryRadio)").on('switchChange.bootstrapSwitch', function(event, state) {
+$(":checkbox:not(.CategoryRadio)").on('switchChange.bootstrapSwitch', function (event, state) {
   UpdateCurPoint();
 });
 
-$(".OptButtion").change(function(event, state) {
+$(".OptButtion").change(function (event, state) {
   UpdateCurPoint();
 
 });
 
-$(["<input>"]).change(function(event, state) {
+$(["<input>"]).change(function (event, state) {
   UpdateCurPoint();
 });
 
 
+function UpdateCurPoint() {
+  Atotalpoint = Apkg1point + Apkg2point + Apkg3point + Apkg4point + Aact1point + Aact2point + Aact3point + Aact4point + Aact5apoint + Aact5bpoint + Aact6point + Aact7point + Acshare1point + Adeli1point + Adeli2point + Afam2point + Ahov1point + Math.min(14, Ahov2point + Ahov3point) + Ainfo1point + Ainfo2point + Ainfo3point + Alu1point;
 
-var CurPointSum = 0;
-function UpdateCurPoint(){
-  if($('#radios-0').is(':checked')){
-    CurPointSum = pointnow + Apkg1point + pkg4point + hov3point + Cfam1point ;
-    $('#pointnow').html(CurPointSum.toString());
-  }
-  if($('#radios-1').is(':checked')){
-    CurPointSum = pointnow + Apkg1point + pkg4point + hov3point + Cfam1point ;
-    $('#pointnow').html(CurPointSum.toString());
-  }
-  if($('#radios-2').is(':checked')){
-    CurPointSum = pointnow + Apkg1point + pkg4point + hov3point + Cfam1point ;
-    $('#pointnow').html(CurPointSum.toString());
-  }
-  if($('#radios-3').is(':checked')){
-    CurPointSum = pointnow + Apkg1point + pkg4point + hov3point + Cfam1point ;
-    $('#pointnow').html(CurPointSum.toString());
-  }
-  $("#AcurrentPointTodatabase").val(CurPointSum.toString());
+  Btotalpoint = Bpkg1point + Bpkg2point + Bpkg3point + Bpkg4point + Bact1point + Bact2point + Bact3point + Bact4point + Bact5apoint + Bact5bpoint + Bact6point + Bcshare1point + Bdeli1point + Bfam2point + Bhov1point + Math.min(14, Bhov2point + Bhov3point) + Binfo1point + Binfo2point + Binfo3point;
+
+  Ctotalpoint = Cpkg1point + Cpkg4point + Cact1point + Cact2point + Cact4point + Cact5apoint + Cact5bpoint + Cact6point + Ccshare1point + Cdeli1point + Cfam1point + Cfam2point + Cfam3point + Chov1point + Chov2point + Cinfo1point + Cinfo2point + Cinfo3point + Clu2point;
+
+  Dtotalpoint = Dpkg4point + Dact2point + Dact3point + Dcshare1point + Dinfo1point + Dinfo2point;
+
+  $('#Atotalpoint').html(Atotalpoint.toString());
+  $('#Btotalpoint').html(Btotalpoint.toString());
+  $('#Ctotalpoint').html(Ctotalpoint.toString());
+  $('#Dtotalpoint').html(Dtotalpoint.toString());
+
+
 }
-
-
-
-
-
-
 
 
 //   function unGraySearchStart() {
@@ -8833,8 +8873,6 @@ function UpdateCurPoint(){
 //   }
 //   theNumOfSearches=theNumOfSearches+1
 // }
-
-
 
 
 dojo.require("dijit.layout.BorderContainer");
@@ -8858,7 +8896,7 @@ dojo.require("esri.tasks.PrintParameters");
 var map, locator;
 
 function init() {
-  var popup = new esri.dijit.Popup({          fillSymbol: new esri.symbol.SimpleFillSymbol(esri.symbol.SimpleFillSymbol.STYLE_SOLID, new esri.symbol.SimpleLineSymbol(esri.symbol.SimpleLineSymbol.STYLE_SOLID, new dojo.Color([255,0,0]), 2), new dojo.Color([255,255,0,0.25]))        }, dojo.create("div"));
+  var popup = new esri.dijit.Popup({fillSymbol: new esri.symbol.SimpleFillSymbol(esri.symbol.SimpleFillSymbol.STYLE_SOLID, new esri.symbol.SimpleLineSymbol(esri.symbol.SimpleLineSymbol.STYLE_SOLID, new dojo.Color([255, 0, 0]), 2), new dojo.Color([255, 255, 0, 0.25]))}, dojo.create("div"));
   map = new esri.Map("map_canvas",
     {
       basemap: "topo",
@@ -8875,66 +8913,106 @@ function init() {
 }
 
 dojo.ready(init);
-theNumOfSearches=0
+theNumOfSearches = 0
 
 //resize map when the window size change
 resizeDiv();
-window.onresize = function(event) {
+window.onresize = function (event) {
   resizeDiv();
 }
 
 function resizeDiv() {
-  vpw = $(window).width()*0.95;
-  vph = $(window).height()*0.5;
+  vpw = $(window).width() * 0.95;
+  vph = $(window).height() * 0.5;
   $('#map_canvas').css({'width': vpw + 'px'});
   $('#map_canvas').css({'height': vph + 'px'});
 }
 
 //tooltip
 //project characteristic
-$('#CommunityPlan').tooltip({'trigger':'focus', 'placement':'top', 'title': 'e.g.,Balboa Park Station Area Plan; Eastern Neighborhoods (specify which); Glen Park Community Plan; Market and Octavia Neighborhood Plan; Rincon Hill Plan; Transit Center District Plan; Visitaction Valley Redevelopment Plan; Western SoMa Community Plan'});
-
-$('#TAZinput').tooltip({'trigger':'focus', 'placement':'top', 'title': "On the 'Property & Planning' tab in Transportation Information Map, look for 'Traffic Analysis Zone' (aka Transportation Analysis Zone).TAZ 579 is default location for1650 Mission Street." });
-
-$('#AoccupyareaInput').tooltip({'trigger':'focus', 'placement':'top', 'title': "Default is Gross Floor Area, change to appropriate square footage if known." });
 
 
-$('#BoccupyareaInput').tooltip({'trigger':'focus', 'placement':'top', 'title': "Default is Gross Floor Area, change to appropriate square footage if known." });
+$('#TAZinput').tooltip({
+  'trigger': 'focus',
+  'placement': 'top',
+  'title': "On the 'Property & Planning' tab in Transportation Information Map, look for 'Traffic Analysis Zone' (aka Transportation Analysis Zone).TAZ 579 is default location for1650 Mission Street."
+});
 
-$('#DoccupyareaInput').tooltip({'trigger':'focus', 'placement':'top', 'title': "Default is Gross Floor Area, change to appropriate square footage if known." });
+$('#AoccupyareaInput').tooltip({
+  'trigger': 'focus',
+  'placement': 'top',
+  'title': "Default is Gross Floor Area, change to appropriate square footage if known."
+});
 
 
-$('#AparkingInput').tooltip({'trigger':'focus', 'placement':'top', 'title': "Update this row after completing Category A (Retail Type) tab, if necessary." });
+$('#BoccupyareaInput').tooltip({
+  'trigger': 'focus',
+  'placement': 'top',
+  'title': "Default is Gross Floor Area, change to appropriate square footage if known."
+});
 
-$('#BparkingInput').tooltip({'trigger':'focus', 'placement':'top', 'title': "Update this row after completing Category B (Retail Type) tab, if necessary." });
+$('#DoccupyareaInput').tooltip({
+  'trigger': 'focus',
+  'placement': 'top',
+  'title': "Default is Gross Floor Area, change to appropriate square footage if known."
+});
 
-$('#DparkingInput').tooltip({'trigger':'focus', 'placement':'top', 'title': "Update this row after completing Category C (Retail Type) tab, if necessary." });
+
+$('#AparkingInput').tooltip({
+  'trigger': 'focus',
+  'placement': 'top',
+  'title': "Update this row after completing Category A (Retail Type) tab, if necessary."
+});
+
+$('#BparkingInput').tooltip({
+  'trigger': 'focus',
+  'placement': 'top',
+  'title': "Update this row after completing Category B (Retail Type) tab, if necessary."
+});
+
+$('#DparkingInput').tooltip({
+  'trigger': 'focus',
+  'placement': 'top',
+  'title': "Update this row after completing Category C (Retail Type) tab, if necessary."
+});
 
 
-$('#CtwobedroomInput').tooltip({'trigger':'focus', 'placement':'top', 'title': "Update this row after completing Category C (Retail Type) tab, if necessary." });
+$('#CtwobedroomInput').tooltip({
+  'trigger': 'focus',
+  'placement': 'top',
+  'title': "Update this row after completing Category C (Retail Type) tab, if necessary."
+});
 
-$('#CaffordHouseInput').tooltip({'trigger':'focus', 'placement':'top', 'title': "Update this row after completing Category C (Retail Type) tab, if necessary." });
+$('#CaffordHouseInput').tooltip({
+  'trigger': 'focus',
+  'placement': 'top',
+  'title': "Update this row after completing Category C (Retail Type) tab, if necessary."
+});
 
-$('#CparkingInput').tooltip({'trigger':'focus', 'placement':'top', 'title': "Update this row after completing Category C (Retail Type) tab, if necessary." });
+$('#CparkingInput').tooltip({
+  'trigger': 'focus',
+  'placement': 'top',
+  'title': "Update this row after completing Category C (Retail Type) tab, if necessary."
+});
 
 //MEASURE A
-$('.parkingtitle').tooltip({'trigger':'hover', 'placement':'right', 'title': "TDM measures which reduce vehicle miles traveled by appropriately pricing and managing parking." });
+$('.parkingtitle').tooltip({
+  'trigger': 'hover',
+  'placement': 'right',
+  'title': "TDM measures which reduce vehicle miles traveled by appropriately pricing and managing parking."
+});
 
-$('.parkratetitle').tooltip({'trigger':'hover', 'placement':'top', 'title': "On Project Characteristics tab, you must fill out Transportation Analysis Zone to obtain Neighborhood Parking Rate." });
+$('.parkratetitle').tooltip({
+  'trigger': 'hover',
+  'placement': 'top',
+  'title': "On Project Characteristics tab, you must fill out Transportation Analysis Zone to obtain Neighborhood Parking Rate."
+});
 
 
+//add comma in number input  (e.g.  1000 -> 1,000)
 
-
-
-
-//add comma in input
-
-function numberWithCommas(x) {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
-
-$(".auto").change(function(event, state) {
-  if(event.which >= 37 && event.which <= 40){
+$(".auto").change(function (event, state) {
+  if (event.which >= 37 && event.which <= 40) {
     event.preventDefault();
   }
   var $this = $(this);
@@ -8963,7 +9041,7 @@ var tour = new Tour({
       placement: "top"
     },
     {
-      element: "#intro",
+      element: "#BasicProjectCharacter",
       title: "Step 2b",
       content: "Input basic project characteristics",
       backdrop: true,
@@ -8984,7 +9062,7 @@ var tour = new Tour({
       placement: "top"
     },
     {
-      element: "#pointdiv",
+      element: "#scrolldiv",
       title: "Point",
       content: "Current point means the points your got based on your TDM choice. Target point is the required points",
       placement: "top"
@@ -8996,17 +9074,25 @@ var tour = new Tour({
 
       placement: "top"
     }
-  ]});
+  ]
+});
 
 
 // Start the tour
-$("#tourbutton").click(function(event, state) {
+$("#tourbutton").click(function (event, state) {
   tour.init();
   tour.restart();
   tour.start(true);
 });
 
-//push project type, measures points to the hidden form
+
+
+//PDF link
+$(".measurename").click(function (event, state) {
+  var measurenamecut = $(this).attr("for").substring(1);
+  window.open(window.location.href+"pdf?name=" + measurenamecut, '_blank')
+});
+
 
 
 

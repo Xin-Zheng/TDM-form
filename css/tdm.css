@@ -29,7 +29,7 @@ html{
 .measurepoint{
     color:#32BA9C;
     font-family: Impact;
-    font-size:22px;
+    font-size:18px;
     margin-left: 2px;
     display: inline-block;
 }
@@ -52,6 +52,11 @@ html{
 .subtitle{
     font-family: Impact;
     font-size:20px;
+}
+
+.affix {
+    top: 5px;
+    width: 31%;
 }
 
 </style>
