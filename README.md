@@ -32,6 +32,8 @@ net:
 
 ! Set Firewall in Windows. Put Mongod.exe in the safe list.
 
+![ScreenShot](/documentation file/firewall.png)
+
 When finish intall MongoDB and run it. And create a user you like using following code:
 ```
 db.createUser(
@@ -53,4 +55,8 @@ Use terminal as Administrator mode and navigate to the nssm folder and type `nss
 
 ### How to run it
 Now you can run it at Windows Services
+
+
+![ScreenShot](/documentation file/windowservice.png)
+
 
