@@ -35,6 +35,9 @@ net:
 ![ScreenShot](/documentation file/firewall.png)
 
 When finish intall MongoDB and run it. And create a user you like using following code:
+
+Use mongo.exe to create new user
+
 ```
 db.createUser(
   {
