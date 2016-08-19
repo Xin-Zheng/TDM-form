@@ -60,3 +60,16 @@ Now you can run it at Windows Services
 ![ScreenShot](/documentation file/windowservice.png)
 
 
+### File structure
+
+
+![ScreenShot](/documentation file/Screen Shot 2016-08-19 at 11.28.30 AM.png)
+
+server.js -- the main backend code using Nodejs and Express
+index.html -- the main frontend code 
+css folder -- including bootstrap and other embeded css files
+js folder -- including TIM and calculator.js which is the main javascript code to do the all point calculations and interaction
+images folder -- banner, icons
+pdf folder -- save the measures pdfs 
+
+
