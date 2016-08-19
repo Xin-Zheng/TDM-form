@@ -43,7 +43,7 @@ db.createUser(
   {
     user: "tdmuser",
     pwd: "12345678",
-    roles: [ { role: "userAdminAnyDatabase", db: "tdm" } ]
+    roles: [ { role: "readWrite", db: "test" } ]
   }
 )
 ```
