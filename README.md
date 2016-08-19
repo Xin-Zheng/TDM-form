@@ -47,6 +47,26 @@ db.createUser(
   }
 )
 ```
+
+Create new database named "test"
+
+```
+use test
+```
+
+Create new collection named "tdm"
+```
+db.tdm.insertOne({
+    "name" : "fafa"
+
+})
+```
+
+Find item
+```
+db.tdm.find()
+```
+
 ####3 Install nssm to let NodeJS run as Windows Service
 
 https://nssm.cc/
