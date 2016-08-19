@@ -75,6 +75,69 @@ js folder -- including TIM and calculator.js which is the main javascript code t
 
 images folder -- banner, icons
 
-pdf folder -- save the measures pdfs 
+pdf folder -- save the measures pdfs (if measures update, you need to put new pdf here)
+
+### server.js notes (You maybe confusing at the first time, especially for defining new "var". Now using const. Haha, because it's javascript in ES2015 style. I am also a new learner of this new trend. )
+```javascript
+const express = require('express');   //load Express nodeJS backend framework
+const fs = require('fs');    //load filesystem package to support PDF distribution
+const path = require('path');   //load path package to manipulate url path
+const bodyParser= require('body-parser');   //load bodyParser to hold form submit service
+const MongoClient = require('mongodb').MongoClient;   //load MongoDB 
+const app = express();   //start Express app
+
+//change reference path based on domain name and port
+app.use('/images',express.static(path.join(__dirname, 'images')));
+app.use('/js',express.static(path.join(__dirname, 'js')));
+app.use('/css',express.static(path.join(__dirname, 'css')));
+
+//root url to show index.html
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html')
+})
+
+//Connect MongoDB.   mongodb://<username>:<password>@<url>:<port>/<databasename>
+MongoClient.connect('mongodb://tdmuser:12345678@54.83.57.240:27017/test', (err, database) => {
+  if (err) return console.log(err)
+  db = database;
+  app.listen(8080, () => {
+    console.log('listening on 8080')
+  })
+})
+
+app.use(bodyParser.urlencoded({extended: true}))
+//submit form using POST request and save data to Mongo and redirect to root url
+app.post('/submitmeasure', (req, res) => {
+  console.log('Hellooooooooooooooooo!')
+  db.collection('tdm').save(req.body, (err, result) => {
+  if (err) return console.log(err)
+  console.log('saved to database')
+  res.redirect('/')
+  })
+})
+
+
+//send measures PDF to client
+app.get('/pdf', function (req, res) {
+  var filePath = "/pdf/measure/"+ req.query.name+".pdf";
+  console.log(req.query.name);
+  console.log(filePath);
+  fs.readFile(__dirname + filePath , function (err,data){
+    res.contentType("application/pdf");
+    res.send(data);
+  });
+});
+
+//send landusecategory PDF to client
+app.get('/landuse', function (req, res) {
+  var filePath = "/pdf/landusesheet/LandUseCategory.pdf";
+  fs.readFile(__dirname + filePath , function (err,data){
+    res.contentType("application/pdf");
+    res.send(data);
+  });
+});
+
+
+```
 
 
