@@ -77,7 +77,11 @@ images folder -- banner, icons
 
 pdf folder -- save the measures pdfs (if measures update, you need to put new pdf here)
 
-### server.js notes (You maybe confusing at the first time, especially for defining new "var". Now using const. Haha, because it's javascript in ES2015 style. I am also a new learner of this new trend. )
+### server.js notes 
+
+(You maybe confusing at the first time, especially for defining new "var". Now using const. Haha, because it's javascript in ES2015 style. I am also a new learner of this new trend. )
+
+
 ```javascript
 const express = require('express');   //load Express nodeJS backend framework
 const fs = require('fs');    //load filesystem package to support PDF distribution
