@@ -25,7 +25,8 @@
 
   <script type="text/javascript" src="js/TIM.js"></script>
   <script type="text/javascript" src="js/proj4js/lib/proj4js-combined.js"></script>
-
+  <script src="js/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="js/sweetalert/dist/sweetalert.css">
 
   <div class="row">
     <img src="images/banner1.png" style="position: absolute; left: 20px; padding-top:5px;" height="90">
@@ -66,69 +67,69 @@
     <div style="color:#32BA9C; display: inline-block;" class="subtitle"> STEP 2:
     </div>
     <span style="font-size:20px;color:#27343A;" class="subtitle">Choose Land Use Categories
-    <a id = "landusequestion" class="glyphicon glyphicon-question-sign" aria-hidden="true"></a>
 
     </span>
 
 
     <!-- Project Type Multiple Radios -->
     <div id="categorydiv" class="row">
-      <div class="col-md-4">
+      <div class="col-md-5">
         <div class="checkbox">
           <label for="radios-0">
-            <input type="checkbox" name="radios" id="radios-0" value="1" class="CategoryRadio" checked="true">
+            <input type="checkbox" name="Category A: Retail Type" id="radios-0" value="1" class="CategoryRadio" checked="true">
             Category A: Retail Type
           </label>
+          <a id="landusehoverA" href="#" data-toggle="popover" data-container="body" data-placement="bottom"
+             data-html="true" data-content="<img src='images/landuseA.png' width='800'/>"
+             class="glyphicon glyphicon-question-sign" aria-hidden="true"></a>
+
         </div>
         <div class="checkbox">
           <label for="radios-1">
-            <input type="checkbox" name="radios" id="radios-1" value="2" class="CategoryRadio">
+            <input type="checkbox" name="Category B: Office Type" id="radios-1" value="2" class="CategoryRadio">
             Category B: Office Type
           </label>
+          <a id="landusehoverB" href="#" data-toggle="popover" data-container="body" data-placement="bottom"
+             data-html="true" data-content="<img src='images/landuseB.png' width='800'/>"
+             class="glyphicon glyphicon-question-sign" aria-hidden="true"></a>
         </div>
       </div>
 
       <div class="col-md-6">
         <div class="checkbox">
           <label for="radios-2">
-            <input type="checkbox" name="radios" id="radios-2" value="3" class="CategoryRadio">
+            <input type="checkbox" name="Category C: Residential Type" id="radios-2" value="3" class="CategoryRadio">
             Category C: Residential Type
           </label>
+          <a id="landusehoverC" href="#" data-toggle="popover" data-container="body" data-placement="bottom"
+             data-html="true" data-content="<img src='images/landuseC.png' width='800'/>"
+             class="glyphicon glyphicon-question-sign" aria-hidden="true"></a>
+
         </div>
         <div class="checkbox">
           <label for="radios-3">
-            <input type="checkbox" name="radios" id="radios-3" value="4" class="CategoryRadio">
+            <input type="checkbox" name="Category D: Other" id="radios-3" value="4" class="CategoryRadio">
             Category D: Other
           </label>
+          <a id="landusehoverD" href="#" data-toggle="popover" data-container="body" data-placement="bottom"
+             data-html="true" data-content="<img src='images/landuseD.png' width='800'/>"
+             class="glyphicon glyphicon-question-sign" aria-hidden="true"></a>
+
         </div>
       </div>
     </div>
   </div>
 
   <div class="col-md-1">
-    <button id="tourbutton">tour</button>
+    <button type="button" class=" btn btn-primary btn-sm" id="tourbutton">&nbsp&nbsp&nbsp&nbsp&nbspTour&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+    <button type="button" class=" btn btn-primary btn-sm" id="questionbutton" data-toggle="modal" data-target="#questionmodal">&nbspQuestion&nbsp</button>
+    <button type="button" class=" btn btn-primary btn-sm" id="Instructionbutton" data-toggle="modal" data-target="#instructionmodal">Instruction</button>
   </div>
 
 </div>
 
 
-<form action="/submitmeasure" method="POST">
-
-  <input type="radio" id="Aprojecttype" name="Aprojecttype" type="text" style="display:none;">
-  <input type="radio" id="Bprojecttype" name="Bprojecttype" type="text" style="display:none;">
-  <input type="radio" id="Cprojecttype" name="Cprojecttype" type="text" style="display:none;">
-  <input type="radio" id="Dprojecttype" name="Dprojecttype" type="text" style="display:none;">
-
-
-  <input id="AcurrentPointTodatabase" name="AcurrentPointTodatabase" type="text" style="display:none;">
-  <input id="AtargetPointTodatabase" name="AtargetPointTodatabase" type="text" style="display:none;">
-  <input id="BcurrentPointTodatabase" name="BcurrentPointTodatabase" type="text" style="display:none;">
-  <input id="BtargetPointTodatabase" name="BtargetPointTodatabase" type="text" style="display:none;">
-  <input id="CcurrentPointTodatabase" name="CcurrentPointTodatabase" type="text" style="display:none;">
-  <input id="CtargetPointTodatabase" name="CtargetPointTodatabase" type="text" style="display:none;">
-  <input id="DcurrentPointTodatabase" name="DcurrentPointTodatabase" type="text" style="display:none;">
-  <input id="DtargetPointTodatabase" name="DtargetPointTodatabase" type="text" style="display:none;">
-
+<form>
 
   <br>
 
@@ -164,8 +165,7 @@
         <div class="form-group">
           <label class="col-md-5 control-label" for="Street">Street Address of Project</label>
           <div class="col-md-7">
-            <input id="Street" name="Street" type="text" placeholder="1650 Mission Street" class="form-control input-md"
-                   required="">
+            <div id="addressdiv" name="Address" style="font-size:130%; padding-top: 4px; color:grey ;">1650 Mission Street</div>
           </div>
 
         </div>
@@ -174,7 +174,8 @@
         <div class="form-group">
           <label class="col-md-5 control-label" for="Assessors Block/Lot">Assessors Block/Lot</label>
           <div class="col-md-6">
-            <div id="AssessorsBlockLot" name="Assessors Block/Lot" style="font-size:130%; padding-top: 4px;"></div>
+            <div id="AssessorsBlockLot" name="Assessors Block/Lot"
+                 style="font-size:130%; padding-top: 4px; color:grey;"></div>
           </div>
         </div>
 
@@ -184,11 +185,15 @@
             Number </label>
           <div class="col-md-6">
             <div id="TAZinput" name="Transportation Analysis Zone Number"
-                 style="font-size:130%; padding-top: 4px;"></div>
+                 style="font-size:130%; padding-top: 4px; color:grey;"></div>
           </div>
+
+        </div>
 
 
       </fieldset>
+
+
     </div>
 
 
@@ -202,7 +207,7 @@
         <div class="form-group">
           <label class="col-md-4 control-label" for="Specify Use A">Specify Use(s)</label>
           <div class="col-md-6">
-            <input id="SpecifyUseA" name="SpecifyUseA" type="text" placeholder="Restaurant"
+            <input id="SpecifyUseA" name="Specify Use A" type="text" placeholder="Restaurant"
                    class="form-control input-md ProjectCharactInput">
           </div>
         </div>
@@ -395,12 +400,12 @@
       <div class="col-md-10"></div>
       <LEGEND class="row col-md-10"></LEGEND>
     </div>
-    <div class="row" >
+    <div class="row">
       <p style="margin:auto;">Choose the measures from following list</p>
     </div>
 
 
-      <!-- A type Measures-->
+    <!-- A type Measures-->
     <div class="col-md-8">
       <div id="measurediv">
         <div id="AtypeMeasure" class="form-horizontal AllMeasure row" style="margin-bottom:100px;">
@@ -415,7 +420,7 @@
           <div class="form-group">
             <label class="col-md-6 control-label measurename" for="Apkg1">PKG 1 Unbundle Parking</label>
             <div class="col-md-6">
-              <input id="Apkg1" type="checkbox" name="Apkg1" data-size="small" data-on-text="Yes" data-off-text="No">
+              <input id="Apkg1" type="checkbox" name="Apkg1" class="measureinput" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Apkg1pointdiv" class="measurepoint"></div>
               <div class="row" style="margin-left:4px">
                 <label id="Apkg1ratelabel" class="control-label regular parkratetitle">Neighborhood Parking
@@ -434,16 +439,17 @@
           <div class="form-group">
             <label class="col-md-6 control-label measurename" for="Apkg2">PKG 2 Parking Pricing</label>
             <div class="col-md-6">
-              <input id="Apkg2" type="checkbox" name="Apkg2" data-size="small" data-on-text="Yes" data-off-text="No">
+              <input id="Apkg2" type="checkbox" name="Apkg2"  class="measureinput" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Apkg2pointdiv" class="measurepoint"></div>
             </div>
           </div>
 
           <!-- A type Measures PKG3-->
           <div class="form-group">
-            <label class="col-md-6 control-label measurename" for="Apkg3">PKG 3 Parking Cash Out - Non-residential Tenants</label>
+            <label class="col-md-6 control-label measurename" for="Apkg3">PKG 3 Parking Cash Out - Non-residential
+              Tenants</label>
             <div class="col-md-5">
-              <input id="Apkg3" type="checkbox" name="Apkg3" data-size="small" data-on-text="Yes" data-off-text="No">
+              <input id="Apkg3" type="checkbox" name="Apkg3" class="measureinput" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Apkg3pointdiv" class="measurepoint"></div>
             </div>
           </div>
@@ -452,7 +458,7 @@
           <div class="form-group">
             <label class="col-md-6 control-label measurename" for="Apkg4" name="pkg4">PKG 4 Parking Supply</label>
             <div class="col-md-5">
-              <input id="Apkg4" class="allpkg4" name="Apkg4" type="checkbox" data-size="small" data-on-text="Yes"
+              <input id="Apkg4" class="allpkg4" name="Apkg4" class="measureinput" type="checkbox" data-size="small" data-on-text="Yes"
                      data-off-text="No">
               <div id="Apkg4pointdiv" class="measurepoint"></div>
 
@@ -480,14 +486,12 @@
           <div class="form-group">
             <label class="col-md-6 control-label measurename" for="Aact1">ACTIVE-1 Improve Walking Conditions</label>
             <div class="col-md-5">
-              <input id="Aact1" type="checkbox" name="Aact1" data-size="small" data-on-text="Yes" data-off-text="No">
+              <input id="Aact1" type="checkbox" name="Aact1" class="measureinput" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Aact1pointdiv" class="measurepoint"></div>
 
               <div class="btn-group">
-                <input id="Aact1OptA" type="radio" class="OptButtion Aact1Opt" autocomplete="off" name="Aact1Opt"
-                       value="1"></input><label class="control-label regular" for="Aact1OptA">Option A</label>
-                <input id="Aact1OptB" type="radio" class="OptButtion Aact1Opt" autocomplete="off" name="Aact1Opt"
-                       value="2"></input><label class="control-label regular" for="Aact1OptB">Option B</label>
+                <input id="Aact1OptA" name="Aact1 Option A" type="radio" class="OptButtion Aact1Opt measureinput" autocomplete="off" value="1"></input><label class="control-label regular"  for="Aact1OptA">Option A</label>
+                <input id="Aact1OptB" name="Aact1 Option B" type="radio" class="OptButtion Aact1Opt measureinput"   autocomplete="off" value="2"></input><label class="control-label regular" for="Aact1OptB">Option B</label>
               </div>
             </div>
           </div>
@@ -496,17 +500,17 @@
           <div class="form-group">
             <label class="col-md-6 control-label measurename" for="Aact2">ACTIVE-2 Bicycle Parking</label>
             <div class="col-md-5">
-              <input id="Aact2" type="checkbox" name="Aact2" data-size="small" data-on-text="Yes" data-off-text="No">
+              <input id="Aact2" type="checkbox" name="Aact2" class="measureinput" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Aact2pointdiv" class="measurepoint"></div>
 
               <div class="btn-group">
-                <input id="Aact2OptA" type="radio" class="OptButtion Aact2Opt" autocomplete="off" name="Aact2Opt"
+                <input id="Aact2OptA" type="radio" class="OptButtion Aact2Opt measureinput" autocomplete="off" name="Aact2 Option A"
                        value="1"></input><label class="control-label regular" for="Aact2OptA">Option A</label>
-                <input id="Aact2OptB" type="radio" class="OptButtion Aact2Opt" autocomplete="off" name="Aact2Opt"
+                <input id="Aact2OptB" type="radio" class="OptButtion Aact2Opt measureinput" autocomplete="off" name="Aact2 Option B"
                        value="2"></input><label class="control-label regular" for="Aact2OptB">Option B</label>
-                <input id="Aact2OptC" type="radio" class="OptButtion Aact2Opt" autocomplete="off" name="Aact2Opt"
+                <input id="Aact2OptC" type="radio" class="OptButtion Aact2Opt measureinput" autocomplete="off" name="Aact2 Option C"
                        value="3"></input><label class="control-label regular" for="Aact2OptC">Option C</label>
-                <input id="Aact2OptD" type="radio" class="OptButtion Aact2Opt" autocomplete="off" name="Aact2Opt"
+                <input id="Aact2OptD" type="radio" class="OptButtion Aact2Opt measureinput" autocomplete="off" name="Aact2 Option D"
                        value="4"></input><label class="control-label regular" for="Aact2OptD">Option D</label>
               </div>
             </div>
@@ -516,7 +520,7 @@
           <div class="form-group">
             <label class="col-md-6 control-label measurename" for="Aact3">ACTIVE-3 Showers and Lockers</label>
             <div class="col-md-5">
-              <input id="Aact3" type="checkbox" name="Aact3" data-size="small" data-on-text="Yes" data-off-text="No">
+              <input id="Aact3" class="measureinput" type="checkbox" name="Aact3" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Aact3pointdiv" class="measurepoint"></div>
 
             </div>
@@ -530,17 +534,17 @@
             </label>
 
             <div class="col-md-5">
-              <input id="Aact4" type="checkbox" name="Aact4" data-size="small" data-on-text="Yes" data-off-text="No">
+              <input id="Aact4"  class="measureinput" type="checkbox" name="Aact4" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Aact4pointdiv" class="measurepoint"></div>
 
               <div class="btn-group">
-                <input id="Aact4OptA" type="radio" class="OptButtion Aact4Opt" autocomplete="off" name="Aact4Opt"
+                <input id="Aact4OptA" type="radio" class="OptButtion Aact4Opt measureinput" autocomplete="off" name="Aact4 Option A"
                        value="1"></input><label class="control-label regular" for="Aact4OptA">>1000feet</label>
-                <input id="Aact4OptB" type="radio" class="OptButtion Aact4Opt" autocomplete="off" name="Aact4Opt"
+                <input id="Aact4OptB" type="radio" class="OptButtion Aact4Opt measureinput" autocomplete="off" name="Aact4 Option B"
                        value="2"></input><label class="control-label regular" for="Aact4OptB"><=1000feet</label>
               </div>
             </div>
-            <a class="row col-md-5 col-md-offset-6" href="http://www.bayareabikeshare.com/stations">
+            <a class="row col-md-5 col-md-offset-6" href="http://www.bayareabikeshare.com/stations" target="_blank">
               (Click here for the bay area bike share station map)
             </a>
           </div>
@@ -549,7 +553,7 @@
           <div class="form-group">
             <label class="col-md-6 control-label measurename" for="Aact5a">ACTIVE-5a Bicycle Repair Station</label>
             <div class="col-md-5">
-              <input id="Aact5a" type="checkbox" name="Aact5a" data-size="small" data-on-text="Yes" data-off-text="No">
+              <input id="Aact5a" class=“measureinput" type="checkbox" name="Aact5a" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Aact5apointdiv" class="measurepoint"></div>
 
             </div>
@@ -557,9 +561,10 @@
 
           <!-- A type Measures ACT5b-->
           <div class="form-group">
-            <label class="col-md-6 control-label measurename" for="Aact5b">ACTIVE-5b Bicycle Maintenance Services</label>
+            <label class="col-md-6 control-label measurename" for="Aact5b">ACTIVE-5b Bicycle Maintenance
+              Services</label>
             <div class="col-md-5">
-              <input id="Aact5b" type="checkbox" name="Aact5b" data-size="small" data-on-text="Yes" data-off-text="No">
+              <input id="Aact5b"  class=“measureinput" type="checkbox" name="Aact5b" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Aact5bpointdiv" class="measurepoint"></div>
 
             </div>
@@ -569,7 +574,7 @@
           <div class="form-group">
             <label class="col-md-6 control-label measurename" for="Aact6">ACTIVE-6 Fleet of Bicycles</label>
             <div class="col-md-5">
-              <input id="Aact6" type="checkbox" name="Aact6" data-size="small" data-on-text="Yes" data-off-text="No">
+              <input id="Aact6" class=“measureinput" type="checkbox" name="Aact6" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Aact6pointdiv" class="measurepoint"></div>
 
             </div>
@@ -577,9 +582,10 @@
 
           <!-- A type Measures ACT7-->
           <div class="form-group">
-            <label class="col-md-6 control-label measurename" for="Aact7" >ACTIVE-7 Temporary Bicycle Valet Parking</label>
+            <label class="col-md-6 control-label measurename" for="Aact7">ACTIVE-7 Temporary Bicycle Valet
+              Parking</label>
             <div class="col-md-5">
-              <input id="Aact7" type="checkbox" name="Aact7" data-size="small" data-on-text="Yes" data-off-text="No">
+              <input id="Aact7"  class=“measureinput" type="checkbox" name="Aact7" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Aact7pointdiv" class="measurepoint"></div>
 
             </div>
@@ -595,23 +601,23 @@
           <div class="form-group">
             <label class="col-md-6 control-label measurename" for="Acshare1">CSHARE-1 Car-Share Parking</label>
             <div class="col-md-5">
-              <input id="Acshare1" type="checkbox" name="Acshare1" data-size="small" data-on-text="Yes"
+              <input id="Acshare1" class=“measureinput" type="checkbox" name="Acshare1" data-size="small" data-on-text="Yes"
                      data-off-text="No">
               <div id="Acshare1pointdiv" class="measurepoint"></div>
 
               <div class="btn-group">
 
-                <input id="Acshare1OptA" type="radio" class="btn-default OptButtion Acshare1Opt" autocomplete="off"
-                       name="Acshare1Opt" value="1"></input><label class="control-label regular" for="Acshare1OptA">Option
+                <input id="Acshare1OptA" type="radio" class="btn-default OptButtion Acshare1Opt measureinput" autocomplete="off"
+                       name="Acshare1 Option A" value="1"></input><label class="control-label regular" for="Acshare1OptA">Option
                 A</label>
-                <input id="Acshare1OptB" type="radio" class="btn-default OptButtion Acshare1Opt" autocomplete="off"
-                       name="Acshare1Opt" value="2"></input><label class="control-label regular" for="Acshare1OptB">Option
+                <input id="Acshare1OptB" type="radio" class="btn-default OptButtion Acshare1Opt measureinput" autocomplete="off"
+                       name="Acshare1 Option B" value="2"></input><label class="control-label regular" for="Acshare1OptB">Option
                 B</label>
-                <input id="Acshare1OptC" type="radio" class="btn-default OptButtion Acshare1Opt" name="Acshare1Opt"
+                <input id="Acshare1OptC" type="radio" class="btn-default OptButtion Acshare1Opt measureinput" name="Acshare1 Option C"
                        value="3"></input><label class="control-label regular" for="Acshare1OptC">Option C</label>
-                <input id="Acshare1OptD" type="radio" class="btn-default OptButtion Acshare1Opt" name="Acshare1Opt"
+                <input id="Acshare1OptD" type="radio" class="btn-default OptButtion Acshare1Opt measureinput" name="Acshare1 Option D"
                        value="4"></input><label class="control-label regular" for="Acshare1OptD">Option D</label>
-                <input id="Acshare1OptE" type="radio" class="btn-default OptButtion Acshare1Opt" name="Acshare1Opt"
+                <input id="Acshare1OptE" type="radio" class="btn-default OptButtion Acshare1Opt measureinput" name="Acshare1 Option E"
                        value="5"></input><label class="control-label regular" for="Acshare1OptE">Option E</label>
               </div>
             </div>
@@ -625,9 +631,10 @@
 
           <!-- A type Measures DELIVERY1-->
           <div class="form-group">
-            <label class="col-md-6 control-label measurename" for="Adeli1">DELIVERY-1 Delivery Supportive Amenities</label>
+            <label class="col-md-6 control-label measurename" for="Adeli1">DELIVERY-1 Delivery Supportive
+              Amenities</label>
             <div class="col-md-5">
-              <input id="Adeli1" type="checkbox" name="Adelivery1" data-size="small" data-on-text="Yes"
+              <input id="Adeli1" type="checkbox" class=“measureinput" name="Adelivery1" data-size="small" data-on-text="Yes"
                      data-off-text="No">
               <div id="Adeli1pointdiv" class="measurepoint"></div>
 
@@ -638,7 +645,7 @@
           <div class="form-group">
             <label class="col-md-6 control-label measurename" for="Adeli2">DELIVERY-2 Provide Delivery Services</label>
             <div class="col-md-5">
-              <input id="Adeli2" type="checkbox" name="Adelivery2" data-size="small" data-on-text="Yes"
+              <input id="Adeli2" type="checkbox" class=“measureinput" name="Adelivery2" data-size="small" data-on-text="Yes"
                      data-off-text="No">
               <div id="Adeli2pointdiv" class="measurepoint"></div>
 
@@ -655,7 +662,7 @@
           <div class="form-group">
             <label class="col-md-6 control-label measurename" for="Afam2">FAM-2 On-site Childcare</label>
             <div class="col-md-5">
-              <input id="Afam2" type="checkbox" name="Afam2" data-size="small" data-on-text="Yes" data-off-text="No">
+              <input id="Afam2" type="checkbox" class=“measureinput" name="Afam2" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Afam2pointdiv" class="measurepoint"></div>
 
             </div>
@@ -671,22 +678,22 @@
           <div class="form-group">
             <label class="col-md-6 control-label measurename" for="Ahov1">HOV-1 Contributions or Incentives</label>
             <div class="col-md-5">
-              <input id="Ahov1" type="checkbox" name="Ahov1" data-size="small" data-on-text="Yes" data-off-text="No">
+              <input id="Ahov1" type="checkbox" class=“measureinput" name="Ahov1" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Ahov1pointdiv" class="measurepoint"></div>
 
               <div class="btn-group">
 
-                <input id="Ahov1OptA" type="radio" class="btn-default OptButtion Ahov1Opt" autocomplete="off"
-                       name="Ahov1Opt" value="1"></input><label class="control-label regular" for="Ahov1OptA">Option
+                <input id="Ahov1OptA" type="radio" class="btn-default OptButtion Ahov1Opt measureinput" autocomplete="off"
+                       name="Ahov1 Option A" value="1"></input><label class="control-label regular" for="Ahov1OptA">Option
                 A</label>
-                <input id="Ahov1OptB" type="radio" class="btn-default OptButtion Ahov1Opt" autocomplete="off"
-                       name="Ahov1Opt" value="2"></input><label class="control-label regular" for="Ahov1OptB">Option
+                <input id="Ahov1OptB" type="radio" class="btn-default OptButtion Ahov1Opt measureinput" autocomplete="off"
+                       name="Ahov1 Option B" value="2"></input><label class="control-label regular" for="Ahov1OptB">Option
                 B</label>
-                <input id="Ahov1OptC" type="radio" class="btn-default OptButtion Ahov1Opt" autocomplete="off"
-                       name="Ahov1Opt" value="3"></input><label class="control-label regular" for="Ahov1OptC">Option
+                <input id="Ahov1OptC" type="radio" class="btn-default OptButtion Ahov1Opt measureinput" autocomplete="off"
+                       name="Ahov1 Option C" value="3"></input><label class="control-label regular" for="Ahov1OptC">Option
                 C</label>
-                <input id="Ahov1OptD" type="radio" class="btn-default OptButtion Ahov1Opt" autocomplete="off"
-                       name="Ahov1Opt" value="4"></input><label class="control-label regular" for="Ahov1OptD">Option
+                <input id="Ahov1OptD" type="radio" class="btn-default OptButtion Ahov1Opt measureinput" autocomplete="off"
+                       name="Ahov1 Option D" value="4"></input><label class="control-label regular" for="Ahov1OptD">Option
                 D</label>
 
               </div>
@@ -697,15 +704,15 @@
           <div class="form-group">
             <label class="col-md-6 control-label measurename" for="Ahov2">HOV-2 Shuttle Bus Service</label>
             <div class="col-md-5">
-              <input id="Ahov2" type="checkbox" name="Ahov2" data-size="small" data-on-text="Yes" data-off-text="No">
+              <input id="Ahov2" type="checkbox" name="Ahov2" class=“measureinput" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Ahov2pointdiv" class="measurepoint"></div>
 
               <div class="btn-group">
-                <input id="Ahov2OptA" type="radio" class="btn-default OptButtion Ahov2Opt" autocomplete="off"
-                       name="Ahov2Opt" value="1"></input><label class="control-label regular" for="Ahov2OptA">Option
+                <input id="Ahov2OptA" type="radio" class="btn-default OptButtion Ahov2Opt measureinput" autocomplete="off"
+                       name="Ahov2 Option A" value="1"></input><label class="control-label regular" for="Ahov2OptA">Option
                 A</label>
-                <input id="Ahov2OptB" type="radio" class="btn-default OptButtion Ahov2Opt" autocomplete="off"
-                       name="Ahov2Opt" value="2"></input><label class="control-label regular" for="Ahov2OptB">Option
+                <input id="Ahov2OptB" type="radio" class="btn-default OptButtion Ahov2Opt measureinput" autocomplete="off"
+                       name="Ahov2 Option B" value="2"></input><label class="control-label regular" for="Ahov2OptB">Option
                 B</label>
 
               </div>
@@ -716,7 +723,7 @@
           <div class="form-group">
             <label class="col-md-6 control-label measurename" for="Ahov3">HOV-3 Vanpool Program</label>
             <div class="col-md-1">
-              <input id="Ahov3" type="checkbox" name="Ahov3" data-size="small" data-on-text="Yes" data-off-text="No">
+              <input id="Ahov3" type="checkbox" class=“measureinput" name="Ahov3" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Ahov3pointdiv" class="measurepoint"></div>
 
             </div>
@@ -733,7 +740,7 @@
           <div class="form-group">
             <label class="col-md-6 control-label measurename" for="Ainfo1">INFO-1 Multimodal Wayfinding Signage</label>
             <div class="col-md-5">
-              <input id="Ainfo1" type="checkbox" name="Ainfo1" data-size="small" data-on-text="Yes" data-off-text="No">
+              <input id="Ainfo1" type="checkbox" class=“measureinput" name="Ainfo1" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Ainfo1pointdiv" class="measurepoint"></div>
 
             </div>
@@ -742,9 +749,10 @@
 
           <!-- A type Measures INFO2-->
           <div class="form-group">
-            <label class="col-md-6 control-label measurename" for="Ainfo2">INFO-2 Real Time Transportation Displays</label>
+            <label class="col-md-6 control-label measurename" for="Ainfo2">INFO-2 Real Time Transportation
+              Displays</label>
             <div class="col-md-5">
-              <input id="Ainfo2" type="checkbox" name="Ainfo2" data-size="small" data-on-text="Yes" data-off-text="No">
+              <input id="Ainfo2" type="checkbox" class=“measureinput" name="Ainfo2" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Ainfo2pointdiv" class="measurepoint"></div>
 
             </div>
@@ -752,20 +760,21 @@
 
           <!-- A type Measures INFO3-->
           <div class="form-group">
-            <label class="col-md-6 control-label measurename" for="Ainfo3">INFO-3 Tailored Transportation Marketing Services</label>
+            <label class="col-md-6 control-label measurename" for="Ainfo3">INFO-3 Tailored Transportation Marketing
+              Services</label>
             <div class="col-md-5">
-              <input id="Ainfo3" type="checkbox" name="Ainfo3" data-size="small" data-on-text="Yes" data-off-text="No">
+              <input id="Ainfo3" type="checkbox" class=“measureinput" name="Ainfo3" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Ainfo3pointdiv" class="measurepoint"></div>
 
               <div class="btn-group">
-                <input id="Ainfo3OptA" type="radio" class="OptButtion Ainfo3Opt" autocomplete="off" name="Ainfo3Opt"
+                <input id="Ainfo3OptA" type="radio" class="OptButtion Ainfo3Opt measureinput" autocomplete="off" name="Ainfo3 Option A"
                        value="1"></input><label class="control-label regular" for="Ainfo3OptA">Option A</label>
-                <input id="Ainfo3OptB" type="radio" class="OptButtion Ainfo3Opt" autocomplete="off" name="Ainfo3Opt"
+                <input id="Ainfo3OptB" type="radio" class="OptButtion Ainfo3Opt measureinput" autocomplete="off" name="Ainfo3 Option B"
                        value="2"></input><label class="control-label regular" for="Ainfo3OptB">Option B</label>
-                <input id="Ainfo3OptC" type="radio" class="OptButtion Ainfo3Opt" autocomplete="off" name="Ainfo3Opt"
+                <input id="Ainfo3OptC" type="radio" class="OptButtion Ainfo3Opt measureinput" autocomplete="off" name="Ainfo3 Option C"
                        value="3"></input><label class="control-label regular" for="Ainfo3OptC">Option C</label>
-                <input id="Ainfo3OptD" type="radio" class="OptButtion Ainfo3Opt" autocomplete="off" name="Ainfo3Opt"
-                       value="4"></input><label class="control-label regular" for="Ainfo3OptD">Option D</label>
+                <input id="Ainfo3OptD" type="radio" class="OptButtion Ainfo3Opt measureinput" autocomplete="off" name="Ainfo3 Option D"
+                       value="4"></input><label class="control-label regular " for="Ainfo3OptD">Option D</label>
               </div>
             </div>
           </div>
@@ -778,9 +787,10 @@
 
           <!-- A type Measures LU1-->
           <div class="form-group">
-            <label class="col-md-6 control-label measurename" for="Alu1">LU-1 Healthy Food Retail in Underserved Area</label>
+            <label class="col-md-6 control-label measurename" for="Alu1">LU-1 Healthy Food Retail in Underserved
+              Area</label>
             <div class="col-md-5">
-              <input id="Alu1" type="checkbox" name="Alu1" data-size="small" data-on-text="Yes" data-off-text="No">
+              <input id="Alu1" type="checkbox" name="Alu1"  class=“measureinput" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Alu1pointdiv" class="measurepoint"></div>
 
             </div>
@@ -943,7 +953,8 @@
 
           <!-- B type Measures ACT5b-->
           <div class="form-group">
-            <label class="col-md-6 control-label measurename" for="Bact5b">ACTIVE-5b Bicycle Maintenance Services</label>
+            <label class="col-md-6 control-label measurename" for="Bact5b">ACTIVE-5b Bicycle Maintenance
+              Services</label>
             <div class="col-md-5">
               <input id="Bact5b" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Bact5bpointdiv" class="measurepoint"></div>
@@ -1000,7 +1011,8 @@
 
           <!-- B type Measures DELIVERY1-->
           <div class="form-group">
-            <label class="col-md-6 control-label measurename" for="Bdeli1">DELIVERY-1 Delivery Supportive Amenities</label>
+            <label class="col-md-6 control-label measurename" for="Bdeli1">DELIVERY-1 Delivery Supportive
+              Amenities</label>
             <div class="col-md-5">
               <input id="Bdeli1" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Bdeli1pointdiv" class="measurepoint"></div>
@@ -1104,7 +1116,8 @@
 
           <!-- B type Measures INFO2-->
           <div class="form-group">
-            <label class="col-md-6 control-label measurename" for="Binfo2">INFO-2 Real Time Transportation Displays</label>
+            <label class="col-md-6 control-label measurename" for="Binfo2">INFO-2 Real Time Transportation
+              Displays</label>
             <div class="col-md-5">
               <input id="Binfo2" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Binfo2pointdiv" class="measurepoint"></div>
@@ -1114,7 +1127,8 @@
 
           <!-- B type Measures INFO3-->
           <div class="form-group">
-            <label class="col-md-6 control-label measurename" for="Binfo3">INFO-3 Tailored Transportation Marketing Services</label>
+            <label class="col-md-6 control-label measurename" for="Binfo3">INFO-3 Tailored Transportation Marketing
+              Services</label>
             <div class="col-md-5">
               <input id="Binfo3" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Binfo3pointdiv" class="measurepoint"></div>
@@ -1262,7 +1276,8 @@
 
           <!-- C type Measures ACT5b-->
           <div class="form-group">
-            <label class="col-md-6 control-label measurename" for="Cact5b">ACTIVE-5b Bicycle Maintenance Services</label>
+            <label class="col-md-6 control-label measurename" for="Cact5b">ACTIVE-5b Bicycle Maintenance
+              Services</label>
             <div class="col-md-5">
               <input id="Cact5b" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Cact5bpointdiv" class="measurepoint"></div>
@@ -1319,7 +1334,8 @@
 
           <!-- C type Measures DELIVERY1-->
           <div class="form-group">
-            <label class="col-md-6 control-label measurename" for="Cdeli1">DELIVERY-1 Delivery Supportive Amenities</label>
+            <label class="col-md-6 control-label measurename" for="Cdeli1">DELIVERY-1 Delivery Supportive
+              Amenities</label>
             <div class="col-md-5">
               <input id="Cdeli1" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Cdeli1pointdiv" class="measurepoint"></div>
@@ -1455,7 +1471,8 @@
 
           <!-- C type Measures INFO3-->
           <div class="form-group">
-            <label class="col-md-6 control-label measurename" for="Cinfo3">INFO-3 Tailored Transportation Marketing Services</label>
+            <label class="col-md-6 control-label measurename" for="Cinfo3">INFO-3 Tailored Transportation Marketing
+              Services</label>
             <div class="col-md-5">
               <input id="Cinfo3" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Cinfo3pointdiv" class="measurepoint"></div>
@@ -1612,7 +1629,8 @@
 
           <!-- D type Measures INFO2-->
           <div class="form-group">
-            <label class="col-md-6 control-label measurename" for="Dinfo2">INFO-2 Real Time Transportation Displays</label>
+            <label class="col-md-6 control-label measurename" for="Dinfo2">INFO-2 Real Time Transportation
+              Displays</label>
             <div class="col-md-5">
               <input id="Dinfo2" type="checkbox" data-size="small" data-on-text="Yes" data-off-text="No">
               <div id="Dinfo2pointdiv" class="measurepoint"></div>
@@ -1623,148 +1641,169 @@
 
         </div>
 
-        <div id="buttondiv" class="col-md-offset-8" style="margin-bottom: 50px;">
-          <button id="summit" name="summit" class="btn btn-success" type="submit">Submit</button>
-          <button id="Clear" name="Clear" class="btn btn-danger">Clear</button>
-        </div>
+        <!-- Comment box-->
 
-      </div>
+        <div  class="form-horizontal row" >
+
+          <div class="row">
+            <div class="col-md-1"></div>
+
+            <LEGEND class="col-md-7">COMMENTS</LEGEND>
+          </div>
+            <div class="form-group">
+              <div class="col-md-7">
+                <input id="commentbox" name="comment" type="text" placeholder="" class="form-control input-md col-md-offset-2">
+              </div>
+            </div>
+        </div>
+          <br>
+        <br>
+
+            <!--submit and clear button-->
+            <div id="buttondiv" class="col-md-offset-8 row" style="margin-bottom: 50px;">
+              <button id="summit"  class="btn btn-success">Submit</button>
+              <button id="Clear" name="Clear" class="btn btn-danger">Clear</button>
+            </div>
+
+          </div>
+
 
     </div>
+
 
     <!-- Point panel (float and scroll) -->
     <div class="nav col-md-4 col-xs-11 container">
       <!--<div class="row">-->
-        <div id="scrolldiv" >
-          <div id="Apointdiv" class="allpointdiv">
-            <legend style="padding-left: 12px;">
-              Category A - Retail
-            </legend>
+      <div id="scrolldiv">
+        <div id="Apointdiv" class="allpointdiv">
+          <legend style="padding-left: 12px;">
+            Category A - Retail
+          </legend>
 
-            <div class="col-md-5 col-xs-4">
-              <p style="font-size: 120%; ">Current Point:</p>
-              <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
-                <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
-                     id="Atotalpoint">0
-                </div>
-
+          <div class="col-md-5 col-xs-5">
+            <p style="font-size: 120%; ">Current Point:</p>
+            <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
+              <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
+                   id="Atotalpoint">0
               </div>
 
             </div>
 
-
-            <div class="col-md-1" style="border-left:solid #333333; height:80px;line-height: 80%;border-width: 2px;margin-top:10px;margin-left:-10px;"></div>
-
-
-            <div class="col-md-5 col-xs-5">
-              <p style="font-size: 120%; ">Target Point:</p>
-
-              <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
-                <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
-                     id="Atargetpoint">0
-                </div>
-              </div>
-            </div>
           </div>
 
 
-          <div id="Bpointdiv" class="allpointdiv">
-            <legend style="padding-left: 12px;">
-              Category B - Office
-            </legend>
-
-            <div class="col-md-5 col-xs-4">
-              <p style="font-size: 120%; ">Current Point:</p>
-
-              <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
-                <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
-                     id="Btotalpoint">0
-                </div>
-              </div>
-            </div>
+          <div class="col-md-1 col-xs-1"
+               style="border-left:solid #333333; height:80px;line-height: 80%;border-width: 2px;margin-top:10px;margin-left:-10px;"></div>
 
 
+          <div class="col-md-5 col-xs-5">
+            <p style="font-size: 120%; ">Target Point:</p>
 
-            <div class="col-md-1" style="border-left:solid #333333; height:80px;line-height: 80%;border-width: 2px;margin-top:10px;margin-left:-10px;"></div>
-
-
-            <div class="col-md-5 col-xs-5">
-              <p style="font-size: 120%; ">Target Point:</p>
-
-              <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
-                <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
-                     id="Btargetpoint">0
-                </div>
+            <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
+              <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
+                   id="Atargetpoint">0
               </div>
             </div>
           </div>
-
-
-          <div id="Cpointdiv" class="allpointdiv">
-            <legend style="padding-left: 12px;">
-              Category C - Residential
-            </legend>
-
-            <div class="col-md-5 col-xs-4">
-              <p style="font-size: 120%; ">Current Point:</p>
-
-              <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
-                <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
-                     id="Ctotalpoint">0
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="col-md-1" style="border-left:solid #333333; height:80px;line-height: 80%;border-width: 2px;margin-top:10px;margin-left:-10px;"></div>
-
-            <div class="col-md-5 col-xs-5">
-              <p style="font-size: 120%; ">Target Point:</p>
-
-              <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
-                <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
-                     id="Ctargetpoint">0
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div id="Dpointdiv" class="allpointdiv">
-            <legend style="padding-left: 12px;">
-              Category D - Other
-            </legend>
-
-            <div class="col-md-5 col-xs-4">
-              <p style="font-size: 120%; ">Current Point:</p>
-
-              <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
-                <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
-                     id="Dtotalpoint">0
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="col-md-1" style="border-left:solid #333333; height:80px;line-height: 80%;border-width: 2px;margin-top:10px;margin-left:-10px;"></div>
-
-
-            <div class="col-md-5 col-xs-5">
-              <p style="font-size: 120%; ">Target Point:</p>
-
-              <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
-                <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
-                     id="Dtargetpoint">0
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
         </div>
+
+
+        <div id="Bpointdiv" class="allpointdiv">
+          <legend style="padding-left: 12px;">
+            Category B - Office
+          </legend>
+
+          <div class="col-md-5 col-xs-5">
+            <p style="font-size: 120%; ">Current Point:</p>
+
+            <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
+              <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
+                   id="Btotalpoint">0
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-1 col-xs-1"
+               style="border-left:solid #333333; height:80px;line-height: 80%;border-width: 2px;margin-top:10px;margin-left:-10px;"></div>
+
+
+          <div class="col-md-5 col-xs-5">
+            <p style="font-size: 120%; ">Target Point:</p>
+
+            <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
+              <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
+                   id="Btargetpoint">0
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="Cpointdiv" class="allpointdiv">
+          <legend style="padding-left: 12px;">
+            Category C - Residential
+          </legend>
+
+          <div class="col-md-5 col-xs-5">
+            <p style="font-size: 120%; ">Current Point:</p>
+
+            <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
+              <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
+                   id="Ctotalpoint">0
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-1 col-xs-1"
+               style="border-left:solid #333333; height:80px;line-height: 80%;border-width: 2px;margin-top:10px;margin-left:-10px;"></div>
+
+          <div class="col-md-5 col-xs-5">
+            <p style="font-size: 120%; ">Target Point:</p>
+
+            <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
+              <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
+                   id="Ctargetpoint">0
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="Dpointdiv" class="allpointdiv">
+          <legend style="padding-left: 12px;">
+            Category D - Other
+          </legend>
+
+          <div class="col-md-5 col-xs-5">
+            <p style="font-size: 120%; ">Current Point:</p>
+
+            <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
+              <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
+                   id="Dtotalpoint">0
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-1 col-xs-1"
+               style="border-left:solid #333333; height:80px;line-height: 80%;border-width: 2px;margin-top:10px;margin-left:-10px;"></div>
+
+
+          <div class="col-md-5 col-xs-5">
+            <p style="font-size: 120%; ">Target Point:</p>
+
+            <div class="col-md-2" style="padding-left:40px; margin-top:-10px;">
+              <div style="font-size: 400%; margin-top:0px; font-family: Helvetica; font-weight: 100;"
+                   id="Dtargetpoint">0
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
       <!--</div>-->
     </div>
 
@@ -1775,8 +1814,99 @@
 
 </form>
 
+
+<!-- Question and Instruction Modal -->
+<div id="questionmodal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Questions</h4>
+      </div>
+      <div class="modal-body">
+        <p>If you have any questions about this tool or this program, please send an email to <a href="mailto:TSP@sfgov.org?Subject=Questions%20about%20TDM%20tool" target="_top">TSP@sfgov.org</a></p>
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<div id="instructionmodal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Instruction</h4>
+      </div>
+      <div class="modal-body">
+        <li>
+          1. Search project address or click on the map
+        </li>
+        <li>
+          2. Choose land use categories.
+        </li>
+        <li style="margin-left:2em">
+          If the project has more than one categories, please sellect them all.
+        </li>
+        <li>
+          3. Fill out Project Characteristics tab
+        </li>
+        <li style="margin-left:2em">
+          Street Address of Project, Assessors Block/Lot and Transportation Analysis Zone Number will automatically update based on the location of your project.
+        </li>
+        <li>
+          4. Select measures from each Category tab to achieve target associated with land use category.
+        <li style="margin-left:2em">
+        Some measures, and options within measures, may be required by Planning Code. These measures are indicated.</li>
+        <li style="margin-left:2em">
+          Some measures have options. You must select "Yes" and the option presented to receive points.
+        </li>
+        <li style="margin-left:2em">
+          Click on the name of measures for description of measure.
+        </li>
+        </li>
+
+        <br>
+        <li>
+          DRAFT tool - 8/23/2016
+        </li>
+        <p>
+
+
+
+
+
+
+
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="application"></div>
+
 </body>
 </html>
+
+
+
+
 
 
 <script type="text/javascript" src="js/calculator.js"></script>
