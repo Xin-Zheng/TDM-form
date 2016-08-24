@@ -6730,7 +6730,7 @@ $('#Aact1').on('switchChange.bootstrapSwitch', function (event, state) {
 });
 
 $('.Aact1Opt').change(function () {
-  switch ($("input[class = Aact1Opt]:checked").val()) {
+  switch ($("input.Aact1Opt:checked").val()) {
     case "1":
       Aact1point = 1;
       $('#Aact1pointdiv').html('+' + Aact1point);
@@ -6758,7 +6758,7 @@ $('#Aact2').on('switchChange.bootstrapSwitch', function (event, state) {
 });
 
 $('.Aact2Opt').change(function () {
-  switch ($("input[class = Aact2Opt]:checked").val()) {
+  switch ($("input.Aact2Opt:checked").val()) {
     case "1":
       Aact2point = 1;
       $('#Aact2pointdiv').html('+' + Aact2point);
@@ -6814,7 +6814,7 @@ $('#Aact4').on('switchChange.bootstrapSwitch', function (event, state) {
 });
 
 $('.Aact4Opt').change(function () {
-  switch ($("input[class = Aact4Opt]:checked").val()) {
+  switch ($("input.Aact4Opt:checked").val()) {
     case "1":
       Aact4point = 1;
       $('#Aact4pointdiv').html('+' + Aact4point);
@@ -6905,7 +6905,7 @@ $('#Acshare1').on('switchChange.bootstrapSwitch', function (event, state) {
 });
 
 $('.Acshare1Opt').change(function () {
-  switch ($("input[class = Acshare1Opt]:checked").val()) {
+  switch ($("input.Acshare1Opt:checked").val()) {
     case "1":
       Acshare1point = 1;
       $('#Acshare1pointdiv').html('+' + Acshare1point);
@@ -6998,7 +6998,7 @@ $('#Ahov1').on('switchChange.bootstrapSwitch', function (event, state) {
 });
 
 $('.Ahov1Opt').change(function () {
-  switch ($("input[class = Ahov1Opt]:checked").val()) {
+  switch ($("input.Ahov1Opt:checked").val()) {
     case "1":
       Ahov1point = 2;
       $('#Ahov1pointdiv').html('+' + Ahov1point);
@@ -7038,7 +7038,7 @@ $('#Ahov2').on('switchChange.bootstrapSwitch', function (event, state) {
 });
 
 $('.Ahov2Opt').change(function () {
-  switch ($("input[class = Ahov2Opt]:checked").val()) {
+  switch ($("input.Ahov2Opt:checked").val()) {
     case "1":
       Ahov2point = 7;
       $('#Ahov2pointdiv').html('+' + Ahov2point);
@@ -7168,7 +7168,7 @@ $('#Ainfo3').on('switchChange.bootstrapSwitch', function (event, state) {
 });
 
 $('.Ainfo3Opt').change(function () {
-  switch ($("input[class = Ainfo3Opt]:checked").val()) {
+  switch ($("input.Ainfo3Opt:checked").val()) {
     case "1":
       Ainfo3point = 1;
       $('#Ainfo3pointdiv').html('+' + Ainfo3point);
@@ -7452,7 +7452,7 @@ $('#Bact1').on('switchChange.bootstrapSwitch', function (event, state) {
 
 var Bact1pre = 0;
 $('.Bact1Opt').change(function () {
-  switch ($("input[class = Bact1Opt]:checked").val()) {
+  switch ($("input.Bact1Opt:checked").val()) {
     case "1":
       Bact1point = 1;
       $('#Bact1pointdiv').html('+' + Bact1point);
@@ -7485,7 +7485,7 @@ $('#Bact2').on('switchChange.bootstrapSwitch', function (event, state) {
 
 var Bact2pre = 0;
 $('.Bact2Opt').change(function () {
-  switch ($("input[class = Bact2Opt]:checked").val()) {
+  switch ($("input.Bact2Opt:checked").val()) {
     case "1":
       Bact2point = 1;
       $('#Bact2pointdiv').html('+' + Bact2point);
@@ -7541,7 +7541,7 @@ $('#Bact4').on('switchChange.bootstrapSwitch', function (event, state) {
 
 var Bact4pre = 0;
 $('.Bact4Opt').change(function () {
-  switch ($("input[class = Bact4Opt]:checked").val()) {
+  switch ($("input.Bact4Opt:checked").val()) {
     case "1":
       Bact4point = 1;
       $('#Bact4pointdiv').html('+' + Bact4point);
@@ -7619,7 +7619,7 @@ $('#Bcshare1').on('switchChange.bootstrapSwitch', function (event, state) {
 
 var Bcshare1pre = 0;
 $('.Bcshare1Opt').change(function () {
-  switch ($("input[class = Bcshare1Opt]:checked").val()) {
+  switch ($("input.Bcshare1Opt:checked").val()) {
     case "1":
       Bcshare1point = 1;
       $('#Bcshare1pointdiv').html('+' + Bcshare1point);
@@ -7699,7 +7699,7 @@ $('#Bhov1').on('switchChange.bootstrapSwitch', function (event, state) {
 });
 
 $('.Bhov1Opt').change(function () {
-  switch ($("input[class = Bhov1Opt]:checked").val()) {
+  switch ($("input.Bhov1Opt:checked").val()) {
     case "1":
       Bhov1point = 2;
       $('#Bhov1pointdiv').html('+' + Bhov1point);
@@ -7739,7 +7739,7 @@ $('#Bhov2').on('switchChange.bootstrapSwitch', function (event, state) {
 });
 
 $('.Bhov2Opt').change(function () {
-  switch ($("input[class = Bhov2Opt]:checked").val()) {
+  switch ($("input.Bhov2Opt:checked").val()) {
     case "1":
       Bhov2point = 7;
       $('#Bhov2pointdiv').html('+' + Bhov2point);
@@ -7869,7 +7869,7 @@ $('#Binfo3').on('switchChange.bootstrapSwitch', function (event, state) {
 
 var Binfo3pre = 0;
 $('.Binfo3Opt').change(function () {
-  switch ($("input[class = Binfo3Opt]:checked").val()) {
+  switch ($("input.Binfo3Opt:checked").val()) {
     case "1":
       Binfo3point = 1;
       $('#Binfo3pointdiv').html('+' + Binfo3point);
@@ -8108,7 +8108,7 @@ $('#Cact1').on('switchChange.bootstrapSwitch', function (event, state) {
 });
 
 $('.Cact1Opt').change(function () {
-  switch ($("input[class = Cact1Opt]:checked").val()) {
+  switch ($("input.Cact1Opt:checked").val()) {
     case "1":
       Cact1point = 1;
       $('#Cact1pointdiv').html('+' + Cact1point);
@@ -8140,7 +8140,7 @@ $('#Cact2').on('switchChange.bootstrapSwitch', function (event, state) {
 });
 
 $('.Cact2Opt').change(function () {
-  switch ($("input[class = Cact2Opt]:checked").val()) {
+  switch ($("input.Cact2Opt:checked").val()) {
     case "1":
       Cact2point = 1;
       $('#Cact2pointdiv').html('+' + Cact2point);
@@ -8181,7 +8181,7 @@ $('#Cact4').on('switchChange.bootstrapSwitch', function (event, state) {
 });
 
 $('.Cact4Opt').change(function () {
-  switch ($("input[class = Cact4Opt]:checked").val()) {
+  switch ($("input.Cact4Opt:checked").val()) {
     case "1":
       Cact4point = 1;
       $('#Cact4pointdiv').html('+' + Cact4point);
@@ -8260,7 +8260,7 @@ $('#Ccshare1').on('switchChange.bootstrapSwitch', function (event, state) {
 
 var Ccshare1pre = 0;
 $('.Ccshare1Opt').change(function () {
-  switch ($("input[class = Ccshare1Opt]:checked").val()) {
+  switch ($("input.Ccshare1Opt:checked").val()) {
     case "1":
       Ccshare1point = 1;
       $('#Ccshare1pointdiv').html('+' + Ccshare1point);
@@ -8429,7 +8429,7 @@ $('#Chov1').on('switchChange.bootstrapSwitch', function (event, state) {
 });
 
 $('.Chov1Opt').change(function () {
-  switch ($("input[class = Chov1Opt]:checked").val()) {
+  switch ($("input.Chov1Opt:checked").val()) {
     case "1":
       Chov1point = 2;
       $('#Chov1pointdiv').html('+' + Chov1point);
@@ -8470,7 +8470,7 @@ $('#Chov2').on('switchChange.bootstrapSwitch', function (event, state) {
 });
 
 $('.Chov2Opt').change(function () {
-  switch ($("input[class = Chov2Opt]:checked").val()) {
+  switch ($("input.Chov2Opt:checked").val()) {
     case "1":
       Chov2point = 7;
       $('#Chov2pointdiv').html('+' + Chov2point);
@@ -8532,7 +8532,7 @@ $('#Cinfo3').on('switchChange.bootstrapSwitch', function (event, state) {
 });
 
 $('.Cinfo3Opt').change(function () {
-  switch ($("input[class = Cinfo3Opt]:checked").val()) {
+  switch ($("input.Cinfo3Opt:checked").val()) {
     case "1":
       Cinfo3point = 1;
       $('#Cinfo3pointdiv').html('+' + Cinfo3point);
@@ -8747,7 +8747,7 @@ $('#Dact2').on('switchChange.bootstrapSwitch', function (event, state) {
 });
 
 $('.Dact2Opt').change(function () {
-  switch ($("input[class = Dact2Opt]:checked").val()) {
+  switch ($("input.Dact2Opt:checked").val()) {
     case "1":
       Dact2point = 1;
       $('#Dact2pointdiv').html('+' + Dact2point);
@@ -8805,7 +8805,7 @@ $('#Dcshare1').on('switchChange.bootstrapSwitch', function (event, state) {
 
 var Dcshare1pre = 0;
 $('.Dcshare1Opt').change(function () {
-  switch ($("input[class = Dcshare1Opt]:checked").val()) {
+  switch ($("input.Dcshare1Opt:checked").val()) {
     case "1":
       Dcshare1point = 1;
       $('#Dcshare1pointdiv').html('+' + Dcshare1point);
@@ -9149,19 +9149,32 @@ $("#summit").click(function(event, state){
   //Merge data from form
   var measurearray = [];
   $(".measureinput:checked").each(function(){
-    measrearray.push(this.name);
+    var MeasureOptionValue = "";
+    if ($(this).attr("value")!= undefined){
+      MeasureOptionValue = $(this).attr("value");
+    }
+
+    measurearray.push($(this).attr("id"));
   });
-  var submitdata = {measures:measurearray};
+
+  var day = new Date();
+  var timeISO = day.toISOString();
+  var addressval = $("#addressdiv").html();
+  var AssessorsBlockVal = $("#AssessorsBlockLot").html();
+  var TAZval = $("#TAZinput").html();
+  var Commentval = $("#commentbox").html();
+
+  var submitdata = {date: timeISO, address:addressval, AssessorsBlock:AssessorsBlockVal  , TAZ:TAZval , measures:measurearray, comment:Commentval};
 
   console.log(submitdata);
 
   if (Atotalpoint >= Atargetpoint && Btotalpoint >= Btargetpoint && Ctotalpoint >= Ctargetpoint  ){
-    swal("Good job!", "You meet the requirement!", "success");
-    $.post("/submitmeasure",
-    submitdata,
+    $.post("/submitmeasure", submitdata,
       function(data, status){
         alert("Data: " + data + "\nStatus: " + status);
       });
+    swal("Good job!", "You meet the requirement!", "success");
+
   }
   else{
     swal({   title: "Are you sure?",   text: "You didn't meet the requirement!",   type: "warning",   showCancelButton: false,   confirmButtonColor: "#DD6B55",   confirmButtonText: "Back to check!",   closeOnConfirm: false });
@@ -9183,17 +9196,3 @@ $("#addressInput").on("input", function (e) {
 $('[data-toggle="popover"]').popover({ trigger: "hover" });
 
 
-var tableContent = '';
-
-$.getJSON( '/application', function( data ) {
-
-  // For each item in our JSON, add a table row and cells to the content string
-  $.each(data, function(){
-    tableContent += '<tr>';
-    tableContent += '<td>' + this._id + '</td>';
-    tableContent += '</tr>';
-  });
-
-  // Inject the whole content string into our existing HTML table
-  $('#application').html(tableContent);
-});
